@@ -1,0 +1,195 @@
+---
+format:
+  html:
+    theme: yeti
+    toc: false
+    page-layout: full
+    title-block-banner: false
+jupyter: python3
+---
+
+<style>
+.center {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.links a {
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+.code-image-container {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.code-block {
+  flex: 1;
+  min-width: 300px;
+}
+.image-block {
+  flex: 1;
+  min-width: 200px;
+}
+</style>
+
+<div class="center">
+
+### "Filtering Attention Heads through <br> Automable Interpretability Experiments"
+
+#### Amiri Hayes, Jacob Andreas, Belinda Li
+
+# — ADDITIONAL INFO —
+
+[**Abstract**](https://drive.google.com/file/d/1Py0Iy6DFwMWoviuffSzoH2f0pfzIuhy6/view?usp=sharing)  [**Poster**](https://drive.google.com/file/d/1pJabwGFm6aaWH20wK8qmOcMiKy29-IiG/view?usp=sharing)  [**GitHub**](https://github.com/AmiriHayes/LLM-Interpretability)
+
+</div>
+
+## THREE PROGRAM EXAMPLES:
+<!-- 🔁 Code + Image Example 1 -->
+<div class="code-image-container">
+<div class="code-block">
+```{python}
+# 1/3. NEXT ATTENTION PROGRAM
+# Program Goal: predicts what head activations for head
+# where tokens only look at next tokens in sequence.
+
+def next_attention(sentence, tokenizer):
+    toks = tokenizer([sentence], return_tensors="pt")
+    len_seq = len(toks.input_ids[0])
+    out = np.zeros((len_seq, len_seq))
+    for i in range(1, len_seq - 1):
+        out[i, i + 1] = 1
+    out[0, 0] = 1
+    out[-1, 0] = 1
+
+    return "Next Head Attention Pattern", out
+```
+</div>
+<div class="image-block rounded">
+![](img/next_Attention.png)
+</div>
+</div>
+
+---
+
+<!-- 🔁 Code + Image Example 2 (Copy from here) -->
+<!-- Copy and paste this whole block to add more examples -->
+<div class="code-image-container">
+<div class="code-block">
+```{python}
+# 2/3. DEPENDENCY ATTENTION PROGRAM
+# Program Goal: assigns bidirectional uniform
+# attention to tokens based on sentence dependency tree.
+
+def dependencies(sentence, tokenizer):
+    toks = tokenizer([sentence], return_tensors="pt")
+    len_seq = len(toks.input_ids[0])
+    out = np.zeros((len_seq, len_seq))
+    doc = nlp(" ".join(sentence.split()))
+    for stok in doc:
+        parent_index = stok.i
+        for child_stok in stok.children:
+            child_index = child_stok.i
+            out[parent_index+1, child_index+1] = 1
+            out[child_index+1, parent_index+1] = 1
+    out[0, 0] = 1
+    out[-1, 0] = 1
+    out = out / out.sum(axis=1, keepdims=True)
+    return "Dependency Parsing Pattern", out
+```
+</div>
+<div class="image-block">
+![](img/dependencies.png)
+</div>
+</div>
+
+---
+
+<!-- 🔁 Code + Image Example 3 -->
+<div class="code-image-container">
+<div class="code-block">
+```{python}
+# 3/3. PUNCTUATION ATTENTION PROGRAM
+# Simple Program: assigns uniform attention to the
+# upcoming punctuations in a given sentence.
+
+def punctuation_attention(sentence, tokenizer):
+    toks = tokenizer([sentence], return_tensors="pt")
+    len_seq = len(toks.input_ids[0])
+    out = np.zeros((len_seq, len_seq))
+    words = tokenizer.convert_ids_to_tokens(toks.input_ids[0])
+    punctuation_set = set('!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~')
+    punctuation_indices = [i for i, tok in enumerate(words) if any(p in tok for p in punctuation_set)]
+    for i in range(len_seq):
+        future_punct = [j for j in punctuation_indices if j > i]
+        if future_punct:
+            for j in future_punct:
+                out[i, j] = 1.0
+            out[i] /= out[i].sum()
+        else:
+            out[i, i] = 1.0
+    out += 1e-4
+    out = out / out.sum(axis=1, keepdims=True)
+    return "Punctuation Pattern", out
+```
+</div>
+<div class="image-block">
+![](img/punctuation.png)
+</div>
+</div>
+
+---
+
+<!-- 🔁 Code + Image Example 3 -->
+<div class="code-image-container">
+<div class="code-block">
+```{python}
+# EXTRA - LINEARLY FIT ATTENTION EXAMPLE:
+# Example of linearly combining programs for a better fit:
+
+def linear_fit(sentence, tokenizer, patterns, y):
+    X = []
+    for pattern in patterns:
+      X.append(pattern(sentence, tokenizer)[1].flatten())
+    X_n = np.array(X).T
+
+    reg = LinearRegression().fit(X_n, y.flatten())
+    out = reg.intercept_ + sum(coef * mat for coef, mat in zip(reg.coef_, X))
+
+    len_seq = len(tokenizer([sentence], return_tensors="pt").input_ids[0])
+    out = out.reshape((len_seq, len_seq))
+    out = out / out.sum(axis=1, keepdims=True)
+    return "Linear Fit", out, reg.intercept_, reg.coef_
+```
+</div>
+<div class="image-block">
+![](img/punctuation.png)
+</div>
+</div>
+
+## FUTURE STEPS
+As of 8/1/2025 &#8594;
+
+- Automation: \
+&emsp; *Expand on currently implemented automated (LLM-generated) programs*
+  1. First, manually implement additional programs to start a program database
+  2. Then, run the following pipeline to augment database & improve LLM programs
+      - Sample attention heads that best_fit & linear_fit do not fit well
+      - Generate hypothesis and program using data and validate hypothesis
+      - Add program to the databse and rerun cycle
+\
+\
+- Inference-Time Analyses (Some Questions): \
+  - Do heads take on the same function across all sentences & all types of sentences?
+  - Do these programs emerge in different models? Are there programs which only exist in bigger LLMs?
+  - Do head functions emerge over time during training? If so, when and which ones?
+    - If heads can change function, is there a correlation between what it is & other patterns the head takens on?
+\
+\
+- Structured Evaluation:  
+  &emsp;*Explore program / function compositions*  
+  &emsp;&emsp;- Determine which programs are co-occuring in heads & develop a composition tree from program database \
+  &emsp;*Expand on existing Chain-of-Thought (COT) Implementation*  
+  &emsp;&emsp;- Continue comparing activations in Question-Answering contexts when LLMs are given misleading hints
