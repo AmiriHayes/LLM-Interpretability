@@ -109,9 +109,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 <div class="center">
 <section id="filtering-attention-heads-through-automable-interpretability-experiments" class="level3">
-<h3 class="anchored" data-anchor-id="filtering-attention-heads-through-automable-interpretability-experiments">“Filtering Attention Heads through <br> Automable Interpretability Experiments”</h3>
-<section id="amiri-hayes-jacob-andreas-belinda-li" class="level4">
-<h4 class="anchored" data-anchor-id="amiri-hayes-jacob-andreas-belinda-li">Amiri Hayes, Jacob Andreas, Belinda Li</h4>
+<h3 class="anchored" data-anchor-id="filtering-attention-heads-through-automable-interpretability-experiments">Filtering Attention Heads through Automable Interpretability Experiments</h3>
+<section id="amiri-hayes-jacob-andreas-belinda-li" class="level5">
+<h5 class="anchored" data-anchor-id="amiri-hayes-jacob-andreas-belinda-li">Amiri Hayes, Jacob Andreas, Belinda Li</h5>
 </section>
 </section>
 <section id="additional-info" class="level1">
@@ -121,10 +121,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="three-program-examples" class="level2">
 <h2 class="anchored" data-anchor-id="three-program-examples">THREE PROGRAM EXAMPLES:</h2>
+<br>
 <!-- 🔁 Code + Image Example 1 -->
 <div class="code-image-container">
 <div class="code-block">
-<div id="80085ca8" class="cell" data-execution_count="1">
+<div id="16f1b78c" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1/3. NEXT </span><span class="al">ATTENTION</span><span class="co"> PROGRAM</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Program Goal: predicts what head activations for head</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># where tokens only look at next tokens in sequence.</span></span>
@@ -142,7 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="image-block rounded">
-<p><img src="img/next_Attention.png" class="img-fluid"></p>
+<p><img src="img/next_attention.png" class="img-fluid"></p>
 </div>
 </div>
 <hr>
@@ -150,7 +151,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- Copy and paste this whole block to add more examples -->
 <div class="code-image-container">
 <div class="code-block">
-<div id="67e487cf" class="cell" data-execution_count="2">
+<div id="6bd8c9ce" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2/3. DEPENDENCY </span><span class="al">ATTENTION</span><span class="co"> PROGRAM</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Program Goal: assigns bidirectional uniform</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># attention to tokens based on sentence dependency tree.</span></span>
@@ -180,7 +181,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- 🔁 Code + Image Example 3 -->
 <div class="code-image-container">
 <div class="code-block">
-<div id="2aa0d000" class="cell" data-execution_count="3">
+<div id="15b5b104" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 3/3. PUNCTUATION </span><span class="al">ATTENTION</span><span class="co"> PROGRAM</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple Program: assigns uniform attention to the</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># upcoming punctuations in a given sentence.</span></span>
@@ -213,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- 🔁 Code + Image Example 3 -->
 <div class="code-image-container">
 <div class="code-block">
-<div id="f57067df" class="cell" data-execution_count="4">
+<div id="5fa94c28" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># EXTRA - LINEARLY FIT </span><span class="al">ATTENTION</span><span class="co"> EXAMPLE:</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of linearly combining programs for a better fit:</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -233,7 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="image-block">
-<p><img src="img/punctuation.png" class="img-fluid"></p>
+<p><img src="img/linear_fit.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
@@ -249,22 +250,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Sample attention heads that best_fit &amp; linear_fit do not fit well</li>
 <li>Generate hypothesis and program using data and validate hypothesis</li>
-<li>Add program to the databse and rerun cycle<br>
+<li>Add program to the database and rerun cycle<br>
 <br>
 </li>
 </ul></li>
 </ol></li>
 <li>Inference-Time Analyses (Some Questions):<br>
-
+<em>Run experiments for the following questions</em>
 <ul>
 <li>Do heads take on the same function across all sentences &amp; all types of sentences?</li>
 <li>Do these programs emerge in different models? Are there programs which only exist in bigger LLMs?</li>
-<li>Do head functions emerge over time during training? If so, when and which ones?
-<ul>
+<li>Do head functions emerge over time during training? If so, when and which ones?</li>
 <li>If heads can change function, is there a correlation between what it is &amp; other patterns the head takens on?<br>
 <br>
 </li>
-</ul></li>
 </ul></li>
 <li>Structured Evaluation:<br>
  <em>Explore program / function compositions</em><br>

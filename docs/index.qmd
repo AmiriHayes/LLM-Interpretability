@@ -36,9 +36,9 @@ jupyter: python3
 
 <div class="center">
 
-### "Filtering Attention Heads through <br> Automable Interpretability Experiments"
+### Filtering Attention Heads through Automable Interpretability Experiments
 
-#### Amiri Hayes, Jacob Andreas, Belinda Li
+##### Amiri Hayes, Jacob Andreas, Belinda Li
 
 # — ADDITIONAL INFO —
 
@@ -47,6 +47,7 @@ jupyter: python3
 </div>
 
 ## THREE PROGRAM EXAMPLES:
+\
 <!-- 🔁 Code + Image Example 1 -->
 <div class="code-image-container">
 <div class="code-block">
@@ -68,7 +69,7 @@ def next_attention(sentence, tokenizer):
 ```
 </div>
 <div class="image-block rounded">
-![](img/next_Attention.png)
+![](img/next_attention.png)
 </div>
 </div>
 
@@ -165,7 +166,7 @@ def linear_fit(sentence, tokenizer, patterns, y):
 ```
 </div>
 <div class="image-block">
-![](img/punctuation.png)
+![](img/linear_fit.png)
 </div>
 </div>
 
@@ -178,14 +179,15 @@ As of 8/1/2025 &#8594;
   2. Then, run the following pipeline to augment database & improve LLM programs
       - Sample attention heads that best_fit & linear_fit do not fit well
       - Generate hypothesis and program using data and validate hypothesis
-      - Add program to the databse and rerun cycle
+      - Add program to the database and rerun cycle
 \
 \
 - Inference-Time Analyses (Some Questions): \
+  *Run experiments for the following questions*
   - Do heads take on the same function across all sentences & all types of sentences?
   - Do these programs emerge in different models? Are there programs which only exist in bigger LLMs?
   - Do head functions emerge over time during training? If so, when and which ones?
-    - If heads can change function, is there a correlation between what it is & other patterns the head takens on?
+  - If heads can change function, is there a correlation between what it is & other patterns the head takens on?
 \
 \
 - Structured Evaluation:  
