@@ -1,14 +1,17 @@
 ---
+title: "ViewLLM"
 format:
   html:
     theme: yeti
     toc: false
     page-layout: full
-    title-block-banner: false
 jupyter: python3
 ---
 
 <style>
+.quarto-title-block {
+  display: none !important;
+}
 .center {
   text-align: center;
   margin-bottom: 1.5em;
@@ -41,9 +44,12 @@ jupyter: python3
 ##### Amiri Hayes, Jacob Andreas, Belinda Li
 
 # — ADDITIONAL INFO —
-
-[**Abstract**](https://drive.google.com/file/d/1Py0Iy6DFwMWoviuffSzoH2f0pfzIuhy6/view?usp=sharing)  [**Poster**](https://drive.google.com/file/d/1pJabwGFm6aaWH20wK8qmOcMiKy29-IiG/view?usp=sharing)  [**GitHub**](https://github.com/AmiriHayes/LLM-Interpretability)
-
+<div class="links">
+  <a href="https://drive.google.com/file/d/1Py0Iy6DFwMWoviuffSzoH2f0pfzIuhy6/view?usp=sharing"><strong>Abstract</strong></a>
+  <a href="https://drive.google.com/file/d/1pJabwGFm6aaWH20wK8qmOcMiKy29-IiG/view?usp=sharing"><strong>Poster</strong></a>
+  <a href="https://github.com/AmiriHayes/LLM-Interpretability"><strong>GitHub</strong></a>
+  <a href="https://test.pypi.org/project/viewllm/"><strong>Library: ViewLLM</strong></a>
+</div>
 </div>
 
 ## THREE PROGRAM EXAMPLES:

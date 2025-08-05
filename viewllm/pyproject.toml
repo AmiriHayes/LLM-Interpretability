@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "viewllm"
+version = "0.1.0"
+description = "A library to visualize and score attention heads in transformer models"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    { name="Amiri Hayes", email="amiri@mit.edu" }
+]
+dependencies = [
+    "torch",
+    "transformers",
+    "numpy",
+    "matplotlib",
+
+]
+
+[project.urls]
+Homepage = "https://amirihayes.github.io/LLM-Interpretability/"
+Repository = "https://github.com/AmiriHayes/LLM-Interpretability"
