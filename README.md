@@ -1,4 +1,10 @@
 # LLM-Interpretability | Analyzing Attention Heads
+### Author: Amiri Hayes
+
+>[Link to my Poster](https://drive.google.com/file/d/1pJabwGFm6aaWH20wK8qmOcMiKy29-IiG/view?usp=drive_link) \
+  [Link to my Report](https://drive.google.com/file/d/1h7wfQGjmjxRAEsa5HY0fxZ3_bT0ZXX3E/view?usp=drive_link) \
+  [Python Library | ViewLLM](https://test.pypi.org/project/viewllm/) \
+  [Additional Info](https://amirihayes.github.io/LLM-Interpretability/)
 
 ### Research Question
 
