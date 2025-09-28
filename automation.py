@@ -4,7 +4,6 @@ import os
 import pandas as pd
 from nltk.tokenize import sent_tokenize
 
-API_KEY = "AIzaSyBBW70Rgbm8tCa6l2897Cjq5-jveB9VXhY"
 model = AutoModel.from_pretrained("bert-base-uncased")
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 
