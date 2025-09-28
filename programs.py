@@ -6,6 +6,7 @@ from transformers import PreTrainedTokenizerBase
 from sklearn.linear_model import LinearRegression
 
 # Docs Link: { https://amirihayes.github.io/LLM-Interpretability/ }
+# Unless otherwise notes, these functions are  manually written:
 
 #0/30
 def linear_fit(sentence: str, tokenizer: PreTrainedTokenizerBase, patterns: list[Callable], y: np.ndarray) -> Tuple[str, np.ndarray, float, np.ndarray]:

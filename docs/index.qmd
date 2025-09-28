@@ -72,7 +72,7 @@ def next_attention(sentence, tokenizer):
     out[0, 0] = 1
     out[-1, 0] = 1
 
-    return "Next Head Attention Pattern", out
+    return "Next Token Attention Pattern", out
 ```
 </div>
 <div class="image-block rounded">
