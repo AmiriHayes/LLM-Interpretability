@@ -11,31 +11,53 @@ from transformers import AutoModel, AutoTokenizer
 
 ####### FUNCTION #1: GENERATE AUTOMATED PROMPTS FROM HEAD DATA #######
 
-example_function_one = """
-def dependencies(sentence, tokenizer):
-    toks = tokenizer([sentence], return_tensors="pt")
-    len_seq = len(toks.input_ids[0])
-    out = np.zeros((len_seq, len_seq))
-    words = sentence.split()
-    # use spacey nlp to split word into doc dependency tree
-    # loop through each node in tree and assign directional attention
-    # to the matrix 'out' by adding one when there is an outgoing edge.
-    # assign cls (out[0, 0] = 1) and eos (out[-1, 0] = 1) to have self_attention
-    # Normalize out matrix by row (results in uniform attention) and return out
-    return 'Dependency Parsing Pattern', out
+example_one = """
+def dependencies(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]: /
+    toks = tokenizer([sentence], return_tensors="pt") /
+    len_seq = len(toks.input_ids[0]) /
+    out = np.zeros((len_seq, len_seq)) /
+    words = sentence.split() /
+    doc = nlp(" ".join(words)) /
+    for stok in doc: /
+        parent_index = stok.i /
+        for child_stok in stok.children: /
+            child_index = child_stok.i /
+            out[parent_index+1, child_index+1] = 1 /
+            out[child_index+1, parent_index+1] = 1 /
+    for row in range(len_seq): # Ensure no row is all zeros /
+        if out[row].sum() == 0: /
+            out[row, -1] = 1.0 /
+    out += 1e-4  # Avoid division by zero /
+    out = out / out.sum(axis=1, keepdims=True)  # Normalize
+    return "Dependency Parsing Pattern", out /
 """
-example_function_two = """
-def pos_alignment(sentence, tokenizer):
+example_two = """
+def same_attention(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]: /
     toks = tokenizer([sentence], return_tensors="pt")
     len_seq = len(toks.input_ids[0])
     out = np.zeros((len_seq, len_seq))
-    # assign toks, input_ids, word_ids, len_seq, out, doc
-    # use spacey to get pos_tags for tokens in docs [token.pos_ for token in doc]
-    # for token in pos_tags:
-    # loop through pos_tags and increment out[i,j] when pos_tags match
-    # assign cls (out[0, 0] = 1) and eos (out[-1, 0] = 1) to have self_attention
-    # Normalize out matrix by row (results in uniform attention) and return out
-    # return 'Part of Speech Implementation 1', out
+    for i in range(1, len_seq-1):
+        out[i, i] = 1
+    for row in range(len_seq): # Ensure no row is all zeros /
+        if out[row].sum() == 0: /
+            out[row, -1] = 1.0 /
+    return "Same Token Pattern", out
+"""
+example_three = """
+def pos_alignment(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]:
+    toks = tokenizer([sentence], return_tensors="pt") /
+    len_seq = len(toks.input_ids[0]) /
+    out = np.zeros((len_seq, len_seq)) /
+    # assign toks, input_ids, word_ids, len_seq, out, doc /
+    # use spacey to get pos_tags for tokens in docs [token.pos_ for token in doc] /
+    # for token in pos_tags: /
+    # loop through pos_tags and increment out[i,j] when pos_tags match /
+    # assign cls (out[0, 0] = 1) and eos (out[-1, 0] = 1) to have self_attention /
+    # Normalize out matrix by row (results in uniform attention) and return out /
+    for row in range(len_seq): # Ensure no row is all zeros /
+        if out[row].sum() == 0: /
+            out[row, -1] = 1.0 /
+    # return 'Part of Speech Implementation 1', out /
 """
 
 def generate_prompt(sentences, model, tokenizer, head_loc, top_k_ratio=0.1):
@@ -48,9 +70,10 @@ def generate_prompt(sentences, model, tokenizer, head_loc, top_k_ratio=0.1):
     }
 
     def handle_score(score):
-        return "{:.2f}".format(score)
+        # convert to percentage with 0 decimal places
+        return "{:.0f}".format(score * 100)
         
-    def scrape_head(att, tokens, ignore_special=True, top_k_ratio=0.1):
+    def scrape_head(att, tokens, top_k_ratio, ignore_special=True):
         seq_len = att.shape[0]
         ignore_indices = {i for i, tok in enumerate(tokens) if ignore_special and tok in ("[CLS]", "[SEP]", "[PAD]")}
         keep_indices = [i for i in range(seq_len) if i not in ignore_indices]
@@ -62,14 +85,13 @@ def generate_prompt(sentences, model, tokenizer, head_loc, top_k_ratio=0.1):
         top_att = sorted(att_scores, key=lambda x: x[2], reverse=True)[:top_k]
         top_activations = []
         for i, j, score in top_att:
-            top_activations.append({
-                f"from_token_{i}": tokens[i],
-                f"to_token_{j}": tokens[j],
-                "weight": handle_score(score)
-            })
-        return top_activations
+            top_activations.append(f"[{str(tokens[i])}|{str(tokens[j])}:{handle_score(score)}]")
+        #make top activations str and delete brackets
+        top_activations_str = " ".join(top_activations).replace("[", "").replace("]", "")
+        # print(top_activations_str)
+        return top_activations_str
     
-    for sentence in sentences:
+    for idx, sentence in enumerate(sentences):
         inputs = tokenizer(sentence, return_tensors="pt")
         tokens = tokenizer.convert_ids_to_tokens(inputs["input_ids"][0])
         with torch.no_grad():
@@ -77,86 +99,66 @@ def generate_prompt(sentences, model, tokenizer, head_loc, top_k_ratio=0.1):
             att = outputs.attentions[layer][0, head]
         att = att.detach().cpu().numpy()
         top_activations = scrape_head(att, tokens, top_k_ratio=top_k_ratio)
-        item = { "sentence": sentence, "attention": top_activations }
+        item = {f"sentence {idx}": " ".join(tokens), "sentence attention": top_activations}
         data["examples"].append(item)
 
     data = json.dumps(data, indent=2)
     prompt = f"""
-    Using the following pieces of data based on {len(sentences[0])} sentences, generate three hypothesises about the linguistic role the following head is responsible for based on patterns
-    in the activations.  Then, choose the most fitting hypothesis for the head function using a few examples from the data. Finally, using the linguistic hypothesis you determine, 
-    write a python function which takes in a sentence and tokenizer as parameters and outputs the name of the pattern you hypothesize along with a 'predicted_matrix' (size: token_len * token_len), which is the 
-    rule-encoded matrix mirroring attention patterns you'd predict for any given sentence for Layer {layer}, Head {head}. Feel free to use the capabilities of provided libraries like spacey and nltk for describing 
-    linguistic concepts. Feel free to encode complex functions. You must respond to this prompt in JSON in the form "{{"hypothesis": "...", "explanation": "...", "program": "..."}} with your chosen hypothesis.
-    The first portion of your response has key "hypothesis" with the title of the hypothesis, the second part has key "explanation" with all explanation text, and the third portion of your response with key "program" 
-    should have valid python code. These patterns can be simple or complex. Write the simplest algorithm that captures the pattern. For uniformity, the first three lines of your function should be 'toks = tokenizer([sentence], return_tensors="pt") len_seq = len(toks.input_ids[0]) out = np.zeros((len_seq, len_seq))'.
-    Make sure the token sequences from your tokenizer and spaCy (if you must use spaCy) are aligned, because they often split text differently. To avoid tokenization errors, consider looping only up to the length of the shorter sequence and avoid assuming they match. Make sure you generalize your hypothesis pattern to any sentence. As examples: Layer 3, Head 9 has been found to be responsible for dependency parsing. It's predicted pseudocode would look like:
-    {example_function_one}. Here is another pseudocode example for one method to implement part-of-speech: {example_function_two}. Make sure you return a valid attention matrix. Here is the data for Layer {layer}, Head {head}: {data}"""
+    Using the following pieces of data based on {len(sentences)} sentences, generate three hypothesises about the linguistic role the following head is responsible for based on patterns
+    in the activations.  Then, choose the most fitting hypothesis for the head function using examples from the data. Finally, using the linguistic hypothesis you determine, 
+    write a python function which takes in a sentence and tokenizer as parameters and outputs the name of the pattern you hypothesize along with a predicted_matrix (size: token_len * token_len), which is the 
+    rule encoded matrix mirroring attention patterns you'd predict for any given sentence for Layer {layer}, Head {head}. Feel free to encode complex functions but write the simplest algorithm that captures your 
+    observed pattern. You must respond to this prompt in JSON in the form "{{"hypothesis": "...", "program": "..."}} with your chosen hypothesis. Think carefully before generating any code.
+    The first portion of your response has key "hypothesis" with the title of the hypothesis and the second portion of your response with key "program" should have valid python code starting with ```python and including imports. These patterns can be simple or 
+    complex.  For uniformity, the first three lines of your function should be 'toks = tokenizer([sentence], return_tensors="pt") len_seq = len(toks.input_ids[0]) out = np.zeros((len_seq, len_seq))'.
+    Make sure the token sequences from your tokenizer and spaCy (if you must use spaCy) are aligned via a dictionary if necessary, because they split text differently. Make sure you generalize your hypothesis pattern to any sentence. Functions can almost 
+    always be expressed in fewer than 50 lines of code. As examples, it has been discovered one head is responsible for the complex task of dependency parsing. It's simplistic predicted pseudocode looks like: 
+    {example_one}. Example 2: '''{example_two}''' Example 3: '''{example_three}'''. DATA: {data}"""
     return ' '.join(prompt.strip().split())
 
 
 ####### FUNCTION #2:GENERATE HYPOTHESIS, EXPLANATION, AND PROGRAM SYNTHESIS CODE #######
 
-def parse_llm_idea(prompt, API_KEY="YOUR_API_KEY", output=True):
+def parse_llm_idea(prompt, config="YOUR_API_CONFIG", verbalize=True):
     def make_request():
-        payload = {
-            "contents": [{ "parts": [{"text": prompt}]}],
-            "generationConfig": {"response_mime_type": "application/json"}
-        }
-        response = requests.post(
-            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
-            headers={"Content-Type": "application/json", "X-goog-api-key": API_KEY},
-            data=json.dumps(payload)
-        )
-        return response
-    
-    if output: print("0: STEP ZERO / THREE: Making LLM Request")
-    response = make_request()
+        headers = config["headers_fn"](config["key"])
+        payload = config["payload_fn"](prompt)
+        response = requests.post(config["url"], headers=headers, data=json.dumps(payload))
+        response.raise_for_status()
 
-    if response.status_code != 200:
-        print("Error:", response.status_code, response.text)
-    else:
-        data = response.json()
-        if output: print("1: STEP ONE / THREE: Automated LLM response loaded")
-        output_text = data["candidates"][0]["content"]["parts"][0]["text"]
-        try:
-            result = json.loads(output_text)
-
-            if type(result) is list: result = result[0]
-            hypothesis = result.get("hypothesis", "")
-            explanation = result.get("explanation", "")
-            program = result.get("program", "")
-            if program.startswith("```python"): program = program[9:]
-            if program.endswith("```"): program = program[:-3]
-            program = program.strip()
-            if output: print("2: STEP TWO / THREE: Hypothesis, Explanation & Program successfully parsed")
-
-            def validate_program(program):
-                # turns out this is cumbersome & mostly unnecessary
-                pass
-
-            validate_program(program)
-            if output: print("3: STEP THREE / THREE: Attention program validated, process complete")
-
-        except json.JSONDecodeError:
-            response = make_request()
+        if config["model"] == "gemini":
             data = response.json()
-            if output: print("1: STEP ONE / THREE: Automated LLM response loaded")
-            output_text = data["candidates"][0]["content"]["parts"][0]["text"]
-            result = json.loads(output_text)
+            output = data["candidates"][0]["content"]["parts"][0]["text"]
+        if config["model"] == "openai":
+            pass
+        if config["model"] == "claude":
+            data = response.json()
+            output = data["content"]["text"]
+        if config["model"] == "deepseek":
+            pass
 
-            if type(result) is list: result = result[0]
-            hypothesis = result.get("hypothesis", "")
-            explanation = result.get("explanation", "")
-            program = result.get("program", "")
-            if output: print("2: STEP TWO / THREE: Hypothesis, Explanation & Program successfully parsed")
+        return output
+    
+    output = make_request()
 
-            def validate_program(program):
-                pass
+    try:
+        result = json.loads(output)
 
-            validate_program(program)
-            if output: print("3: STEP THREE / THREE: Attention program validated, process complete")
+        if type(result) is list: result = result[0]
+        hypothesis = result.get("hypothesis", "")
+        program = result.get("program", "")
 
-    return hypothesis, explanation, program
+        if program.startswith("```python"): program = program[9:]
+        if program.endswith("```"): program = program[:-3]
+        program = program.strip()
+
+        if verbalize: print("Hypothesis, Explanation & Program successfully parsed")
+
+    except Exception as e:
+        print(f"Parsing API failed: {str(e)}")
+        return str(e)
+
+    return hypothesis, program
 
 ####### FUNCTION #3: CHECK WHETHER PROGRAM SYNTHESIS IS VALID #######
 
