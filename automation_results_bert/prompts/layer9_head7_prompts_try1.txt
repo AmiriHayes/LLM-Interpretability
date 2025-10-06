@@ -1,0 +1,1 @@
+The error 'name 'Tuple' is not defined' suggests that the Tuple type hint was used without importing it, leading to an error. To fix this, we must import Tuple from the 'typing' module. The code has been updated to include this import.

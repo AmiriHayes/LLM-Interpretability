@@ -1,0 +1,1 @@
+Fixed return unpacking issue in coreference resolution function, clearly specifying that it returns a tuple as expected.

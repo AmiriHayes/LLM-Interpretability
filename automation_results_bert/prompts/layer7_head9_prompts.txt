@@ -1,0 +1,1 @@
+Coordination and Sharing of Actions Pattern

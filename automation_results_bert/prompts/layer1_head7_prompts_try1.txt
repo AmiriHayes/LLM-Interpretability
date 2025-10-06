@@ -1,0 +1,1 @@
+Fix of Variable Naming Error in Coordinating Conjunction and Coordinating Punctuation Attention

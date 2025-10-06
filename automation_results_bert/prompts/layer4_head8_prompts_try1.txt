@@ -1,0 +1,1 @@
+The initial error was due to an incorrect mapping of tokenizer and spaCy indices. The mapping required adjustment to ensure proper alignment and handling of out-of-bounds indices.

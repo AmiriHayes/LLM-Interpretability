@@ -1,0 +1,1 @@
+I fixed the missing import error by including the necessary Tuple import from the typing module, which is required for specifying return types in function annotations.

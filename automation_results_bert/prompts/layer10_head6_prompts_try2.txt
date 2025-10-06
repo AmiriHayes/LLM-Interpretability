@@ -1,0 +1,1 @@
+The error was due to incorrectly attempting to start the Python code with the keyword 'python' in the JSON string. The corrected JSON must directly start with the code block without this keyword as JSON only contains strings and key-value pairs.

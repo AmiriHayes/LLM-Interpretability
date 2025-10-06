@@ -1,0 +1,1 @@
+The issue was an unterminated string literal in the 'conjunctions' set. The corrected code fixes this by properly enclosing all string literals within quotation marks.

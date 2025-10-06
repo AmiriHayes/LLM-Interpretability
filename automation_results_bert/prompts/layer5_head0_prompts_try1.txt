@@ -1,0 +1,1 @@
+The code did not import the 'Tuple' type from 'typing', which is necessary for type hinting in the Python function definition. The updated program includes the required import statement to ensure compatibility and correct use of type hints.

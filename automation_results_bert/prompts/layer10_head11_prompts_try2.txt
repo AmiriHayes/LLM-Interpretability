@@ -1,0 +1,1 @@
+The previous code contained a syntax error due to the incorrect type hint in the function signature. To fix this, I have updated the type hint to correctly specify the return type as 'Tuple[str, np.ndarray]'.

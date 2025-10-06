@@ -1,0 +1,1 @@
+The Tuple type was not imported from the 'typing' module, leading to a NameError. Fixing this requires importing Tuple explicitly.

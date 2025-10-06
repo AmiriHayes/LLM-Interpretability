@@ -1,0 +1,1 @@
+Fixed Normalization and Error Diagnostics

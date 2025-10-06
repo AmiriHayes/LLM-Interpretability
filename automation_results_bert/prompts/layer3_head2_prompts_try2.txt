@@ -1,0 +1,1 @@
+Fixed error in aligning tokenization by correctly iterating over the offset mapping instead of tokenizer

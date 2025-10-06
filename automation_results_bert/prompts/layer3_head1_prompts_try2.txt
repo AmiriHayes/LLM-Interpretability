@@ -1,0 +1,1 @@
+Fixed the missing Tuple import error by adding the import statement from typing, ensuring the return type of the function can be correctly interpreted.
