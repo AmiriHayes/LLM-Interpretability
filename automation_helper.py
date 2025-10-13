@@ -70,7 +70,6 @@ def generate_prompt(sentences, model, tokenizer, head_loc, top_k_ratio=0.1):
     }
 
     def handle_score(score):
-        # convert to percentage with 0 decimal places
         return "{:.0f}".format(score * 100)
         
     def scrape_head(att, tokens, top_k_ratio, ignore_special=True):
@@ -86,9 +85,7 @@ def generate_prompt(sentences, model, tokenizer, head_loc, top_k_ratio=0.1):
         top_activations = []
         for i, j, score in top_att:
             top_activations.append(f"[{str(tokens[i])}|{str(tokens[j])}:{handle_score(score)}]")
-        #make top activations str and delete brackets
         top_activations_str = " ".join(top_activations).replace("[", "").replace("]", "")
-        # print(top_activations_str)
         return top_activations_str
     
     for idx, sentence in enumerate(sentences):
@@ -186,7 +183,8 @@ def score_prediction(torch_model, torch_tokenizer, head_loc, pattern, sentence_1
         score = np.mean(jensonshannon_distances)
     return score
 
-def validate_program(program_path, model, tokenizer, layer, head, sentences):       
+import traceback
+def validate_program(program_path, model, tokenizer, layer, head, sentence):       
     try:
         spec = importlib.util.spec_from_file_location("loaded_program", program_path)
         module = importlib.util.module_from_spec(spec)
@@ -203,8 +201,10 @@ def validate_program(program_path, model, tokenizer, layer, head, sentences):
             break
 
     try:
-        score = score_prediction(model, tokenizer, (layer, head), program, sentences, distance="jsd", output=False)
+        score = score_prediction(model, tokenizer, (layer, head), program, sentence, distance="jsd", output=False)
         return score
     except Exception as e:
+        print("hello")
         print(f"Program validation failed: {str(e)}")
+        print(traceback.format_exc())
         return str(e)
