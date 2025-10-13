@@ -1,0 +1,1 @@
+The original code did not import Tuple from the typing module, which led to the error. Adding the appropriate import statement ensures the Tuple type is recognized and used correctly in the function definition.

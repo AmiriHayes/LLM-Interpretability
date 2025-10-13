@@ -1,0 +1,1 @@
+The previous error was due to a syntax error in embedding the code inside the JSON. The 'program' part should be enclosed with triple backticks to indicate a code block.

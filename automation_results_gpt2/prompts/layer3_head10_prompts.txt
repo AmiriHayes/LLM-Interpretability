@@ -1,0 +1,1 @@
+Subjects have self-attention and initial sequence attention

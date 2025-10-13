@@ -1,0 +1,1 @@
+The error occurred because the 'Tuple' class was not imported from the typing module. Adding the import statement for Tuple from typing fixed the issue.

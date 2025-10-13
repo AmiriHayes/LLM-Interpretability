@@ -1,0 +1,1 @@
+The invalid syntax was caused by a misplaced newline splitting the list comprehension. The 'corresponding_token_index' calculation within the function had a newline before '[idx for idx, val in token_index_map.items() if val == token_counter]', which caused a syntax error. I moved the list comprehension to the same line as the assignment for proper syntax.

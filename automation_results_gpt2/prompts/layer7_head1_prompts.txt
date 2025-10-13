@@ -1,0 +1,1 @@
+Coreference Resolution: Head pays attention to pronouns and their antecedents.

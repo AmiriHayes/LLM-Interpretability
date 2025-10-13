@@ -1,0 +1,1 @@
+I removed the 'python' text label before the code block within the JSON to correct the syntax error.

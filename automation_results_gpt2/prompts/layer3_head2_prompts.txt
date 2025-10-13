@@ -1,0 +1,1 @@
+Coreference Resolution: Head 2 at Layer 3 may be involved in identifying coreferential mentions within a sentence, linking pronouns and possible referring expressions to their antecedents.

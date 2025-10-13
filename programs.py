@@ -219,18 +219,38 @@ def noun_modifier_attention(sentence: str, tokenizer: PreTrainedTokenizerBase) -
     input_ids = toks.input_ids[0].tolist()
     len_seq = len(input_ids)
     out = np.zeros((len_seq, len_seq))
+
     doc = nlp(sentence)
-    for token in doc:
+    words = [t.text for t in doc]
+    enc = tokenizer(words, is_split_into_words=True, return_offsets_mapping=True, add_special_tokens=True)
+    input_ids = enc["input_ids"]
+    word_ids = enc.word_ids()
+
+    spacy_to_hf = {i: [] for i in range(len(words))}
+    for hf_idx, wid in enumerate(word_ids):
+        if wid is not None: spacy_to_hf[wid].append(hf_idx)
+    
+    for sp_i, token in enumerate(doc):
         if token.pos_ == "NOUN":
-            noun_indices = [i for i, tok in enumerate(input_ids) if tok == token.i + tokenizer.vocab_size]
-            for i in noun_indices:
-                for child in token.children:
-                    if child.pos_ in ["ADJ", "DET", "NUM"]:
-                        child_indices = [j for j, tok in enumerate(input_ids) if tok == child.i + tokenizer.vocab_size]
-                        for j in child_indices:
-                            out[i, j] = 1 / len(noun_indices)
-    out[0, 0] = 1
-    out[-1, 0] = 1
+            noun_hf_inds = spacy_to_hf.get(sp_i, [])
+            modifier_hf_inds = []
+            for child in token.children:
+                modifier_hf_inds.extend(spacy_to_hf.get(child.i, []))
+            if modifier_hf_inds:
+                for ni in noun_hf_inds:
+                    for mj in modifier_hf_inds:
+                        out[ni, mj] = 1.0
+            else:
+                for ni in noun_hf_inds: out[ni, ni] = 1.0
+    
+    last_idx = len_seq - 1
+    for i in range(len_seq):
+        if out[i].sum() == 0:
+            out[i, last_idx] = 1.0
+
+    row_sums = out.sum(axis=1, keepdims=True)
+    row_sums[row_sums == 0] = 1.0  # avoid divide-by-zero
+    out = out / row_sums
     return "Noun Clustering Pattern", out
 
 #15/30
@@ -239,31 +259,79 @@ def pronoun_attention(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tupl
     input_ids = toks.input_ids[0].tolist()
     len_seq = len(input_ids)
     out = np.zeros((len_seq, len_seq))
+
     doc = nlp(sentence)
-    for token in doc:
+    words = [t.text for t in doc]
+    enc = tokenizer(words, is_split_into_words=True, return_offsets_mapping=True, add_special_tokens=True)
+    input_ids = enc["input_ids"]
+    word_ids = enc.word_ids()
+
+    spacy_to_hf = {i: [] for i in range(len(words))}
+    for hf_idx, wid in enumerate(word_ids):
+        if wid is not None: spacy_to_hf[wid].append(hf_idx)
+    
+    for sp_i, token in enumerate(doc):
         if token.pos_ == "PRON":
-            pronoun_indices = [i for i, tok in enumerate(input_ids) if tok == token.i + tokenizer.vocab_size]
-            for i in pronoun_indices:
-                out[i, :] = 1 / len_seq
-    out[0, 0] = 1
-    out[-1, 0] = 1
-    return "Pronoun Clustering Pattern", out
+            noun_hf_inds = spacy_to_hf.get(sp_i, [])
+            modifier_hf_inds = []
+            for child in token.children:
+                modifier_hf_inds.extend(spacy_to_hf.get(child.i, []))
+            if modifier_hf_inds:
+                for ni in noun_hf_inds:
+                    for mj in modifier_hf_inds:
+                        out[ni, mj] = 1.0
+            else:
+                for ni in noun_hf_inds: out[ni, ni] = 1.0
+    
+    last_idx = len_seq - 1
+    for i in range(len_seq):
+        if out[i].sum() == 0:
+            out[i, last_idx] = 1.0
+
+    row_sums = out.sum(axis=1, keepdims=True)
+    row_sums[row_sums == 0] = 1.0  # avoid divide-by-zero
+    out = out / row_sums
+    return "Noun Clustering Pattern", out
 
 #16/30
-def preposition_attention(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]:
+def preoposition_attention(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]:
     toks = tokenizer([sentence], return_tensors="pt")
     input_ids = toks.input_ids[0].tolist()
     len_seq = len(input_ids)
     out = np.zeros((len_seq, len_seq))
+
     doc = nlp(sentence)
-    for token in doc:
+    words = [t.text for t in doc]
+    enc = tokenizer(words, is_split_into_words=True, return_offsets_mapping=True, add_special_tokens=True)
+    input_ids = enc["input_ids"]
+    word_ids = enc.word_ids()
+
+    spacy_to_hf = {i: [] for i in range(len(words))}
+    for hf_idx, wid in enumerate(word_ids):
+        if wid is not None: spacy_to_hf[wid].append(hf_idx)
+    
+    for sp_i, token in enumerate(doc):
         if token.pos_ == "ADP":
-            preposition_indices = [i for i, tok in enumerate(input_ids) if tok == token.i + tokenizer.vocab_size]
-            for i in preposition_indices:
-                out[i, :] = 1 / len_seq
-    out[0, 0] = 1
-    out[-1, 0] = 1
-    return "Preposition Clustering Pattern", out
+            noun_hf_inds = spacy_to_hf.get(sp_i, [])
+            modifier_hf_inds = []
+            for child in token.children:
+                modifier_hf_inds.extend(spacy_to_hf.get(child.i, []))
+            if modifier_hf_inds:
+                for ni in noun_hf_inds:
+                    for mj in modifier_hf_inds:
+                        out[ni, mj] = 1.0
+            else:
+                for ni in noun_hf_inds: out[ni, ni] = 1.0
+    
+    last_idx = len_seq - 1
+    for i in range(len_seq):
+        if out[i].sum() == 0:
+            out[i, last_idx] = 1.0
+
+    row_sums = out.sum(axis=1, keepdims=True)
+    row_sums[row_sums == 0] = 1.0  # avoid divide-by-zero
+    out = out / row_sums
+    return "Noun Clustering Pattern", out
 
 #17/30
 def adjective_attention(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]:
@@ -396,7 +464,7 @@ def root_cluster_attention(sentence: str, tokenizer: PreTrainedTokenizerBase) ->
     out = np.zeros((len_seq, len_seq))
     doc = nlp(sentence)
     root_index = next(i for i, token in enumerate(doc) if token.dep_ == "ROOT")
-    print(sentence.split(" ")[root_index])
+    # print(sentence.split(" ")[root_index])
     for i in range(len_seq):
         if i == root_index:
             out[i, i] = 1

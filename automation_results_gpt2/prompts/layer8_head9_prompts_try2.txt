@@ -1,0 +1,1 @@
+The issue was fixed by importing the 'Tuple' type from the 'typing' module, which is required for type hinting in Python.

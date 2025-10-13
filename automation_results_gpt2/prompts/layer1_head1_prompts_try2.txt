@@ -1,0 +1,1 @@
+The previous code was missing an import statement for the 'Tuple' type from the 'typing' module, which led to a NameError. By adding 'from typing import Tuple', the error is resolved, allowing the function signature to correctly reference the Tuple type for its return value.

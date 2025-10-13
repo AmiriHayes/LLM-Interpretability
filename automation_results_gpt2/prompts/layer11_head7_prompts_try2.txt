@@ -1,0 +1,1 @@
+I fixed the code by importing the 'Tuple' type from the 'typing' module in Python, which allows the function to correctly specify its return type as a tuple. This error arises when 'Tuple' is not defined because it's a type hint that requires importing from the Python standard library.

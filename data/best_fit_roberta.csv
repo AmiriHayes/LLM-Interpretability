@@ -1,0 +1,12 @@
+i,j,Pattern,Score
+0,9,next_attention,0.1393016158488336
+1,2,next_attention,0.04819248692345894
+2,9,next_attention,0.5309259149270306
+7,6,next_attention,0.42561339442534524
+0,11,previous_attention,0.07925675020260205
+2,1,previous_attention,0.4829835893562896
+3,6,previous_attention,0.532053367866857
+7,8,previous_attention,0.3105651797179433
+11,9,same_attention,0.45120680224618254
+11,9,repeated_attention,0.4522070776572761
+11,9,pos_alignment,0.5359087479521685

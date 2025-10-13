@@ -1,0 +1,1 @@
+I fixed the function's return type hint to correctly follow Python syntax. The initial type hint was incorrect as it did not use 'Tuple' to indicate the function returns a tuple. Additionally, I ensured the function correctly normalizes and handles the attention weights.

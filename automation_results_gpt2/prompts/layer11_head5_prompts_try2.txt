@@ -1,0 +1,1 @@
+The error was fixed by importing the 'Tuple' type from the 'typing' module, which is necessary to specify return types that involve tuples.

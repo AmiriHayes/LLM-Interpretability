@@ -1,0 +1,1 @@
+Fixed out of bounds error during matrix indexing by ensuring indices align with token length

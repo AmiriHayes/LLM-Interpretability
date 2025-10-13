@@ -1,0 +1,1 @@
+Adjusting index bounds to prevent out-of-bounds errors when linking pronouns and proper nouns.
