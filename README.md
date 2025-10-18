@@ -20,3 +20,13 @@ Main analytical work is performed within `interpretability.ipynb`, which is stru
 * **Data & Pattern Initialization Functions:** Functions dedicated to loading data and initializing example/interpretable patterns
 * **Analysis Helper Functions:** A collection of utility functions to assist in the quantitative analysis of attention head behaviors
 * **Filter Automation Efforts:** Initial progress towards automating filtering and categorization of attention heads using scores
+
+<br />
+<br />
+Two cool plots from my <b>Fall 2025</b> Experiments so far (Work-In-Progress):
+<br />
+<br />
+
+![What is GPT-2 doing? - Best Fit Patterns Across All Attention Heads](docs/img/what_gpt_does.png)
+
+![What is BERT doing? - Best Fit Patterns Across All Attention Heads](docs/img/what_bert_does.png)

@@ -1,0 +1,1475 @@
+Searching for new patterns, iteration 0 | total loops 1...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.4228
+		Hypothesis: Phrase Boundary Attention. Program successfully parsed.
+		Program valid with score 0.6719.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.4177
+		Hypothesis: Chunk Boundary Attention. Program successfully parsed.
+		Program valid with score 0.7007.
+	 TRYING | Layer 7, Head 1 - Previous Interpolation Score: 0.3968
+		Hypothesis: Light Verb Construction Attention. Program successfully parsed.
+		Program valid with score 0.4905.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3907
+		Hypothesis: Noun-Clause Connection. Program successfully parsed.
+		Program valid with score 0.5761.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3829
+		Hypothesis: Long-Range Entity Association. Program successfully parsed.
+		Program valid with score 0.6789.
+	 TRYING | Layer 3, Head 10 - Previous Interpolation Score: 0.3677
+		Hypothesis: Semantic Role Association. Program successfully parsed.
+	 TRYING | Layer 7, Head 4 - Previous Interpolation Score: 0.3640
+		Hypothesis: Prepositional Phrase Internal Structure. Program successfully parsed.
+		Program valid with score 0.5360.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3625
+		Hypothesis: Long-Distance Semantic Association Attention. Program successfully parsed.
+		Program valid with score 0.5894.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3555
+		Hypothesis: Coreference Attention Pattern. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3545
+		Hypothesis: Noun Phrase Coreference. Program successfully parsed.
+	 TRYING | Layer 7, Head 9 - Previous Interpolation Score: 0.3505
+		Hypothesis: Prepositional Phrase Linkage. Program successfully parsed.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3461
+		Hypothesis: Focus on Parent-Child Verb Relationships. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+Best candidate program punctuation_coordination_attention added | solo score 0.4905.
+Searching for new patterns, iteration 0 | total loops 2...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 11, Head 7 - Previous Interpolation Score: 0.4191
+		Hypothesis: Sentence Segment Association. Program successfully parsed.
+		Program valid with score 0.6310.
+	 TRYING | Layer 11, Head 10 - Previous Interpolation Score: 0.4125
+		Hypothesis: Comma Association Pattern. Program successfully parsed.
+		Program valid with score 0.4896.
+	 TRYING | Layer 9, Head 7 - Previous Interpolation Score: 0.4112
+		Hypothesis: Noun-Modifier Association. Program successfully parsed.
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.3903
+		Hypothesis: Parallel Structures Attention. Program successfully parsed.
+		Program valid with score 0.3170.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3740
+		Hypothesis: Associative Pair Attention. Program successfully parsed.
+		Program valid with score 0.7036.
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3584
+		Hypothesis: Subject-Predicate Bridging. Program successfully parsed.
+		Program valid with score 0.3353.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3562
+		Hypothesis: Coordination Attention Pattern. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 10, Head 1 - Previous Interpolation Score: 0.3479
+		Hypothesis: Comma-Based Attention Pattern. Program successfully parsed.
+		Program valid with score 0.3706.
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3472
+		Hypothesis: Noun Phrasal Cohesion. Program successfully parsed.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.3434
+		Hypothesis: Coordinating Conjunction Association. Program successfully parsed.
+		Program valid with score 0.4286.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.3378
+		Error parsing response, skipping head (5, 3)
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3374
+		Hypothesis: Post-Punctuation Focus. Program successfully parsed.
+		Program valid with score 0.4502.
+Best candidate program punctuation_coordination_attention added | solo score 0.3170.
+Searching for new patterns, iteration 1 | total loops 3...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.4193
+		Hypothesis: Clause Boundary Attention. Program successfully parsed.
+		Program valid with score 0.6644.
+	 TRYING | Layer 5, Head 9 - Previous Interpolation Score: 0.3976
+		Hypothesis: Head 9 ascribes high attention scores to conjunction and associated entities. Program successfully parsed.
+		Program valid with score 0.5382.
+	 TRYING | Layer 6, Head 11 - Previous Interpolation Score: 0.3899
+		Hypothesis: Prepositional Phrase Contextualization. Program successfully parsed.
+		Program valid with score 0.5558.
+	 TRYING | Layer 5, Head 8 - Previous Interpolation Score: 0.3892
+		Hypothesis: Focus on Event Outcomes. Program successfully parsed.
+	 TRYING | Layer 10, Head 11 - Previous Interpolation Score: 0.3890
+		Hypothesis: Conjunction Coordination. Program successfully parsed.
+		Program valid with score 0.7975.
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3838
+		Hypothesis: Prepositional Phrase Association. Program successfully parsed.
+		Program valid with score 0.4273.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.3795
+		Error parsing response, skipping head (5, 3)
+	 TRYING | Layer 11, Head 2 - Previous Interpolation Score: 0.3670
+		Error parsing response, skipping head (11, 2)
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3654
+		Hypothesis: Core-Noun Interaction Attention. Program successfully parsed.
+		Program valid with score 0.5031.
+	 TRYING | Layer 10, Head 10 - Previous Interpolation Score: 0.3646
+		Hypothesis: Associating Elements with their Context. Program successfully parsed.
+		Program valid with score 0.5710.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3508
+		Hypothesis: Prepositional Phrase Linking. Program successfully parsed.
+		Program valid with score 0.4780.
+	 TRYING | Layer 9, Head 10 - Previous Interpolation Score: 0.3495
+		Hypothesis: Colon Association. Program successfully parsed.
+Best candidate program parallel_structures_attention added | solo score 0.4273.
+Searching for new patterns, iteration 2 | total loops 4...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.4361
+		Hypothesis: Comma-Adjacent Association Pattern. Program successfully parsed.
+		Program valid with score 0.5172.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.4283
+		Hypothesis: Interjection Attention Pattern. Program successfully parsed.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.4146
+		Hypothesis: Head Function as Content-Relation Detector. Program successfully parsed.
+		Program valid with score 0.5810.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.3986
+		Hypothesis: Positional Adjacency in Phrases. Program successfully parsed.
+		Program valid with score 0.6242.
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.3929
+		Hypothesis: Descriptive Elements Grouping Pattern. Program successfully parsed.
+		Program valid with score 0.4631.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3758
+		Hypothesis: Multi-clause/Complex Sentence Linking. Program successfully parsed.
+		Program valid with score 0.7311.
+	 TRYING | Layer 7, Head 5 - Previous Interpolation Score: 0.3638
+		Hypothesis: Cross-Sentence Entity Linking. Program successfully parsed.
+		Program valid with score 0.5409.
+	 TRYING | Layer 10, Head 7 - Previous Interpolation Score: 0.3571
+		Hypothesis: Comma-Period Alignment. Program successfully parsed.
+		Program valid with score 0.5198.
+	 TRYING | Layer 6, Head 10 - Previous Interpolation Score: 0.3524
+		Hypothesis: Paired Punctuation to Related Elements Attention. Program successfully parsed.
+	 TRYING | Layer 10, Head 11 - Previous Interpolation Score: 0.3524
+		Hypothesis: Coordinate Phrase Detection. Program successfully parsed.
+	 TRYING | Layer 0, Head 1 - Previous Interpolation Score: 0.3493
+		Hypothesis: Event-Centric Thematic Attention. Program successfully parsed.
+	 TRYING | Layer 6, Head 6 - Previous Interpolation Score: 0.3411
+		Hypothesis: Verb-Centered Contextual Focus. Program successfully parsed.
+		Program valid with score 0.6482.
+Best candidate program prepositional_phrase_association added | solo score 0.4631.
+Searching for new patterns, iteration 3 | total loops 5...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3946
+		Hypothesis: Noun-Phrase to Modifier Connection. Program successfully parsed.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3850
+		Hypothesis: Semantic Role Association. Program successfully parsed.
+		Program valid with score 0.5681.
+	 TRYING | Layer 11, Head 10 - Previous Interpolation Score: 0.3729
+		Hypothesis: Commas and Punctuation Grouping. Program successfully parsed.
+		Program valid with score 0.7709.
+	 TRYING | Layer 6, Head 2 - Previous Interpolation Score: 0.3687
+		Hypothesis: Comma Conjunction Followed by Verb Phrase. Program successfully parsed.
+		Program valid with score 0.4351.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3646
+		Hypothesis: Interjection Clause Association. Program successfully parsed.
+	 TRYING | Layer 10, Head 6 - Previous Interpolation Score: 0.3595
+		Hypothesis: Verb-Object Association. Program successfully parsed.
+		Program valid with score 0.8020.
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.3564
+		Hypothesis: Action-Object Grouping. Program successfully parsed.
+		Program valid with score 0.6146.
+	 TRYING | Layer 10, Head 10 - Previous Interpolation Score: 0.3479
+		Hypothesis: Modifier-Noun Association. Program successfully parsed.
+Program loading failed: [E050] Can't find model 'en_core_web_md'. It doesn't seem to be a Python package or a valid path to a data directory.
+	 TRYING | Layer 3, Head 3 - Previous Interpolation Score: 0.3461
+		Hypothesis: Punctuation Proximity Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 0, Head 1 - Previous Interpolation Score: 0.3433
+		Hypothesis: Conjoined Sentence Linking. Program successfully parsed.
+	 TRYING | Layer 2, Head 11 - Previous Interpolation Score: 0.3415
+		Hypothesis: Pause and Continuance Attention. Program successfully parsed.
+	 TRYING | Layer 10, Head 8 - Previous Interpolation Score: 0.3414
+		Hypothesis: Comma Association Pattern. Program successfully parsed.
+		Program valid with score 0.6789.
+Best candidate program descriptive_elements_grouping added | solo score 0.4351.
+Searching for new patterns, iteration 4 | total loops 6...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 9 - Previous Interpolation Score: 0.4794
+		Hypothesis: Semantic Connectivity Pattern. Program successfully parsed.
+Program loading failed: unexpected indent (automation_refinement_bert/candidate/layer10_head9_code.py, line 2)
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.4476
+		Hypothesis: Participial Phrase Grouping. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.4422
+		Hypothesis: Focus on Paired Word Elements. Program successfully parsed.
+		Program valid with score 0.3987.
+	 TRYING | Layer 6, Head 10 - Previous Interpolation Score: 0.4353
+		Hypothesis: Comma Attention Dominance. Program successfully parsed.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.4244
+		Hypothesis: Perspective-Based Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.3947
+		Error parsing response, skipping head (6, 5)
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3936
+		Hypothesis: Action-Purpose Linkage. Program successfully parsed.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.3924
+		Hypothesis: Modifier-Preposition Association Pattern. Program successfully parsed.
+		Program valid with score 0.5628.
+	 TRYING | Layer 11, Head 1 - Previous Interpolation Score: 0.3879
+		Error parsing response, skipping head (11, 1)
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3768
+		Hypothesis: Key Subject-Verb or Noun Phrase-Adjunct Pairing. Program successfully parsed.
+		Program valid with score 0.4853.
+	 TRYING | Layer 11, Head 10 - Previous Interpolation Score: 0.3639
+		Hypothesis: High-Frequency Punctuation and Content Word Linking. Program successfully parsed.
+		Program valid with score 0.5477.
+	 TRYING | Layer 10, Head 2 - Previous Interpolation Score: 0.3569
+		Hypothesis: Punctuation Anchoring. Program successfully parsed.
+		Program valid with score 0.4365.
+Best candidate program comma_conjunction_after added | solo score 0.3987.
+Searching for new patterns, iteration 5 | total loops 7...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 1 - Previous Interpolation Score: 0.5762
+		Hypothesis: Conjunction Following Punctuation. Program successfully parsed.
+		Program valid with score 0.6956.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.4636
+		Hypothesis: Main Clause Predicate Attention. Program successfully parsed.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.4634
+		Hypothesis: Pause and Continuation Attention Pattern. Program successfully parsed.
+		Program valid with score 0.5043.
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.4419
+		Hypothesis: Compound Adjective Connection. Program successfully parsed.
+		Program valid with score 0.5122.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.4337
+		Hypothesis: Parenthetical Tying. Program successfully parsed.
+		Program valid with score 0.4522.
+	 TRYING | Layer 6, Head 10 - Previous Interpolation Score: 0.4332
+		Hypothesis: Comma Coordination Attention. Program successfully parsed.
+		Program valid with score 0.7466.
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.4223
+		Error parsing response, skipping head (8, 10)
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.4024
+		Hypothesis: Long-Range Association. Program successfully parsed.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3937
+		Hypothesis: Clause Association. Program successfully parsed.
+	 TRYING | Layer 7, Head 8 - Previous Interpolation Score: 0.3907
+		Hypothesis: Punctuation Pause Attention. Program successfully parsed.
+		Program valid with score 0.5004.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.3687
+		Hypothesis: Clause Boundary Attention. Program successfully parsed.
+		Program valid with score 0.5753.
+	 TRYING | Layer 9, Head 5 - Previous Interpolation Score: 0.3650
+		Hypothesis: Phrase Boundary Attention. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+Best candidate program paired_element_attention added | solo score 0.4522.
+Searching for new patterns, iteration 6 | total loops 8...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 8, Head 2 - Previous Interpolation Score: 0.4034
+		Hypothesis: Comma Conjunction Pairing. Program successfully parsed.
+		Program valid with score 0.2273.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.4028
+		Hypothesis: Complement-Object Identification. Program successfully parsed.
+		Program valid with score 0.7362.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.3973
+		Hypothesis: Comma-Based Interruptive Phrase Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 10, Head 9 - Previous Interpolation Score: 0.3940
+		Hypothesis: Verb-Centric Attention Pattern. Program successfully parsed.
+		Program valid with score 0.7267.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3908
+		Hypothesis: Semantic Role Alignment. Program successfully parsed.
+	 TRYING | Layer 4, Head 0 - Previous Interpolation Score: 0.3812
+		Hypothesis: Lexical Morphological Connection. Program successfully parsed.
+		Program valid with score 0.5756.
+	 TRYING | Layer 9, Head 2 - Previous Interpolation Score: 0.3800
+		Hypothesis: Comma-Pause Linkage. Program successfully parsed.
+	 TRYING | Layer 10, Head 10 - Previous Interpolation Score: 0.3775
+		Hypothesis: Parallel Structure Identification. Program successfully parsed.
+		Program valid with score 0.6039.
+	 TRYING | Layer 7, Head 8 - Previous Interpolation Score: 0.3730
+		Hypothesis: Punctuated Element Attention. Program successfully parsed.
+		Program valid with score 0.5992.
+	 TRYING | Layer 6, Head 4 - Previous Interpolation Score: 0.3727
+		Hypothesis: Adjective-Noun Association. Program successfully parsed.
+		Program valid with score 0.3311.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.3723
+		Hypothesis: Punctuation Proximity Attention. Program successfully parsed.
+		Program valid with score 0.6373.
+	 TRYING | Layer 3, Head 3 - Previous Interpolation Score: 0.3593
+		Hypothesis: Comma-based Attention Pattern. Program successfully parsed.
+		Program valid with score 0.5855.
+Best candidate program parenthetical_tying_pattern added | solo score 0.2273.
+Searching for new patterns, iteration 7 | total loops 9...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 11, Head 11 - Previous Interpolation Score: 0.4128
+		Hypothesis: Coordination and List Structure Detection. Program successfully parsed.
+		Program valid with score 0.5606.
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3660
+		Hypothesis: Thematic Focus Pattern. Program successfully parsed.
+		Program valid with score 0.4574.
+	 TRYING | Layer 3, Head 3 - Previous Interpolation Score: 0.3629
+		Hypothesis: Punctuation Proximity Attention. Program successfully parsed.
+		Program valid with score 0.6846.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3604
+		Hypothesis: Clause Boundary Association. Program successfully parsed.
+		Program valid with score 0.7715.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3587
+		Hypothesis: Verb-Object Relationship Recognition. Program successfully parsed.
+		Program valid with score 0.4802.
+	 TRYING | Layer 3, Head 10 - Previous Interpolation Score: 0.3529
+		Hypothesis: Noun-Modifier Focus. Program successfully parsed.
+		Program valid with score 0.5201.
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.3523
+		Hypothesis: Semantic Pairing Hypothesis. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3519
+		Hypothesis: Comma-Based Pattern Detection. Program successfully parsed.
+		Program valid with score 0.7359.
+	 TRYING | Layer 9, Head 2 - Previous Interpolation Score: 0.3507
+		Hypothesis: Comma-Based Grouping. Program successfully parsed.
+		Program valid with score 0.6154.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3502
+		Hypothesis: Noun-Adjective Pairing. Program successfully parsed.
+		Program valid with score 0.8218.
+	 TRYING | Layer 0, Head 1 - Previous Interpolation Score: 0.3422
+		Error parsing response, skipping head (0, 1)
+	 TRYING | Layer 10, Head 11 - Previous Interpolation Score: 0.3421
+		Hypothesis: Clause Separation Pattern. Program successfully parsed.
+Best candidate program comma_conjunction_pairing added | solo score 0.4574.
+Searching for new patterns, iteration 8 | total loops 10...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 11, Head 7 - Previous Interpolation Score: 0.4680
+		Hypothesis: Reporting Speech and Quotation Association. Program successfully parsed.
+		Program valid with score 0.6498.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.4416
+		Hypothesis: Associative Pairing. Program successfully parsed.
+		Program valid with score 0.6810.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.4109
+		Hypothesis: Phrase Connectivity Attention. Program successfully parsed.
+		Program valid with score 0.5894.
+	 TRYING | Layer 11, Head 5 - Previous Interpolation Score: 0.4050
+		Hypothesis: Indirect Quotation and Contextual Association. Program successfully parsed.
+		Program valid with score 0.6622.
+	 TRYING | Layer 9, Head 1 - Previous Interpolation Score: 0.3898
+		Error parsing response, skipping head (9, 1)
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3893
+		Hypothesis: Intensive Noun-Phrase Relation. Program successfully parsed.
+		Program valid with score 0.6111.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3799
+		Hypothesis: Temporal Event Sequence Association. Program successfully parsed.
+	 TRYING | Layer 6, Head 2 - Previous Interpolation Score: 0.3793
+		Error parsing response, skipping head (6, 2)
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3729
+		Hypothesis: Subject-Predicate Association Pattern. Program successfully parsed.
+		Program valid with score 0.5111.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3691
+		Hypothesis: Sentence Structure Emphasis. Program successfully parsed.
+	 TRYING | Layer 7, Head 11 - Previous Interpolation Score: 0.3681
+		Hypothesis: Possessive Relationship Detection. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 9, Head 0 - Previous Interpolation Score: 0.3494
+		Hypothesis: Semantic Field Association. Program successfully parsed.
+Best candidate program thematic_focus added | solo score 0.5111.
+Searching for new patterns, iteration 8 | total loops 11...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 9 - Previous Interpolation Score: 0.5309
+		Hypothesis: Noun-Adjective Pairing Attention. Program successfully parsed.
+	 TRYING | Layer 5, Head 9 - Previous Interpolation Score: 0.4057
+		Hypothesis: Commas_Attention_Conjunctions. Program successfully parsed.
+		Program valid with score 0.5052.
+	 TRYING | Layer 11, Head 10 - Previous Interpolation Score: 0.3984
+		Hypothesis: Numerical Alignment. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 8, Head 9 - Previous Interpolation Score: 0.3842
+		Hypothesis: Contrastive Relationship Attention. Program successfully parsed.
+Program loading failed: invalid syntax (automation_refinement_bert/candidate/layer8_head9_code.py, line 49)
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.3806
+		Hypothesis: Comma-Mediated Attention. Program successfully parsed.
+		Program valid with score 0.6971.
+	 TRYING | Layer 10, Head 2 - Previous Interpolation Score: 0.3755
+		Hypothesis: Quotation to Contextual Cue Association. Program successfully parsed.
+		Program valid with score 0.7817.
+	 TRYING | Layer 9, Head 5 - Previous Interpolation Score: 0.3610
+		Hypothesis: Center-Concept Attention. Program successfully parsed.
+		Program valid with score 0.6936.
+	 TRYING | Layer 5, Head 0 - Previous Interpolation Score: 0.3607
+		Hypothesis: List Element Grouping. Program successfully parsed.
+		Program valid with score 0.5121.
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3552
+		Hypothesis: Subject-Predicate Attention Pattern. Program successfully parsed.
+	 TRYING | Layer 7, Head 4 - Previous Interpolation Score: 0.3504
+		Hypothesis: Bridge Element Association. Program successfully parsed.
+		Program valid with score 0.5732.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3499
+		Error parsing response, skipping head (6, 9)
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3457
+		Hypothesis: Contextual Cohesion Bridging. Program successfully parsed.
+		Program valid with score 0.8189.
+Best candidate program thematic_focus added | solo score 0.5052.
+Searching for new patterns, iteration 8 | total loops 12...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.4483
+		Hypothesis: Lexical Semantic Coherence. Program successfully parsed.
+		Program valid with score 0.6780.
+	 TRYING | Layer 11, Head 7 - Previous Interpolation Score: 0.4223
+		Hypothesis: Verb-Adjacent Dependency Attention. Program successfully parsed.
+		Program valid with score 0.7955.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3969
+		Hypothesis: Complement Phrase Association. Program successfully parsed.
+		Program valid with score 0.5782.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3678
+		Hypothesis: Phrase Boundary Attention. Program successfully parsed.
+		Program valid with score 0.7253.
+	 TRYING | Layer 7, Head 1 - Previous Interpolation Score: 0.3602
+		Hypothesis: Verb-Object Association Attention. Program successfully parsed.
+		Program valid with score 0.5022.
+	 TRYING | Layer 8, Head 11 - Previous Interpolation Score: 0.3596
+		Error parsing response, skipping head (8, 11)
+	 TRYING | Layer 3, Head 3 - Previous Interpolation Score: 0.3522
+		Hypothesis: Comma Separation Associative Pattern. Program successfully parsed.
+	 TRYING | Layer 9, Head 5 - Previous Interpolation Score: 0.3462
+		Hypothesis: Foreground-Background Distinction. Program successfully parsed.
+		Program valid with score 0.7458.
+	 TRYING | Layer 9, Head 2 - Previous Interpolation Score: 0.3452
+		Hypothesis: Strong Comma-Based Attention. Program successfully parsed.
+		Program valid with score 0.7629.
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3432
+		Hypothesis: Coreferential Dependencies. Program successfully parsed.
+		Program valid with score 0.5774.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3426
+		Hypothesis: Main Clause and Subordinate Clause Attention. Program successfully parsed.
+		Program valid with score 0.4944.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3406
+		Hypothesis: Inter-sentence Clause Connection. Program successfully parsed.
+		Program valid with score 0.6066.
+Best candidate program thematic_focus added | solo score 0.4944.
+Searching for new patterns, iteration 8 | total loops 13...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 5 - Previous Interpolation Score: 0.5724
+		Hypothesis: Salient Content Words Attention. Program successfully parsed.
+	 TRYING | Layer 9, Head 7 - Previous Interpolation Score: 0.4318
+		Hypothesis: Abstract-Concrete Association Attention. Program successfully parsed.
+		Program valid with score 0.4497.
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.4209
+		Hypothesis: Semantic Focus on Core and Secondary Elements. Program successfully parsed.
+		Program valid with score 0.5168.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3878
+		Error parsing response, skipping head (3, 9)
+	 TRYING | Layer 10, Head 0 - Previous Interpolation Score: 0.3877
+		Hypothesis: Comma Adjacency Attention Pattern. Program successfully parsed.
+		Program valid with score 0.5443.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3788
+		Hypothesis: Punctuation-Bound Element Separator. Program successfully parsed.
+		Program valid with score 0.5131.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.3740
+		Hypothesis: Comma Based Association. Program successfully parsed.
+	 TRYING | Layer 5, Head 9 - Previous Interpolation Score: 0.3736
+		Hypothesis: Coordinating Conjunction Association Pattern. Program successfully parsed.
+	 TRYING | Layer 10, Head 11 - Previous Interpolation Score: 0.3548
+		Hypothesis: Sentence Part Termination Attention. Program successfully parsed.
+		Program valid with score 0.6495.
+	 TRYING | Layer 9, Head 5 - Previous Interpolation Score: 0.3410
+		Hypothesis: Attention to Targeted Salient Noun Phrase. Program successfully parsed.
+		Program valid with score 0.7068.
+	 TRYING | Layer 7, Head 1 - Previous Interpolation Score: 0.3346
+		Hypothesis: Long-Distance Verb Modifier Relationship. Program successfully parsed.
+		Program valid with score 0.4450.
+	 TRYING | Layer 10, Head 6 - Previous Interpolation Score: 0.3338
+		Hypothesis: Sentential Opening and Closing Attention. Program successfully parsed.
+		Program valid with score 0.6155.
+Best candidate program thematic_focus added | solo score 0.4450.
+Searching for new patterns, iteration 9 | total loops 14...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.4006
+		Hypothesis: Semantic Adjacency Detection. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3768
+		Hypothesis: Consecutive Punctuation and List Item Focus. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3723
+		Hypothesis: Sentence Element Association. Program successfully parsed.
+		Program valid with score 0.7350.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3690
+		Hypothesis: Sentence Coreference Resolution. Program successfully parsed.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.3668
+		Hypothesis: Coordinated Elements Attention. Program successfully parsed.
+	 TRYING | Layer 11, Head 4 - Previous Interpolation Score: 0.3609
+		Hypothesis: Comma Focus Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.3592
+		Hypothesis: Comma Pair Attention. Program successfully parsed.
+		Program valid with score 0.3865.
+	 TRYING | Layer 11, Head 10 - Previous Interpolation Score: 0.3584
+		Hypothesis: Punctuation-Based Aggregation. Program successfully parsed.
+		Program valid with score 0.5226.
+	 TRYING | Layer 6, Head 2 - Previous Interpolation Score: 0.3498
+		Hypothesis: Comma-Phrase Separation. Program successfully parsed.
+		Program valid with score 0.7289.
+	 TRYING | Layer 3, Head 2 - Previous Interpolation Score: 0.3472
+		Hypothesis: Comma-Dominant Attention. Program successfully parsed.
+		Program valid with score 0.5511.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3429
+		Hypothesis: Punctuation Proximity Attention. Program successfully parsed.
+		Program valid with score 0.4058.
+	 TRYING | Layer 9, Head 1 - Previous Interpolation Score: 0.3422
+		Hypothesis: Noun Phrase Association. Program successfully parsed.
+		Program valid with score 0.4566.
+Best candidate program verb_modifier_attention added | solo score 0.3865.
+Searching for new patterns, iteration 10 | total loops 15...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.4781
+		Hypothesis: Parallel Structure Attention. Program successfully parsed.
+		Program valid with score 0.3469.
+	 TRYING | Layer 9, Head 7 - Previous Interpolation Score: 0.4126
+		Hypothesis: Contextual Association of Related Phrases. Program successfully parsed.
+	 TRYING | Layer 7, Head 1 - Previous Interpolation Score: 0.3941
+		Hypothesis: Subject-Predicate Linking. Program successfully parsed.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3921
+		Hypothesis: Object Complement Pattern. Program successfully parsed.
+		Program valid with score 0.5647.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3733
+		Hypothesis: Semantic Role Labeling Pattern. Program successfully parsed.
+		Program valid with score 0.7202.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3726
+		Hypothesis: Narrative Contextual Bridging. Program successfully parsed.
+Program loading failed: expected an indented block after function definition on line 5 (automation_refinement_bert/candidate/layer0_head3_code.py, line 5)
+	 TRYING | Layer 9, Head 10 - Previous Interpolation Score: 0.3725
+		Hypothesis: Clause Separation Attention. Program successfully parsed.
+		Program valid with score 0.7839.
+	 TRYING | Layer 6, Head 4 - Previous Interpolation Score: 0.3694
+		Hypothesis: Morphological Affix Association. Program successfully parsed.
+		Program valid with score 0.2835.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.3644
+		Hypothesis: Punctuation-Based Structuring. Program successfully parsed.
+		Program valid with score 0.6948.
+	 TRYING | Layer 2, Head 1 - Previous Interpolation Score: 0.3639
+		Hypothesis: Compound and Morpheme Association. Program successfully parsed.
+		Program valid with score 0.7223.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3409
+		Hypothesis: Prepositional Phrase Linking. Program successfully parsed.
+		Program valid with score 0.4844.
+	 TRYING | Layer 7, Head 11 - Previous Interpolation Score: 0.3349
+		Hypothesis: Conjunction-related emphasis. Program successfully parsed.
+		Program valid with score 0.6235.
+Best candidate program comma_pair_attention added | solo score 0.2835.
+Searching for new patterns, iteration 11 | total loops 16...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.4644
+		Hypothesis: Comma Association. Program successfully parsed.
+		Program valid with score 0.5427.
+	 TRYING | Layer 10, Head 4 - Previous Interpolation Score: 0.4248
+		Hypothesis: Pause and Clause Attention. Program successfully parsed.
+		Program valid with score 0.6597.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3987
+		Hypothesis: Attribute-Action Association. Program successfully parsed.
+		Program valid with score 0.6703.
+	 TRYING | Layer 10, Head 6 - Previous Interpolation Score: 0.3804
+		Hypothesis: Sentence Internal Quote Delimiter Linking. Program successfully parsed.
+		Program valid with score 0.6283.
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3771
+		Hypothesis: Noun-Phrase to Noun-Attention. Program successfully parsed.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3734
+		Hypothesis: Contrast Transition Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 11, Head 1 - Previous Interpolation Score: 0.3645
+		Hypothesis: Emphasized Phrase Attention. Program successfully parsed.
+Program loading failed: unterminated triple-quoted string literal (detected at line 37) (automation_refinement_bert/candidate/layer11_head1_code.py, line 13)
+	 TRYING | Layer 11, Head 5 - Previous Interpolation Score: 0.3626
+		Hypothesis: Punctuation Coupling Attention. Program successfully parsed.
+	 TRYING | Layer 9, Head 7 - Previous Interpolation Score: 0.3581
+		Hypothesis: Semantic Grouping Based on Contextual Keywords. Program successfully parsed.
+		Program valid with score 0.4800.
+	 TRYING | Layer 6, Head 11 - Previous Interpolation Score: 0.3564
+		Hypothesis: POS and Semantic Connection Pattern. Program successfully parsed.
+		Program valid with score 0.5202.
+	 TRYING | Layer 10, Head 1 - Previous Interpolation Score: 0.3498
+		Hypothesis: Compositional Structure & Event Narrative Sequence. Program successfully parsed.
+Program loading failed: expected an indented block after function definition on line 4 (automation_refinement_bert/candidate/layer10_head1_code.py, line 4)
+	 TRYING | Layer 6, Head 10 - Previous Interpolation Score: 0.3487
+		Hypothesis: Comma Association and List Elements. Program successfully parsed.
+Best candidate program morphological_affix_association added | solo score 0.4800.
+Searching for new patterns, iteration 12 | total loops 17...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 4 - Previous Interpolation Score: 0.4909
+		Hypothesis: Quotation Content Focus. Program successfully parsed.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.4735
+		Hypothesis: Comma-Preceded Reference Attention. Program successfully parsed.
+		Program valid with score 0.5134.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.4431
+		Hypothesis: Co-occurrence Combinations Attention. Program successfully parsed.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.3908
+		Hypothesis: Comma Surroundings Pattern. Program successfully parsed.
+		Program valid with score 0.7249.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3889
+		Hypothesis: Function Word Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3732
+		Hypothesis: Pattern of Core Elements' Association. Program successfully parsed.
+		Program valid with score 0.4771.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.3596
+		Hypothesis: Sentence-Level Pattern: Sentiment Framing Attention. Program successfully parsed.
+		Program valid with score 0.4211.
+	 TRYING | Layer 5, Head 11 - Previous Interpolation Score: 0.3576
+		Hypothesis: Punctuation Consistent Dependency Attention. Program successfully parsed.
+		Program valid with score 0.5406.
+	 TRYING | Layer 10, Head 6 - Previous Interpolation Score: 0.3531
+		Hypothesis: Comma-Sep-Phrase Completion. Program successfully parsed.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.3528
+		Hypothesis: Comma-centered Attention. Program successfully parsed.
+		Program valid with score 0.5225.
+	 TRYING | Layer 5, Head 10 - Previous Interpolation Score: 0.3494
+		Error parsing response, skipping head (5, 10)
+	 TRYING | Layer 9, Head 10 - Previous Interpolation Score: 0.3443
+		Hypothesis: Comma Chunking Contextualization. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+Best candidate program semantic_grouping_pattern added | solo score 0.4211.
+Searching for new patterns, iteration 13 | total loops 18...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.4415
+		Hypothesis: Semantic Role Assignment Attention. Program successfully parsed.
+		Program valid with score 0.2309.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.4228
+		Hypothesis: Comma Coordination and Diction Attention. Program successfully parsed.
+		Program valid with score 0.6707.
+	 TRYING | Layer 10, Head 11 - Previous Interpolation Score: 0.4117
+		Hypothesis: Associative Entity Grouping. Program successfully parsed.
+		Program valid with score 0.6007.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3963
+		Hypothesis: Punctuation Contextual Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 9, Head 2 - Previous Interpolation Score: 0.3869
+		Hypothesis: Lexical Tie Pattern. Program successfully parsed.
+		Program valid with score 0.4466.
+	 TRYING | Layer 2, Head 1 - Previous Interpolation Score: 0.3515
+		Error parsing response, skipping head (2, 1)
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3508
+		Hypothesis: Function-Word Association. Program successfully parsed.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.3481
+		Hypothesis: Comma-based Separation and Element Association. Program successfully parsed.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3399
+		Hypothesis: Comma-Dominated Attention. Program successfully parsed.
+		Program valid with score 0.6477.
+	 TRYING | Layer 9, Head 4 - Previous Interpolation Score: 0.3363
+		Error parsing response, skipping head (9, 4)
+	 TRYING | Layer 7, Head 4 - Previous Interpolation Score: 0.3353
+		Hypothesis: Punctuation Induced Emphasis. Program successfully parsed.
+		Program valid with score 0.3370.
+	 TRYING | Layer 6, Head 10 - Previous Interpolation Score: 0.3343
+		Hypothesis: Punctuation Collocation Attention. Program successfully parsed.
+		Program valid with score 0.2906.
+Best candidate program sentiment_framing_attention added | solo score 0.2309.
+Searching for new patterns, iteration 14 | total loops 19...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.4639
+		Error parsing response, skipping head (3, 11)
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3973
+		Hypothesis: Subject-Verb Association. Program successfully parsed.
+		Program valid with score 0.5448.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3939
+		Hypothesis: Semantic Role Preparation. Program successfully parsed.
+		Program valid with score 0.5252.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.3912
+		Hypothesis: Coordinate Conjunction Elevation. Program successfully parsed.
+Program loading failed: unterminated string literal (detected at line 14) (automation_refinement_bert/candidate/layer5_head3_code.py, line 14)
+	 TRYING | Layer 10, Head 3 - Previous Interpolation Score: 0.3880
+		Error parsing response, skipping head (10, 3)
+	 TRYING | Layer 6, Head 2 - Previous Interpolation Score: 0.3878
+		Hypothesis: Comma-Centric Association. Program successfully parsed.
+	 TRYING | Layer 9, Head 1 - Previous Interpolation Score: 0.3826
+		Hypothesis: Relation of Nouns to Their Objects. Program successfully parsed.
+		Program valid with score 0.5068.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3810
+		Hypothesis: Numerical Proximity Attention. Program successfully parsed.
+		Program valid with score 0.7597.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.3754
+		Hypothesis: Colon Structure Support. Program successfully parsed.
+		Program valid with score 0.5511.
+	 TRYING | Layer 3, Head 10 - Previous Interpolation Score: 0.3631
+		Hypothesis: Compound Modifier Patterns. Program successfully parsed.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3617
+		Hypothesis: Coordination and Conjunction Alignment. Program successfully parsed.
+		Program valid with score 0.5230.
+	 TRYING | Layer 10, Head 10 - Previous Interpolation Score: 0.3533
+		Hypothesis: Lexical Cohesion Around Rare Words. Program successfully parsed.
+		Program valid with score 0.6947.
+Best candidate program semantic_role_assignment added | solo score 0.5068.
+Searching for new patterns, iteration 14 | total loops 20...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.4432
+		Hypothesis: Collective Noun Grouping. Program successfully parsed.
+	 TRYING | Layer 11, Head 6 - Previous Interpolation Score: 0.4402
+		Hypothesis: Delimited Structure Focus. Program successfully parsed.
+		Program valid with score 0.4793.
+	 TRYING | Layer 11, Head 7 - Previous Interpolation Score: 0.4229
+		Hypothesis: Certain Phrase Attention. Program successfully parsed.
+		Program valid with score 0.7782.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.4149
+		Hypothesis: Punctuation-Adjacent Attention. Program successfully parsed.
+		Program valid with score 0.5177.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.4103
+		Hypothesis: Logical Coordination Linking. Program successfully parsed.
+	 TRYING | Layer 11, Head 2 - Previous Interpolation Score: 0.3937
+		Hypothesis: Commas Grouping Attention. Program successfully parsed.
+Program loading failed: invalid syntax (automation_refinement_bert/candidate/layer11_head2_code.py, line 21)
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3826
+		Hypothesis: Subject-Object Association. Program successfully parsed.
+		Program valid with score 0.4276.
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.3765
+		Hypothesis: Attribute-Descriptor Binding. Program successfully parsed.
+		Program valid with score 0.4593.
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.3745
+		Hypothesis: Contextual Temporal Pattern. Program successfully parsed.
+		Program valid with score 0.6386.
+	 TRYING | Layer 7, Head 4 - Previous Interpolation Score: 0.3630
+		Hypothesis: Intermediate Phrase Emphasis. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 9, Head 2 - Previous Interpolation Score: 0.3602
+		Hypothesis: Punctuation Centric Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.3517
+		Hypothesis: Colon and Comma Separation. Program successfully parsed.
+		Program valid with score 0.6998.
+Best candidate program semantic_role_assignment added | solo score 0.4276.
+Searching for new patterns, iteration 15 | total loops 21...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.4381
+		Hypothesis: Coordinating Conjunction Attention. Program successfully parsed.
+		Program valid with score 0.4204.
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.3873
+		Hypothesis: Coordinate Conjunction Reinforcement. Program successfully parsed.
+		Program valid with score 0.4059.
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3869
+		Hypothesis: Entity-Descriptor Attention. Program successfully parsed.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3852
+		Hypothesis: Emphasis on Prepositional Objects. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 5, Head 9 - Previous Interpolation Score: 0.3821
+		Hypothesis: Adjective-Noun Association. Program successfully parsed.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.3819
+		Hypothesis: Coordination and Lists Association. Program successfully parsed.
+		Program valid with score 0.5948.
+	 TRYING | Layer 6, Head 2 - Previous Interpolation Score: 0.3754
+		Hypothesis: Comma Coordination and List Attention. Program successfully parsed.
+		Program valid with score 0.4129.
+	 TRYING | Layer 11, Head 6 - Previous Interpolation Score: 0.3738
+		Hypothesis: Comma Pause Linking. Program successfully parsed.
+		Program valid with score 0.2961.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.3729
+		Hypothesis: Connector Word Associations. Program successfully parsed.
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3719
+		Hypothesis: Main Subject-Verb Attention. Program successfully parsed.
+		Program valid with score 0.2447.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3713
+		Hypothesis: Sentence Element Pairing. Program successfully parsed.
+	 TRYING | Layer 9, Head 7 - Previous Interpolation Score: 0.3696
+		Error parsing response, skipping head (9, 7)
+Best candidate program subject_object_association added | solo score 0.2447.
+Searching for new patterns, iteration 16 | total loops 22...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.4279
+		Hypothesis: Clause Association Pattern. Program successfully parsed.
+		Program valid with score 0.8103.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.4040
+		Hypothesis: Conjunction-Based Comma Attention. Program successfully parsed.
+		Program valid with score 0.5825.
+	 TRYING | Layer 10, Head 10 - Previous Interpolation Score: 0.3939
+		Hypothesis: Core Semantic Role Detection. Program successfully parsed.
+		Program valid with score 0.5625.
+	 TRYING | Layer 9, Head 10 - Previous Interpolation Score: 0.3824
+		Hypothesis: Colon and Dash Attention Pattern. Program successfully parsed.
+		Program valid with score 0.5162.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3792
+		Hypothesis: Conjunction-Related Emphasis. Program successfully parsed.
+		Program valid with score 0.6327.
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3648
+		Hypothesis: Semantically-Themed Entity Attention. Program successfully parsed.
+		Program valid with score 0.5912.
+	 TRYING | Layer 5, Head 10 - Previous Interpolation Score: 0.3550
+		Hypothesis: Comma Predominance Attention. Program successfully parsed.
+		Program valid with score 0.7380.
+	 TRYING | Layer 7, Head 8 - Previous Interpolation Score: 0.3516
+		Hypothesis: Comma Delimitation Attention. Program successfully parsed.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3514
+		Hypothesis: Punctuation and Surrounding Elements Cohesion. Program successfully parsed.
+		Program valid with score 0.5218.
+	 TRYING | Layer 5, Head 9 - Previous Interpolation Score: 0.3505
+		Error parsing response, skipping head (5, 9)
+	 TRYING | Layer 7, Head 6 - Previous Interpolation Score: 0.3488
+		Hypothesis: Clausal Segmentation Attention. Program successfully parsed.
+		Program valid with score 0.2682.
+	 TRYING | Layer 9, Head 7 - Previous Interpolation Score: 0.3457
+		Hypothesis: Semantic Field Linking. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+Best candidate program main_subject_verb_attention added | solo score 0.2682.
+Searching for new patterns, iteration 17 | total loops 23...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 4 - Previous Interpolation Score: 0.4907
+		Hypothesis: Comma-Pair Attention. Program successfully parsed.
+		Program valid with score 0.6225.
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.4029
+		Hypothesis: Complexity Linking. Program successfully parsed.
+		Program valid with score 0.5466.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3878
+		Hypothesis: Collocational Framework. Program successfully parsed.
+	 TRYING | Layer 6, Head 11 - Previous Interpolation Score: 0.3829
+		Hypothesis: Entity-Attribute Pair Association. Program successfully parsed.
+		Program valid with score 0.5543.
+	 TRYING | Layer 9, Head 7 - Previous Interpolation Score: 0.3752
+		Error parsing response, skipping head (9, 7)
+	 TRYING | Layer 10, Head 11 - Previous Interpolation Score: 0.3674
+		Hypothesis: Relative Clauses Association. Program successfully parsed.
+		Program valid with score 0.6827.
+	 TRYING | Layer 7, Head 1 - Previous Interpolation Score: 0.3585
+		Hypothesis: Verb-Object Relationship Detection. Program successfully parsed.
+	 TRYING | Layer 3, Head 3 - Previous Interpolation Score: 0.3578
+		Hypothesis: Comma Contextual Attention. Program successfully parsed.
+		Program valid with score 0.6384.
+	 TRYING | Layer 6, Head 7 - Previous Interpolation Score: 0.3538
+		Hypothesis: Vivid Imagery Detection. Program successfully parsed.
+	 TRYING | Layer 2, Head 1 - Previous Interpolation Score: 0.3516
+		Hypothesis: Compound-Suffix Linkage. Program successfully parsed.
+Program loading failed: unexpected indent (automation_refinement_bert/candidate/layer2_head1_code.py, line 5)
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.3471
+		Hypothesis: Question Relation Attention. Program successfully parsed.
+		Program valid with score 0.7264.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3454
+		Hypothesis: Comma-Delimited Clause Association. Program successfully parsed.
+		Program valid with score 0.5433.
+Best candidate program clausal_segmentation added | solo score 0.5433.
+Searching for new patterns, iteration 17 | total loops 24...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.4098
+		Hypothesis: Hierarchical Structure Attention. Program successfully parsed.
+		Program valid with score 0.6291.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.4077
+		Hypothesis: Adverb-Adverbial Clause Association. Program successfully parsed.
+	 TRYING | Layer 11, Head 3 - Previous Interpolation Score: 0.4060
+		Hypothesis: Pattern Extraction Based on High Attention Weights to Certain Tokens. Program successfully parsed.
+		Program valid with score 0.6836.
+	 TRYING | Layer 2, Head 1 - Previous Interpolation Score: 0.4026
+		Hypothesis: Compound Processing: Complex Word Formation. Program successfully parsed.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.3845
+		Hypothesis: Semantic Cluster Attention. Program successfully parsed.
+		Program valid with score 0.5718.
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.3745
+		Hypothesis: Semantic Role Clustering. Program successfully parsed.
+		Program valid with score 0.5170.
+	 TRYING | Layer 10, Head 10 - Previous Interpolation Score: 0.3724
+		Hypothesis: Semantic Focus on Key Details. Program successfully parsed.
+		Program valid with score 0.6879.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.3693
+		Hypothesis: Subject-Verb Attention. Program successfully parsed.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3589
+		Hypothesis: High-Salience Element Association. Program successfully parsed.
+		Program valid with score 0.7381.
+	 TRYING | Layer 7, Head 11 - Previous Interpolation Score: 0.3546
+		Hypothesis: Subordinate Conjunction Attention. Program successfully parsed.
+		Program valid with score 0.3359.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.3497
+		Hypothesis: Emphasis on Clause Relationship. Program successfully parsed.
+		Program valid with score 0.4956.
+	 TRYING | Layer 5, Head 10 - Previous Interpolation Score: 0.3471
+		Hypothesis: Conjunction-Based Pattern Attention. Program successfully parsed.
+		Program valid with score 0.5908.
+Best candidate program clausal_segmentation added | solo score 0.3359.
+Searching for new patterns, iteration 18 | total loops 25...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Removed pattern subordinate_conjunction_attention due to error during testing.
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.4905
+		Hypothesis: Phrase Boundary Attention. Program successfully parsed.
+		Program valid with score 0.4074.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.4029
+		Hypothesis: Subject-Predicate-Link Attention. Program successfully parsed.
+Program loading failed: unexpected indent (automation_refinement_bert/candidate/layer0_head3_code.py, line 27)
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3815
+		Hypothesis: Conjunction and List Attention. Program successfully parsed.
+Program loading failed: expected ':' (automation_refinement_bert/candidate/layer6_head9_code.py, line 4)
+	 TRYING | Layer 10, Head 8 - Previous Interpolation Score: 0.3807
+		Hypothesis: List Item Attention Pattern. Program successfully parsed.
+		Program valid with score 0.5843.
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.3703
+		Hypothesis: Conjunction-Comma Synchronization. Program successfully parsed.
+		Program valid with score 0.3363.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3687
+		Error parsing response, skipping head (4, 10)
+	 TRYING | Layer 11, Head 6 - Previous Interpolation Score: 0.3655
+		Hypothesis: Focus on punctuation and separator elements in sentences. Program successfully parsed.
+		Program valid with score 0.3539.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3458
+		Hypothesis: Attribute-Predicate Connection. Program successfully parsed.
+	 TRYING | Layer 2, Head 1 - Previous Interpolation Score: 0.3417
+		Hypothesis: Compound Word Agglomeration. Program successfully parsed.
+		Program valid with score 0.7414.
+	 TRYING | Layer 3, Head 3 - Previous Interpolation Score: 0.3412
+		Hypothesis: Comma Coordination Attention. Program successfully parsed.
+		Program valid with score 0.4154.
+	 TRYING | Layer 4, Head 0 - Previous Interpolation Score: 0.3318
+		Hypothesis: Morphological Affix Linking. Program successfully parsed.
+		Program valid with score 0.4294.
+	 TRYING | Layer 9, Head 5 - Previous Interpolation Score: 0.3313
+		Hypothesis: Coreferential Attention. Program successfully parsed.
+Best candidate program subordinate_conjunction_attention added | solo score 0.3363.
+Searching for new patterns, iteration 19 | total loops 26...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 9 - Previous Interpolation Score: 0.4211
+		Hypothesis: Conjunction Emphasis Recognition. Program successfully parsed.
+		Program valid with score 0.6061.
+	 TRYING | Layer 10, Head 11 - Previous Interpolation Score: 0.4115
+		Hypothesis: Temporal Event Sequencing. Program successfully parsed.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3845
+		Hypothesis: Emphasis on Conjunctions. Program successfully parsed.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3764
+		Hypothesis: Conjunction-Based Sentence Elaboration. Program successfully parsed.
+		Program valid with score 0.5408.
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3688
+		Hypothesis: Anchor Noun to Contextual Modifier Linking. Program successfully parsed.
+	 TRYING | Layer 6, Head 4 - Previous Interpolation Score: 0.3679
+		Hypothesis: Semantic Role Association with Abstract Entities. Program successfully parsed.
+	 TRYING | Layer 6, Head 2 - Previous Interpolation Score: 0.3488
+		Hypothesis: Punctuation-Centric Attention Pattern. Program successfully parsed.
+		Program valid with score 0.7602.
+	 TRYING | Layer 10, Head 10 - Previous Interpolation Score: 0.3426
+		Hypothesis: Core Lexical Entity Highlighting. Program successfully parsed.
+	 TRYING | Layer 7, Head 9 - Previous Interpolation Score: 0.3375
+		Hypothesis: Adjective-Noun Collocation Attention. Program successfully parsed.
+		Program valid with score 0.3683.
+	 TRYING | Layer 4, Head 7 - Previous Interpolation Score: 0.3371
+		Hypothesis: Morphological Suffix Attention. Program successfully parsed.
+		Program valid with score 0.6710.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.3318
+		Hypothesis: Comma-Based Phonological Phrase Linkage. Program successfully parsed.
+		Program valid with score 0.5857.
+	 TRYING | Layer 4, Head 0 - Previous Interpolation Score: 0.3313
+		Hypothesis: Complex Word Formation Patterns. Program successfully parsed.
+		Program valid with score 0.5483.
+Best candidate program conjunction_comma_synchronization added | solo score 0.3683.
+Searching for new patterns, iteration 20 | total loops 27...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 1 - Previous Interpolation Score: 0.4632
+		Hypothesis: Pronoun-Reference Association. Program successfully parsed.
+		Program valid with score 0.2213.
+	 TRYING | Layer 3, Head 3 - Previous Interpolation Score: 0.4222
+		Hypothesis: Comma-based Segmentation Awareness. Program successfully parsed.
+		Program valid with score 0.6315.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.4114
+		Error parsing response, skipping head (5, 3)
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.4052
+		Hypothesis: Conjunction Association Attention. Program successfully parsed.
+		Program valid with score 0.7250.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3814
+		Hypothesis: Noun-Modifier Relationship. Program successfully parsed.
+		Program valid with score 0.4637.
+	 TRYING | Layer 7, Head 4 - Previous Interpolation Score: 0.3791
+		Hypothesis: Contrastive Association. Program successfully parsed.
+	 TRYING | Layer 10, Head 8 - Previous Interpolation Score: 0.3780
+		Hypothesis: Parentheses and Quotation Marks Delimitation Pattern. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 10, Head 7 - Previous Interpolation Score: 0.3760
+		Hypothesis: Delayed Punctuation Emphasis. Program successfully parsed.
+		Program valid with score 0.4663.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3659
+		Hypothesis: Verb-Noun Importance Emphasis. Program successfully parsed.
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3568
+		Hypothesis: Noun and Object Focus Pattern. Program successfully parsed.
+		Program valid with score 0.5547.
+	 TRYING | Layer 7, Head 8 - Previous Interpolation Score: 0.3550
+		Hypothesis: Comma Separation Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 11, Head 7 - Previous Interpolation Score: 0.3457
+		Hypothesis: Verbal Predicate Attraction. Program successfully parsed.
+		Program valid with score 0.2614.
+Best candidate program adj_noun_attention added | solo score 0.2213.
+Searching for new patterns, iteration 21 | total loops 28...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 11, Head 10 - Previous Interpolation Score: 0.4541
+		Hypothesis: Comma Distance Tracking. Program successfully parsed.
+		Program valid with score 0.7876.
+	 TRYING | Layer 11, Head 11 - Previous Interpolation Score: 0.4539
+		Hypothesis: Conjunction Coordination Attention. Program successfully parsed.
+	 TRYING | Layer 10, Head 5 - Previous Interpolation Score: 0.4328
+		Hypothesis: Semantic Context Associations. Program successfully parsed.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.4313
+		Hypothesis: Verb-Object Attention. Program successfully parsed.
+	 TRYING | Layer 0, Head 1 - Previous Interpolation Score: 0.3566
+		Hypothesis: Contrastive Element Linking. Program successfully parsed.
+		Program valid with score 0.7942.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3563
+		Hypothesis: Pairwise Relationship Recognition. Program successfully parsed.
+		Program valid with score 0.7253.
+	 TRYING | Layer 6, Head 11 - Previous Interpolation Score: 0.3482
+		Hypothesis: Conjunction-Comma Synchronization. Program successfully parsed.
+		Program valid with score 0.5558.
+	 TRYING | Layer 10, Head 4 - Previous Interpolation Score: 0.3392
+		Hypothesis: Focus on Commas in Sentences. Program successfully parsed.
+		Program valid with score 0.7068.
+	 TRYING | Layer 7, Head 9 - Previous Interpolation Score: 0.3375
+		Hypothesis: Complex Structure Alignment. Program successfully parsed.
+		Program valid with score 0.4220.
+	 TRYING | Layer 8, Head 8 - Previous Interpolation Score: 0.3371
+		Hypothesis: Comma-Dominant Attention Pattern. Program successfully parsed.
+		Program valid with score 0.7162.
+	 TRYING | Layer 7, Head 1 - Previous Interpolation Score: 0.3322
+		Hypothesis: Role of Heads in Verb-Object Relations. Program successfully parsed.
+		Program valid with score 0.3674.
+	 TRYING | Layer 4, Head 7 - Previous Interpolation Score: 0.3319
+		Hypothesis: Morphological Affix Focus Pattern. Program successfully parsed.
+		Program valid with score 0.3089.
+Best candidate program pronoun_reference_association added | solo score 0.3089.
+Searching for new patterns, iteration 22 | total loops 29...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 11, Head 0 - Previous Interpolation Score: 0.5089
+		Hypothesis: Attention to Nouns followed by 'of' Phrases. Program successfully parsed.
+		Program valid with score 0.7858.
+	 TRYING | Layer 11, Head 1 - Previous Interpolation Score: 0.4299
+		Hypothesis: Punctuation Coordination. Program successfully parsed.
+		Program valid with score 0.7406.
+	 TRYING | Layer 6, Head 10 - Previous Interpolation Score: 0.4116
+		Hypothesis: Comma-Phrase Bridging. Program successfully parsed.
+		Program valid with score 0.3219.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.3911
+		Hypothesis: Long-distance Association Pattern. Program successfully parsed.
+		Program valid with score 0.6364.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3875
+		Hypothesis: Clause Boundary Emphasis. Program successfully parsed.
+		Program valid with score 0.5501.
+	 TRYING | Layer 7, Head 7 - Previous Interpolation Score: 0.3852
+		Hypothesis: Comma-based Attention. Program successfully parsed.
+		Program valid with score 0.3855.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3730
+		Hypothesis: Co-occurrence Based Attention. Program successfully parsed.
+		Program valid with score 0.7263.
+	 TRYING | Layer 11, Head 7 - Previous Interpolation Score: 0.3727
+		Hypothesis: Right Context Punctuation Attention. Program successfully parsed.
+	 TRYING | Layer 6, Head 0 - Previous Interpolation Score: 0.3727
+		Hypothesis: Comma-based Attention. Program successfully parsed.
+		Program valid with score 0.3618.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3655
+		Hypothesis: Noun Phrase Delimitation. Program successfully parsed.
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.3650
+		Hypothesis: Adjective Modifier Attention. Program successfully parsed.
+		Program valid with score 0.4855.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3605
+		Hypothesis: Emphasis on Conjunction-Punctuation Association. Program successfully parsed.
+		Program valid with score 0.4792.
+Best candidate program morphological_affix_focus added | solo score 0.3219.
+Searching for new patterns, iteration 23 | total loops 30...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 6 - Previous Interpolation Score: 0.4486
+		Hypothesis: End-of-Sentence Clause Attention. Program successfully parsed.
+	 TRYING | Layer 11, Head 1 - Previous Interpolation Score: 0.4039
+		Hypothesis: Punctuation Sensitivity. Program successfully parsed.
+		Program valid with score 0.5530.
+	 TRYING | Layer 6, Head 10 - Previous Interpolation Score: 0.4026
+		Hypothesis: Comma-Centric Attention Pattern. Program successfully parsed.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3894
+		Hypothesis: Modify Phrase Pattern. Program successfully parsed.
+		Program valid with score 0.7389.
+	 TRYING | Layer 10, Head 11 - Previous Interpolation Score: 0.3672
+		Hypothesis: Interruption Attention. Program successfully parsed.
+		Program valid with score 0.8135.
+	 TRYING | Layer 6, Head 0 - Previous Interpolation Score: 0.3668
+		Hypothesis: Punctuation-Distanced Association. Program successfully parsed.
+		Program valid with score 0.3714.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3634
+		Hypothesis: Comma-Centric Association. Program successfully parsed.
+		Program valid with score 0.7740.
+	 TRYING | Layer 2, Head 1 - Previous Interpolation Score: 0.3461
+		Hypothesis: Semantic Association within Phrases. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3444
+		Hypothesis: Entity Co-reference Attention. Program successfully parsed.
+		Program valid with score 0.4515.
+	 TRYING | Layer 8, Head 7 - Previous Interpolation Score: 0.3385
+		Hypothesis: Noun Phrase to Related Verb Attention. Program successfully parsed.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3372
+		Hypothesis: Content Sharing-Related Attention. Program successfully parsed.
+		Program valid with score 0.8114.
+	 TRYING | Layer 11, Head 11 - Previous Interpolation Score: 0.3339
+		Hypothesis: Phrase Boundary Highlighting. Program successfully parsed.
+		Program valid with score 0.7976.
+Best candidate program comma_phrase_bridging added | solo score 0.3714.
+Searching for new patterns, iteration 24 | total loops 31...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 9 - Previous Interpolation Score: 0.4685
+		Hypothesis: Intensity or Emphasis Attention. Program successfully parsed.
+		Program valid with score 0.6196.
+	 TRYING | Layer 10, Head 6 - Previous Interpolation Score: 0.4209
+		Hypothesis: Narrative Sequence Focus Attention. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3955
+		Hypothesis: Semantic Pair Association. Program successfully parsed.
+		Program valid with score 0.6309.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3783
+		Hypothesis: Associative Phrase Cohesion. Program successfully parsed.
+		Program valid with score 0.5540.
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.3734
+		Hypothesis: Abstract Concept Grouping. Program successfully parsed.
+		Program valid with score 0.4539.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3672
+		Hypothesis: Parallel Clauses Linking. Program successfully parsed.
+	 TRYING | Layer 5, Head 9 - Previous Interpolation Score: 0.3656
+		Hypothesis: Punctuation Coordination Attention. Program successfully parsed.
+	 TRYING | Layer 9, Head 10 - Previous Interpolation Score: 0.3628
+		Hypothesis: Adverbial Coordination Focus. Program successfully parsed.
+		Program valid with score 0.5557.
+	 TRYING | Layer 7, Head 4 - Previous Interpolation Score: 0.3615
+		Hypothesis: Juxtaposition of Elements. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 2, Head 1 - Previous Interpolation Score: 0.3510
+		Hypothesis: Compound-Word Morphological Affix Relation. Program successfully parsed.
+		Program valid with score 0.7928.
+	 TRYING | Layer 10, Head 0 - Previous Interpolation Score: 0.3476
+		Hypothesis: Semantic Role Pattern. Program successfully parsed.
+		Program valid with score 0.6187.
+	 TRYING | Layer 7, Head 1 - Previous Interpolation Score: 0.3433
+		Hypothesis: Clause Level Attention. Program successfully parsed.
+		Program valid with score 0.5570.
+Best candidate program punctuation_distanced_association added | solo score 0.4539.
+Searching for new patterns, iteration 25 | total loops 32...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.4369
+		Hypothesis: Subject-Object Association. Program successfully parsed.
+		Program valid with score 0.5855.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3960
+		Hypothesis: Object-Attribute Association. Program successfully parsed.
+		Program valid with score 0.5443.
+	 TRYING | Layer 6, Head 0 - Previous Interpolation Score: 0.3712
+		Hypothesis: Punctuation Pair Association. Program successfully parsed.
+		Program valid with score 0.2465.
+	 TRYING | Layer 10, Head 2 - Previous Interpolation Score: 0.3708
+		Hypothesis: Punctuation-based Association. Program successfully parsed.
+Program loading failed: unterminated string literal (detected at line 13) (automation_refinement_bert/candidate/layer10_head2_code.py, line 13)
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3670
+		Hypothesis: Logical Transition Focus. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 9, Head 2 - Previous Interpolation Score: 0.3566
+		Hypothesis: Parenthetical Disregard. Program successfully parsed.
+		Program valid with score 0.3767.
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.3539
+		Hypothesis: Semantic Role Alignment. Program successfully parsed.
+		Program valid with score 0.5359.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3535
+		Hypothesis: Parenthetical Tie Attention. Program successfully parsed.
+		Program valid with score 0.4720.
+	 TRYING | Layer 3, Head 11 - Previous Interpolation Score: 0.3400
+		Hypothesis: Phrase Boundary Attention. Program successfully parsed.
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3393
+		Hypothesis: Semantic Role Assignment for Objects. Program successfully parsed.
+		Program valid with score 0.5002.
+	 TRYING | Layer 8, Head 7 - Previous Interpolation Score: 0.3392
+		Hypothesis: Comma-proximity Attention. Program successfully parsed.
+		Program valid with score 0.5414.
+	 TRYING | Layer 10, Head 10 - Previous Interpolation Score: 0.3306
+		Error parsing response, skipping head (10, 10)
+Best candidate program abstract_concept_grouping added | solo score 0.2465.
+Searching for new patterns, iteration 26 | total loops 33...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 5 - Previous Interpolation Score: 0.5690
+		Hypothesis: Semantic_Salience_Attention. Program successfully parsed.
+		Program valid with score 0.6588.
+	 TRYING | Layer 10, Head 7 - Previous Interpolation Score: 0.3921
+		Hypothesis: Sentence Segment Divider. Program successfully parsed.
+		Program valid with score 0.6450.
+	 TRYING | Layer 11, Head 10 - Previous Interpolation Score: 0.3910
+		Hypothesis: Comma Association Pattern. Program successfully parsed.
+		Program valid with score 0.6017.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3700
+		Hypothesis: Connection of Related Semantic Elements. Program successfully parsed.
+		Program valid with score 0.7304.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3687
+		Hypothesis: Core Clause Element Attention. Program successfully parsed.
+		Program valid with score 0.5274.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3621
+		Hypothesis: Punctuation-to-Noun Phrase Attention. Program successfully parsed.
+Program loading failed: expected ':' (automation_refinement_bert/candidate/layer4_head10_code.py, line 5)
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.3480
+		Hypothesis: Complementarity Attention. Program successfully parsed.
+	 TRYING | Layer 6, Head 2 - Previous Interpolation Score: 0.3476
+		Hypothesis: Comma-centered Liaison Pattern. Program successfully parsed.
+		Program valid with score 0.4732.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.3423
+		Hypothesis: Adjoined Clause Attention. Program successfully parsed.
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3423
+		Hypothesis: Noun-Complement Association. Program successfully parsed.
+		Program valid with score 0.5617.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3379
+		Hypothesis: Prepositional and Complement Phrase Head Association. Program successfully parsed.
+		Program valid with score 0.5742.
+	 TRYING | Layer 4, Head 8 - Previous Interpolation Score: 0.3258
+		Hypothesis: Comma Dominance Pattern. Program successfully parsed.
+		Program valid with score 0.7511.
+Best candidate program punctuation_pair_association added | solo score 0.4732.
+Searching for new patterns, iteration 27 | total loops 34...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 9, Head 7 - Previous Interpolation Score: 0.4191
+		Hypothesis: Narrative Flow Pattern. Program successfully parsed.
+Program loading failed: expected an indented block after function definition on line 5 (automation_refinement_bert/candidate/layer9_head7_code.py, line 7)
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3880
+		Hypothesis: Association Between Nouns and Their Descriptive Adjectives. Program successfully parsed.
+		Program valid with score 0.8173.
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.3879
+		Hypothesis: Coreference Resolution. Program successfully parsed.
+	 TRYING | Layer 8, Head 11 - Previous Interpolation Score: 0.3679
+		Hypothesis: Semantic Role Focus. Program successfully parsed.
+		Program valid with score 0.5567.
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.3627
+		Hypothesis: Entity-to-Entity Linking. Program successfully parsed.
+		Program valid with score 0.5243.
+	 TRYING | Layer 10, Head 11 - Previous Interpolation Score: 0.3555
+		Hypothesis: Punctuation-Based Attention. Program successfully parsed.
+		Program valid with score 0.7711.
+	 TRYING | Layer 11, Head 6 - Previous Interpolation Score: 0.3551
+		Hypothesis: Comma-Based Attention. Program successfully parsed.
+	 TRYING | Layer 6, Head 1 - Previous Interpolation Score: 0.3534
+		Hypothesis: Disruption Pattern. Program successfully parsed.
+		Program valid with score 0.5892.
+	 TRYING | Layer 7, Head 4 - Previous Interpolation Score: 0.3473
+		Hypothesis: Conjunction Coordination Attention. Program successfully parsed.
+	 TRYING | Layer 5, Head 10 - Previous Interpolation Score: 0.3442
+		Hypothesis: Comma Pairing Attention. Program successfully parsed.
+		Program valid with score 0.5995.
+	 TRYING | Layer 7, Head 9 - Previous Interpolation Score: 0.3432
+		Hypothesis: Modifier Focused Attention. Program successfully parsed.
+		Program valid with score 0.4938.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3430
+		Hypothesis: Comma Token Association as Transition Points. Program successfully parsed.
+		Program valid with score 0.5185.
+Best candidate program comma_centered_liaison added | solo score 0.4938.
+Searching for new patterns, iteration 27 | total loops 35...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 10, Head 1 - Previous Interpolation Score: 0.4330
+		Hypothesis: Contextual Salience Detection. Program successfully parsed.
+	 TRYING | Layer 11, Head 10 - Previous Interpolation Score: 0.4099
+		Hypothesis: Punctuation Dominance. Program successfully parsed.
+		Program valid with score 0.3912.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3991
+		Hypothesis: Subordinate Clause Isolation. Program successfully parsed.
+		Program valid with score 0.5127.
+	 TRYING | Layer 11, Head 1 - Previous Interpolation Score: 0.3890
+		Hypothesis: Internal Grouping Pattern. Program successfully parsed.
+Program loading failed: expected ':' (automation_refinement_bert/candidate/layer11_head1_code.py, line 5)
+	 TRYING | Layer 7, Head 3 - Previous Interpolation Score: 0.3798
+		Hypothesis: Focus on Semantic Relationships and Modifiers. Program successfully parsed.
+		Program valid with score 0.2101.
+	 TRYING | Layer 10, Head 9 - Previous Interpolation Score: 0.3771
+		Hypothesis: Conversational Association. Program successfully parsed.
+		Program valid with score 0.7199.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3702
+		Hypothesis: Comma-Centric Attention. Program successfully parsed.
+	 TRYING | Layer 3, Head 3 - Previous Interpolation Score: 0.3679
+		Hypothesis: Temporal Marker Attention. Program successfully parsed.
+		Program valid with score 0.6862.
+	 TRYING | Layer 8, Head 11 - Previous Interpolation Score: 0.3635
+		Error parsing response, skipping head (8, 11)
+	 TRYING | Layer 4, Head 5 - Previous Interpolation Score: 0.3608
+		Hypothesis: Subordinate Clause Association. Program successfully parsed.
+		Program valid with score 0.5426.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3585
+		Hypothesis: Verbal-Noun Association. Program successfully parsed.
+		Program valid with score 0.5234.
+	 TRYING | Layer 6, Head 10 - Previous Interpolation Score: 0.3562
+		Hypothesis: Comma-Centric Coordination Attention. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+Best candidate program comma_centered_liaison added | solo score 0.2101.
+Searching for new patterns, iteration 28 | total loops 36...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.4591
+		Hypothesis: List Element Separation or Punctuated Phrase Breaking. Program successfully parsed.
+	 TRYING | Layer 2, Head 1 - Previous Interpolation Score: 0.4103
+		Hypothesis: Morphological Affix Association. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.3955
+		Hypothesis: Noun-Phrase Boundary Attention. Program successfully parsed.
+		Program valid with score 0.5406.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3763
+		Error parsing response, skipping head (0, 3)
+	 TRYING | Layer 10, Head 10 - Previous Interpolation Score: 0.3734
+		Hypothesis: Intensifier-Adjective Association. Program successfully parsed.
+		Program valid with score 0.6008.
+	 TRYING | Layer 10, Head 0 - Previous Interpolation Score: 0.3730
+		Hypothesis: Adjective-Noun Grouping Based on Contextual Adjectives. Program successfully parsed.
+		Program valid with score 0.7087.
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.3563
+		Hypothesis: Noun-Verb Pairing. Program successfully parsed.
+		Program valid with score 0.4500.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3445
+		Hypothesis: Prepositional Phrase Attachment and Noun Association. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 8, Head 7 - Previous Interpolation Score: 0.3418
+		Hypothesis: paired_element_colocation. Program successfully parsed.
+		Program valid with score 0.5844.
+	 TRYING | Layer 9, Head 7 - Previous Interpolation Score: 0.3418
+		Hypothesis: Semantic Association Pattern. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 7, Head 11 - Previous Interpolation Score: 0.3402
+		Hypothesis: Coordination Pattern Detection. Program successfully parsed.
+		Program valid with score 0.4907.
+	 TRYING | Layer 3, Head 9 - Previous Interpolation Score: 0.3361
+		Hypothesis: Verb-Noun Relationship Attention. Program successfully parsed.
+		Program valid with score 0.6079.
+Best candidate program semantic_relationship_modifiers added | solo score 0.4500.
+Searching for new patterns, iteration 29 | total loops 37...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+	 TRYING | Layer 8, Head 10 - Previous Interpolation Score: 0.4005
+		Hypothesis: Coreference Resolution Pattern. Program successfully parsed.
+Program loading failed: invalid syntax (automation_refinement_bert/candidate/layer8_head10_code.py, line 35)
+	 TRYING | Layer 5, Head 9 - Previous Interpolation Score: 0.3979
+		Hypothesis: Comma-Phrase Association. Program successfully parsed.
+	 TRYING | Layer 0, Head 3 - Previous Interpolation Score: 0.3933
+		Error parsing response, skipping head (0, 3)
+	 TRYING | Layer 10, Head 2 - Previous Interpolation Score: 0.3808
+		Error parsing response, skipping head (10, 2)
+	 TRYING | Layer 6, Head 2 - Previous Interpolation Score: 0.3714
+		Hypothesis: Comma-Centric Emphasis Attenuation. Program successfully parsed.
+		Program valid with score 0.4109.
+	 TRYING | Layer 6, Head 1 - Previous Interpolation Score: 0.3642
+		Hypothesis: Temporal Event Resolution. Program successfully parsed.
+	 TRYING | Layer 5, Head 7 - Previous Interpolation Score: 0.3561
+		Hypothesis: Adjective-Noun Coordination Pattern. Program successfully parsed.
+		Program valid with score 0.2333.
+	 TRYING | Layer 4, Head 10 - Previous Interpolation Score: 0.3454
+		Hypothesis: Quotation Flow Association. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 10, Head 6 - Previous Interpolation Score: 0.3447
+		Hypothesis: Alternative Conjunction Linking in Complex Structures. Program successfully parsed.
+		Program valid with score 0.6549.
+	 TRYING | Layer 6, Head 5 - Previous Interpolation Score: 0.3444
+		Hypothesis: Semantic Role Association. Program successfully parsed.
+		Program valid with score 0.4566.
+	 TRYING | Layer 7, Head 0 - Previous Interpolation Score: 0.3377
+		Error parsing response, skipping head (7, 0)
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.3357
+		Hypothesis: Conjunction and Coordination Detection. Program successfully parsed.
+		Program valid with score 0.5078.
+Best candidate program noun_verb_pairing added | solo score 0.2333.
