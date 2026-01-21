@@ -1,0 +1,2592 @@
+Analyzing Layer 0, Head 0...
+	Using pattern: adverbial_modulation
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: conjunction_comma_synchronization
+	Score for Layer 0, Head 0: 0.48
+
+Analyzing Layer 0, Head 1...
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: adverbial_modulation
+	Using pattern: parenthetical_attention
+	Using pattern: parenthetical_attention
+	Using pattern: parenthetical_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: parenthetical_attention
+	Using pattern: parenthetical_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: parenthetical_attention
+	Score for Layer 0, Head 1: 0.42
+
+Analyzing Layer 0, Head 2...
+	Using pattern: previous_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: relative_position_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 0, Head 2: 0.47
+
+Analyzing Layer 0, Head 3...
+	Using pattern: previous_attention
+	Using pattern: relative_position_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: relative_position_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: relative_position_attention
+	Score for Layer 0, Head 3: 0.51
+
+Analyzing Layer 0, Head 4...
+	Using pattern: appositive_phrase_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: adverbial_modulation
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: adverbial_modulation
+	Using pattern: quotation_association
+	Using pattern: appositive_phrase_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 0, Head 4: 0.28
+
+Analyzing Layer 0, Head 5...
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: parenthetical_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 0, Head 5: 0.39
+
+Analyzing Layer 0, Head 6...
+	Using pattern: quotation_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: dependencies
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Score for Layer 0, Head 6: 0.47
+
+Analyzing Layer 0, Head 7...
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Score for Layer 0, Head 7: 0.32
+
+Analyzing Layer 0, Head 8...
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: compound_word_attention_pattern
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Score for Layer 0, Head 8: 0.41
+
+Analyzing Layer 0, Head 9...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Score for Layer 0, Head 9: 0.31
+
+Analyzing Layer 0, Head 10...
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Score for Layer 0, Head 10: 0.38
+
+Analyzing Layer 0, Head 11...
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 0, Head 11: 0.41
+
+Analyzing Layer 1, Head 0...
+	Using pattern: parenthetical_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: parenthetical_attention
+	Score for Layer 1, Head 0: 0.37
+
+Analyzing Layer 1, Head 1...
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: cls_attention
+	Using pattern: next_attention
+	Score for Layer 1, Head 1: 0.40
+
+Analyzing Layer 1, Head 2...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 1, Head 2: 0.33
+
+Analyzing Layer 1, Head 3...
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 1, Head 3: 0.35
+
+Analyzing Layer 1, Head 4...
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Score for Layer 1, Head 4: 0.38
+
+Analyzing Layer 1, Head 5...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 1, Head 5: 0.35
+
+Analyzing Layer 1, Head 6...
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Score for Layer 1, Head 6: 0.16
+
+Analyzing Layer 1, Head 7...
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 1, Head 7: 0.34
+
+Analyzing Layer 1, Head 8...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 1, Head 8: 0.26
+
+Analyzing Layer 1, Head 9...
+	Using pattern: appositive_phrase_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 1, Head 9: 0.23
+
+Analyzing Layer 1, Head 10...
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Score for Layer 1, Head 10: 0.38
+
+Analyzing Layer 1, Head 11...
+	Using pattern: repeated_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: repeated_attention
+	Using pattern: parenthetical_attention
+	Using pattern: repeated_attention
+	Using pattern: repeated_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: same_attention
+	Score for Layer 1, Head 11: 0.46
+
+Analyzing Layer 2, Head 0...
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Score for Layer 2, Head 0: 0.02
+
+Analyzing Layer 2, Head 1...
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Score for Layer 2, Head 1: 0.45
+
+Analyzing Layer 2, Head 2...
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Score for Layer 2, Head 2: 0.37
+
+Analyzing Layer 2, Head 3...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 2, Head 3: 0.30
+
+Analyzing Layer 2, Head 4...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 2, Head 4: 0.36
+
+Analyzing Layer 2, Head 5...
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: appositive_phrase_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Score for Layer 2, Head 5: 0.31
+
+Analyzing Layer 2, Head 6...
+	Using pattern: repeated_attention
+	Using pattern: repeated_attention
+	Using pattern: repeated_attention
+	Using pattern: relative_position_attention
+	Using pattern: same_attention
+	Using pattern: relative_position_attention
+	Using pattern: repeated_attention
+	Using pattern: relative_position_attention
+	Using pattern: repeated_attention
+	Using pattern: relative_position_attention
+	Using pattern: repeated_attention
+	Using pattern: relative_position_attention
+	Using pattern: same_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 2, Head 6: 0.45
+
+Analyzing Layer 2, Head 7...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 2, Head 7: 0.35
+
+Analyzing Layer 2, Head 8...
+	Using pattern: appositive_phrase_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: appositive_phrase_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 2, Head 8: 0.38
+
+Analyzing Layer 2, Head 9...
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Score for Layer 2, Head 9: 0.03
+
+Analyzing Layer 2, Head 10...
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Score for Layer 2, Head 10: 0.39
+
+Analyzing Layer 2, Head 11...
+	Using pattern: adverbial_modulation
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: appositive_phrase_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: compound_modifier_attention
+	Using pattern: parenthetical_attention
+	Score for Layer 2, Head 11: 0.39
+
+Analyzing Layer 3, Head 0...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Score for Layer 3, Head 0: 0.45
+
+Analyzing Layer 3, Head 1...
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_structure_attention
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Score for Layer 3, Head 1: 0.35
+
+Analyzing Layer 3, Head 2...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 3, Head 2: 0.41
+
+Analyzing Layer 3, Head 3...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: high_saliency_relationship_detection
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 3, Head 3: 0.44
+
+Analyzing Layer 3, Head 4...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Score for Layer 3, Head 4: 0.35
+
+Analyzing Layer 3, Head 5...
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Score for Layer 3, Head 5: 0.31
+
+Analyzing Layer 3, Head 6...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 3, Head 6: 0.35
+
+Analyzing Layer 3, Head 7...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 3, Head 7: 0.31
+
+Analyzing Layer 3, Head 8...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 3, Head 8: 0.34
+
+Analyzing Layer 3, Head 9...
+	Using pattern: next_attention
+	Using pattern: relative_position_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: relative_position_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 3, Head 9: 0.51
+
+Analyzing Layer 3, Head 10...
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 3, Head 10: 0.41
+
+Analyzing Layer 3, Head 11...
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 3, Head 11: 0.45
+
+Analyzing Layer 4, Head 0...
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Using pattern: morphological_affix_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: relative_position_attention
+	Using pattern: morphological_affix_association
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: relative_position_attention
+	Score for Layer 4, Head 0: 0.44
+
+Analyzing Layer 4, Head 1...
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Score for Layer 4, Head 1: 0.45
+
+Analyzing Layer 4, Head 2...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Score for Layer 4, Head 2: 0.39
+
+Analyzing Layer 4, Head 3...
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: semantic_grouping_pattern
+	Using pattern: thematic_focus
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Score for Layer 4, Head 3: 0.29
+
+Analyzing Layer 4, Head 4...
+	Using pattern: appositive_phrase_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: compound_word_attention_pattern
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Score for Layer 4, Head 4: 0.39
+
+Analyzing Layer 4, Head 5...
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: relative_position_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Score for Layer 4, Head 5: 0.46
+
+Analyzing Layer 4, Head 6...
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Using pattern: cooccurrence_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Using pattern: semantic_relationship_modifiers
+	Score for Layer 4, Head 6: 0.45
+
+Analyzing Layer 4, Head 7...
+	Using pattern: cooccurrence_attention
+	Using pattern: special_token_attention
+	Using pattern: morphological_affix_association
+	Using pattern: cooccurrence_attention
+	Using pattern: morphological_affix_association
+	Using pattern: morphological_affix_association
+	Using pattern: morphological_affix_association
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: comma_phrase_bridging
+	Using pattern: punctuation_distanced_association
+	Using pattern: noun_modifier_collocation
+	Using pattern: semicolon_comma_pre_association
+	Score for Layer 4, Head 7: 0.37
+
+Analyzing Layer 4, Head 8...
+	Using pattern: comma_phrase_bridging
+	Using pattern: noun_modifier_collocation
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: pronoun_reference_association
+	Using pattern: special_token_attention
+	Using pattern: semicolon_comma_pre_association
+	Score for Layer 4, Head 8: 0.42
+
+Analyzing Layer 4, Head 9...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 4, Head 9: 0.34
+
+Analyzing Layer 4, Head 10...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Score for Layer 4, Head 10: 0.45
+
+Analyzing Layer 4, Head 11...
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: thematic_focus
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_conjunction_pairing
+	Using pattern: comma_conjunction_pairing
+	Using pattern: comma_phrase_bridging
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: cooccurrence_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: special_token_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: noun_modifier_collocation
+	Using pattern: special_token_attention
+	Score for Layer 4, Head 11: 0.41
+
+Analyzing Layer 5, Head 0...
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: noun_modifier_collocation
+	Using pattern: punctuation_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Score for Layer 5, Head 0: 0.42
+
+Analyzing Layer 5, Head 1...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: eos_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_centered_liaison
+	Using pattern: special_token_attention
+	Using pattern: comma_conjunction_pairing
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: paired_element_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: thematic_focus
+	Using pattern: main_subject_verb_attention
+	Using pattern: paired_element_attention
+	Score for Layer 5, Head 1: 0.23
+
+Analyzing Layer 5, Head 2...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: thematic_focus
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 5, Head 2: 0.38
+
+Analyzing Layer 5, Head 3...
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: comma_phrase_bridging
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Score for Layer 5, Head 3: 0.43
+
+Analyzing Layer 5, Head 4...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: sentence_boundary_attention
+	Using pattern: thematic_focus
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 5, Head 4: 0.41
+
+Analyzing Layer 5, Head 5...
+	Using pattern: semantic_grouping_pattern
+	Using pattern: punctuation_distanced_association
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: eos_attention
+	Using pattern: semantic_grouping_pattern
+	Using pattern: noun_modifier_collocation
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: special_token_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: thematic_focus
+	Using pattern: noun_modifier_collocation
+	Using pattern: semantic_grouping_pattern
+	Score for Layer 5, Head 5: 0.31
+
+Analyzing Layer 5, Head 6...
+	Using pattern: cooccurrence_attention
+	Using pattern: special_token_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: cooccurrence_attention
+	Using pattern: special_token_attention
+	Using pattern: comma_conjunction_pairing
+	Using pattern: comma_phrase_bridging
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: descriptive_elements_grouping
+	Using pattern: noun_modifier_collocation
+	Using pattern: cooccurrence_attention
+	Using pattern: semantic_grouping_pattern
+	Using pattern: pronoun_reference_association
+	Using pattern: semantic_relationship_modifiers
+	Score for Layer 5, Head 6: 0.32
+
+Analyzing Layer 5, Head 7...
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: noun_modifier_collocation
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_conjunction_pairing
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: pronoun_reference_association
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Score for Layer 5, Head 7: 0.38
+
+Analyzing Layer 5, Head 8...
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 5, Head 8: 0.43
+
+Analyzing Layer 5, Head 9...
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: next_attention
+	Using pattern: comma_phrase_bridging
+	Score for Layer 5, Head 9: 0.44
+
+Analyzing Layer 5, Head 10...
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: descriptive_elements_grouping
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: semantic_grouping_pattern
+	Score for Layer 5, Head 10: 0.49
+
+Analyzing Layer 5, Head 11...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: special_token_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: thematic_focus
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: special_token_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: noun_modifier_collocation
+	Using pattern: comma_phrase_bridging
+	Score for Layer 5, Head 11: 0.37
+
+Analyzing Layer 6, Head 0...
+	Using pattern: special_token_attention
+	Using pattern: sentence_structure_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: special_token_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Score for Layer 6, Head 0: 0.34
+
+Analyzing Layer 6, Head 1...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Score for Layer 6, Head 1: 0.42
+
+Analyzing Layer 6, Head 2...
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Score for Layer 6, Head 2: 0.44
+
+Analyzing Layer 6, Head 3...
+	Using pattern: cooccurrence_attention
+	Using pattern: special_token_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: descriptive_elements_grouping
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: cooccurrence_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: semicolon_comma_pre_association
+	Score for Layer 6, Head 3: 0.32
+
+Analyzing Layer 6, Head 4...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: punctuation_distanced_association
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_centered_liaison
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: morphological_affix_association
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: thematic_focus
+	Using pattern: descriptive_elements_grouping
+	Using pattern: prepositional_phrase_association
+	Using pattern: punctuation_distanced_association
+	Using pattern: punctuation_distanced_association
+	Using pattern: special_token_attention
+	Using pattern: comma_phrase_bridging
+	Score for Layer 6, Head 4: 0.39
+
+Analyzing Layer 6, Head 5...
+	Using pattern: semantic_grouping_pattern
+	Using pattern: thematic_focus
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Score for Layer 6, Head 5: 0.47
+
+Analyzing Layer 6, Head 6...
+	Using pattern: special_token_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: comma_conjunction_pairing
+	Using pattern: comma_conjunction_pairing
+	Using pattern: noun_modifier_collocation
+	Using pattern: special_token_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: cooccurrence_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Score for Layer 6, Head 6: 0.42
+
+Analyzing Layer 6, Head 7...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Using pattern: noun_modifier_collocation
+	Using pattern: comma_phrase_bridging
+	Score for Layer 6, Head 7: 0.41
+
+Analyzing Layer 6, Head 8...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Score for Layer 6, Head 8: 0.39
+
+Analyzing Layer 6, Head 9...
+	Using pattern: prepositional_phrase_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Using pattern: morphological_affix_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Using pattern: thematic_focus
+	Score for Layer 6, Head 9: 0.47
+
+Analyzing Layer 6, Head 10...
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_conjunction_pairing
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: punctuation_distanced_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: cooccurrence_attention
+	Using pattern: thematic_focus
+	Using pattern: thematic_focus
+	Score for Layer 6, Head 10: 0.40
+
+Analyzing Layer 6, Head 11...
+	Using pattern: previous_attention
+	Using pattern: relative_position_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: comma_phrase_bridging
+	Using pattern: previous_attention
+	Using pattern: special_token_attention
+	Using pattern: comma_phrase_bridging
+	Score for Layer 6, Head 11: 0.48
+
+Analyzing Layer 7, Head 0...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 7, Head 0: 0.45
+
+Analyzing Layer 7, Head 1...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Using pattern: sentence_structure_attention
+	Using pattern: relative_position_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 7, Head 1: 0.44
+
+Analyzing Layer 7, Head 2...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: noun_modifier_collocation
+	Using pattern: special_token_attention
+	Using pattern: thematic_focus
+	Using pattern: comma_conjunction_pairing
+	Using pattern: comma_conjunction_pairing
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Using pattern: thematic_focus
+	Using pattern: subject_object_association
+	Using pattern: relative_position_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Score for Layer 7, Head 2: 0.42
+
+Analyzing Layer 7, Head 3...
+	Using pattern: cooccurrence_attention
+	Using pattern: subject_object_association
+	Using pattern: punctuation_distanced_association
+	Using pattern: cooccurrence_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: cooccurrence_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: special_token_attention
+	Using pattern: thematic_focus
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Score for Layer 7, Head 3: 0.33
+
+Analyzing Layer 7, Head 4...
+	Using pattern: previous_attention
+	Using pattern: special_token_attention
+	Using pattern: previous_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: previous_attention
+	Using pattern: relative_position_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: previous_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: previous_attention
+	Using pattern: cooccurrence_attention
+	Using pattern: previous_attention
+	Using pattern: comma_phrase_bridging
+	Score for Layer 7, Head 4: 0.49
+
+Analyzing Layer 7, Head 5...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Score for Layer 7, Head 5: 0.46
+
+Analyzing Layer 7, Head 6...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: noun_modifier_collocation
+	Using pattern: special_token_attention
+	Using pattern: thematic_focus
+	Using pattern: comma_conjunction_pairing
+	Using pattern: comma_conjunction_pairing
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: comma_phrase_bridging
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Score for Layer 7, Head 6: 0.28
+
+Analyzing Layer 7, Head 7...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: thematic_focus
+	Using pattern: sentence_structure_attention
+	Using pattern: sentence_structure_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Score for Layer 7, Head 7: 0.30
+
+Analyzing Layer 7, Head 8...
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: punctuation_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: punctuation_attention
+	Using pattern: punctuation_attention
+	Using pattern: last_token_attention
+	Score for Layer 7, Head 8: 0.44
+
+Analyzing Layer 7, Head 9...
+	Using pattern: prepositional_phrase_association
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: comma_phrase_bridging
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: thematic_focus
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: thematic_focus
+	Using pattern: pronoun_reference_association
+	Using pattern: thematic_focus
+	Score for Layer 7, Head 9: 0.42
+
+Analyzing Layer 7, Head 10...
+	Using pattern: prepositional_phrase_association
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Score for Layer 7, Head 10: 0.44
+
+Analyzing Layer 7, Head 11...
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: comma_centered_liaison
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: sentence_structure_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: comma_phrase_bridging
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Score for Layer 7, Head 11: 0.36
+
+Analyzing Layer 8, Head 0...
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 8, Head 0: 0.37
+
+Analyzing Layer 8, Head 1...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: comma_phrase_bridging
+	Using pattern: parenthetical_tying_pattern
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: parenthetical_tying_pattern
+	Score for Layer 8, Head 1: 0.37
+
+Analyzing Layer 8, Head 2...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: noun_modifier_collocation
+	Using pattern: morphological_affix_association
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_conjunction_pairing
+	Using pattern: comma_conjunction_pairing
+	Using pattern: thematic_focus
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: morphological_affix_association
+	Using pattern: semantic_grouping_pattern
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: punctuation_distanced_association
+	Using pattern: punctuation_distanced_association
+	Using pattern: eos_attention
+	Score for Layer 8, Head 2: 0.26
+
+Analyzing Layer 8, Head 3...
+	Using pattern: relative_position_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: punctuation_attention
+	Using pattern: relative_position_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: thematic_focus
+	Score for Layer 8, Head 3: 0.41
+
+Analyzing Layer 8, Head 4...
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: punctuation_distanced_association
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Score for Layer 8, Head 4: 0.39
+
+Analyzing Layer 8, Head 5...
+	Using pattern: special_token_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_conjunction_pairing
+	Using pattern: comma_conjunction_pairing
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: comma_phrase_bridging
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: semantic_grouping_pattern
+	Score for Layer 8, Head 5: 0.33
+
+Analyzing Layer 8, Head 6...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: punctuation_distanced_association
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: comma_phrase_bridging
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: special_token_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: pronoun_reference_association
+	Using pattern: punctuation_distanced_association
+	Using pattern: thematic_focus
+	Using pattern: semantic_relationship_modifiers
+	Score for Layer 8, Head 6: 0.28
+
+Analyzing Layer 8, Head 7...
+	Using pattern: punctuation_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 8, Head 7: 0.41
+
+Analyzing Layer 8, Head 8...
+	Using pattern: prepositional_phrase_association
+	Using pattern: relative_position_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: comma_phrase_bridging
+	Score for Layer 8, Head 8: 0.41
+
+Analyzing Layer 8, Head 9...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_attention
+	Score for Layer 8, Head 9: 0.39
+
+Analyzing Layer 8, Head 10...
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: comma_phrase_bridging
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: comma_phrase_bridging
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: relative_position_attention
+	Using pattern: semantic_grouping_pattern
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: comma_phrase_bridging
+	Score for Layer 8, Head 10: 0.47
+
+Analyzing Layer 8, Head 11...
+	Using pattern: adverbial_modulation
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_distanced_association
+	Using pattern: thematic_focus
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_attention
+	Using pattern: thematic_focus
+	Score for Layer 8, Head 11: 0.44
+
+Analyzing Layer 9, Head 0...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: sentence_structure_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: thematic_focus
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Score for Layer 9, Head 0: 0.39
+
+Analyzing Layer 9, Head 1...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 9, Head 1: 0.39
+
+Analyzing Layer 9, Head 2...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 9, Head 2: 0.38
+
+Analyzing Layer 9, Head 3...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 9, Head 3: 0.38
+
+Analyzing Layer 9, Head 4...
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: descriptive_elements_grouping
+	Using pattern: relative_position_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Score for Layer 9, Head 4: 0.41
+
+Analyzing Layer 9, Head 5...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 9, Head 5: 0.44
+
+Analyzing Layer 9, Head 6...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: parenthetical_tying_pattern
+	Using pattern: parenthetical_tying_pattern
+	Using pattern: parenthetical_tying_pattern
+	Using pattern: thematic_focus
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Score for Layer 9, Head 6: 0.35
+
+Analyzing Layer 9, Head 7...
+	Using pattern: special_token_attention
+	Using pattern: special_token_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: thematic_focus
+	Using pattern: special_token_attention
+	Using pattern: cooccurrence_attention
+	Using pattern: special_token_attention
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: subordinate_conjunction_attention
+	Using pattern: morphological_affix_association
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: special_token_attention
+	Using pattern: noun_modifier_collocation
+	Using pattern: noun_modifier_collocation
+	Using pattern: semantic_grouping_pattern
+	Score for Layer 9, Head 7: 0.36
+
+Analyzing Layer 9, Head 8...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: prepositional_phrase_association
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 9, Head 8: 0.41
+
+Analyzing Layer 9, Head 9...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: special_token_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: semantic_relationship_modifiers
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: comma_pair_attention
+	Using pattern: eos_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Score for Layer 9, Head 9: 0.28
+
+Analyzing Layer 9, Head 10...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 9, Head 10: 0.39
+
+Analyzing Layer 9, Head 11...
+	Using pattern: special_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Score for Layer 9, Head 11: 0.38
+
+Analyzing Layer 10, Head 0...
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 10, Head 0: 0.41
+
+Analyzing Layer 10, Head 1...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Score for Layer 10, Head 1: 0.45
+
+Analyzing Layer 10, Head 2...
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 10, Head 2: 0.44
+
+Analyzing Layer 10, Head 3...
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: punctuation_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 10, Head 3: 0.33
+
+Analyzing Layer 10, Head 4...
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Score for Layer 10, Head 4: 0.45
+
+Analyzing Layer 10, Head 5...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 10, Head 5: 0.44
+
+Analyzing Layer 10, Head 6...
+	Using pattern: parenthetical_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: special_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 10, Head 6: 0.47
+
+Analyzing Layer 10, Head 7...
+	Using pattern: parenthetical_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 10, Head 7: 0.39
+
+Analyzing Layer 10, Head 8...
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: parenthetical_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: parenthetical_tying_pattern
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Score for Layer 10, Head 8: 0.43
+
+Analyzing Layer 10, Head 9...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: parenthetical_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: parenthetical_attention
+	Using pattern: semicolon_comma_pre_association
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 10, Head 9: 0.48
+
+Analyzing Layer 10, Head 10...
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: pos_alignment
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: repeated_attention
+	Using pattern: relative_position_attention
+	Using pattern: cls_attention
+	Using pattern: special_token_attention
+	Using pattern: conjunction_comma_synchronization
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Score for Layer 10, Head 10: 0.47
+
+Analyzing Layer 10, Head 11...
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: parenthetical_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Score for Layer 10, Head 11: 0.47
+
+Analyzing Layer 11, Head 0...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 11, Head 0: 0.36
+
+Analyzing Layer 11, Head 1...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 11, Head 1: 0.37
+
+Analyzing Layer 11, Head 2...
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 11, Head 2: 0.39
+
+Analyzing Layer 11, Head 3...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 11, Head 3: 0.39
+
+Analyzing Layer 11, Head 4...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 11, Head 4: 0.39
+
+Analyzing Layer 11, Head 5...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 11, Head 5: 0.42
+
+Analyzing Layer 11, Head 6...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 11, Head 6: 0.37
+
+Analyzing Layer 11, Head 7...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 11, Head 7: 0.37
+
+Analyzing Layer 11, Head 8...
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: repeated_attention
+	Using pattern: same_attention
+	Using pattern: same_attention
+	Using pattern: same_attention
+	Using pattern: parenthetical_attention
+	Using pattern: relative_position_attention
+	Using pattern: repeated_attention
+	Using pattern: same_attention
+	Using pattern: punctuation_pair_association
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Using pattern: punctuation_pair_association
+	Score for Layer 11, Head 8: 0.51
+
+Analyzing Layer 11, Head 9...
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: parenthetical_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: relative_position_attention
+	Using pattern: relative_position_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: relative_position_attention
+	Score for Layer 11, Head 9: 0.42
+
+Analyzing Layer 11, Head 10...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 11, Head 10: 0.40
+
+Analyzing Layer 11, Head 11...
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: sentence_boundary_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: last_token_attention
+	Using pattern: sentence_boundary_attention
+	Score for Layer 11, Head 11: 0.39
+

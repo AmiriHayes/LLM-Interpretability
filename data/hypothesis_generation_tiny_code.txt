@@ -1,0 +1,1287 @@
+Searching for new patterns, iteration 0 | total loops 1...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.6232
+		Hypothesis: Function Header Pattern. Program successfully parsed.
+		Program valid with score 0.7918.
+	 TRYING | Layer 0, Head 0 - Previous Interpolation Score: 0.6219
+		Hypothesis: Function Definition Context. Program successfully parsed.
+		Program valid with score 0.7884.
+	 TRYING | Layer 11, Head 11 - Previous Interpolation Score: 0.5989
+		Hypothesis: Function Definition Attention. Program successfully parsed.
+		Program valid with score 0.7128.
+	 TRYING | Layer 2, Head 0 - Previous Interpolation Score: 0.5978
+		Hypothesis: Function Definition Header Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 0, Head 5 - Previous Interpolation Score: 0.5843
+		Hypothesis: Code Structural Element Attention. Program successfully parsed.
+		Program valid with score 0.7867.
+Best candidate program function_definition_attention added | solo score 0.7128.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 3...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.6365
+		Hypothesis: Keyword Attention. Program successfully parsed.
+		Program valid with score 0.7556.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.6022
+		Hypothesis: Function Definition and Structure Attention. Program successfully parsed.
+		Program valid with score 0.6682.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6015
+		Hypothesis: Function Name Recognition. Program successfully parsed.
+		Program valid with score 0.6772.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6005
+		Hypothesis: Function Start Attention. Program successfully parsed.
+		Program valid with score 0.6589.
+	 TRYING | Layer 0, Head 8 - Previous Interpolation Score: 0.5924
+		Hypothesis: Import Statement Recognition. Program successfully parsed.
+		Program valid with score 0.5625.
+Best candidate program import_statement_attention added | solo score 0.5625.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 5...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6465
+		Hypothesis: Function Definition Attention. Program successfully parsed.
+		Program valid with score 0.6930.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6222
+		Hypothesis: Definition or Start of Function Attention. Program successfully parsed.
+		Program valid with score 0.7931.
+	 TRYING | Layer 2, Head 3 - Previous Interpolation Score: 0.5899
+		Hypothesis: Function Header Collaboration Attention. Program successfully parsed.
+	 TRYING | Layer 1, Head 6 - Previous Interpolation Score: 0.5835
+		Hypothesis: Function Definition Attention. Program successfully parsed.
+		Program valid with score 0.5804.
+	 TRYING | Layer 2, Head 0 - Previous Interpolation Score: 0.5776
+		Hypothesis: Function Declaration and Usage Tracking. Program successfully parsed.
+		Program valid with score 0.7326.
+Best candidate program function_definition_attention added | solo score 0.5804.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 7...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 7, Head 2 - Previous Interpolation Score: 0.6249
+		Hypothesis: Relative Position-based Attention. Program successfully parsed.
+		Program valid with score 0.8202.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5944
+		Hypothesis: Function Dependency Attention. Program successfully parsed.
+	 TRYING | Layer 0, Head 6 - Previous Interpolation Score: 0.5823
+		Hypothesis: Repeated Token Frequency Attention. Program successfully parsed.
+		Program valid with score 0.7852.
+	 TRYING | Layer 4, Head 9 - Previous Interpolation Score: 0.5815
+		Hypothesis: Specific Token Type Attention. Program successfully parsed.
+		Program valid with score 0.6868.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.5728
+		Hypothesis: Line Symmetry Pattern. Program successfully parsed.
+		Program valid with score 0.7788.
+Best candidate program specific_token_type_attention added | solo score 0.6868.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 9...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.6214
+		Hypothesis: Function Entry Token Attention. Program successfully parsed.
+		Program valid with score 0.7114.
+	 TRYING | Layer 6, Head 0 - Previous Interpolation Score: 0.6141
+		Hypothesis: Python Definition-focused Attention. Program successfully parsed.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6096
+		Hypothesis: Function Definition Head. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.5975
+		Hypothesis: Keyword Initiation Pattern. Program successfully parsed.
+		Program valid with score 0.8199.
+	 TRYING | Layer 2, Head 3 - Previous Interpolation Score: 0.5901
+		Hypothesis: Function Block Demarcation. Program successfully parsed.
+		Program valid with score 0.7556.
+Best candidate program entry_token_attention added | solo score 0.7114.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 11...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6631
+		Hypothesis: Initial Token Dependency. Program successfully parsed.
+		Program valid with score 0.7218.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6508
+		Hypothesis: Initialization Token Attention Pattern. Program successfully parsed.
+	 TRYING | Layer 11, Head 11 - Previous Interpolation Score: 0.6008
+		Hypothesis: Function Declaration and Identification Pattern. Program successfully parsed.
+Program loading failed: expected an indented block after function definition on line 4 (layer11_head11_code.py, line 4)
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.5849
+		Hypothesis: Function Signature Attention Pattern. Program successfully parsed.
+		Program valid with score 0.7218.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.5800
+		Hypothesis: Function Structure Indication. Program successfully parsed.
+Best candidate program initial_token_dependency added | solo score 0.7218.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 13...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 0, Head 10 - Previous Interpolation Score: 0.6082
+		Hypothesis: Keyword Importance Aggregation in Lines. Program successfully parsed.
+		Program valid with score 0.6824.
+	 TRYING | Layer 5, Head 0 - Previous Interpolation Score: 0.6064
+		Hypothesis: Code Structure Awareness Pattern. Program successfully parsed.
+		Program valid with score 0.8171.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6048
+		Hypothesis: Function Definition Attention. Program successfully parsed.
+		Program valid with score 0.6813.
+	 TRYING | Layer 7, Head 11 - Previous Interpolation Score: 0.5836
+		Hypothesis: Function-Beginning Pattern. Program successfully parsed.
+		Program valid with score 0.7682.
+	 TRYING | Layer 4, Head 3 - Previous Interpolation Score: 0.5820
+		Hypothesis: Initial Token Context Enrichment. Program successfully parsed.
+		Program valid with score 0.6010.
+Best candidate program initial_token_context_enrichment added | solo score 0.6010.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 15...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 5, Head 1 - Previous Interpolation Score: 0.6279
+		Hypothesis: Function Definition Attention Pattern. Program successfully parsed.
+		Program valid with score 0.7935.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5968
+		Hypothesis: Function and Variable Name Identification. Program successfully parsed.
+		Program valid with score 0.7294.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.5859
+		Hypothesis: Variable and Function Name Alignment. Program successfully parsed.
+		Program valid with score 0.6354.
+	 TRYING | Layer 0, Head 8 - Previous Interpolation Score: 0.5840
+		Hypothesis: Function Scope Delimiter Attention. Program successfully parsed.
+	 TRYING | Layer 2, Head 3 - Previous Interpolation Score: 0.5793
+		Hypothesis: Function Name Delimitation. Program successfully parsed.
+Best candidate program variable_function_alignment added | solo score 0.6354.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 17...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6209
+		Hypothesis: Token Role Attention. Program successfully parsed.
+		Program valid with score 0.5539.
+	 TRYING | Layer 4, Head 3 - Previous Interpolation Score: 0.5919
+		Hypothesis: Function Name Reference Attention. Program successfully parsed.
+Program loading failed: unterminated string literal (detected at line 12) (layer4_head3_code.py, line 12)
+	 TRYING | Layer 1, Head 2 - Previous Interpolation Score: 0.5853
+		Hypothesis: Function Definition Pattern. Program successfully parsed.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.5838
+		Hypothesis: Function Definition Keyword Attention. Program successfully parsed.
+		Program valid with score 0.7479.
+	 TRYING | Layer 1, Head 5 - Previous Interpolation Score: 0.5811
+		Hypothesis: Keyword Matching in Code. Program successfully parsed.
+		Program valid with score 0.5523.
+Best candidate program keyword_matching added | solo score 0.5523.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 19...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6540
+		Hypothesis: Function Definition Token Attention. Program successfully parsed.
+		Program valid with score 0.7952.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6048
+		Hypothesis: Function Definition Focus. Program successfully parsed.
+		Program valid with score 0.6931.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5835
+		Hypothesis: Python Function Structure Identification. Program successfully parsed.
+		Program valid with score 0.8104.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.5825
+		Hypothesis: Lexical Similarity Attention. Program successfully parsed.
+		Program valid with score 0.7543.
+	 TRYING | Layer 6, Head 9 - Previous Interpolation Score: 0.5801
+		Hypothesis: Syntax Scope Boundary Detection. Program successfully parsed.
+		Program valid with score 0.7757.
+Best candidate program function_definition_attention added | solo score 0.6931.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 21...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 5 - Previous Interpolation Score: 0.5907
+		Hypothesis: Function Boundary Detection. Program successfully parsed.
+		Program valid with score 0.6531.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.5794
+		Hypothesis: Function Structure Attention. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 4, Head 6 - Previous Interpolation Score: 0.5645
+		Hypothesis: Function Declaration Alignment. Program successfully parsed.
+		Program valid with score 0.6125.
+	 TRYING | Layer 1, Head 6 - Previous Interpolation Score: 0.5601
+		Hypothesis: Function Start-Centric Attention. Program successfully parsed.
+		Program valid with score 0.5914.
+	 TRYING | Layer 8, Head 8 - Previous Interpolation Score: 0.5584
+		Hypothesis: Line Focus Attention. Program successfully parsed.
+		Program valid with score 0.7468.
+Best candidate program function_start_centric_attention added | solo score 0.5914.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 23...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6631
+		Hypothesis: Python Code Recognition Pattern. Program successfully parsed.
+		Program valid with score 0.7263.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.6267
+		Hypothesis: Function Start Pattern. Program successfully parsed.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.6080
+		Hypothesis: Keyword Centralization. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.5936
+		Hypothesis: Function Initialization Pattern. Program successfully parsed.
+		Program valid with score 0.5235.
+	 TRYING | Layer 0, Head 0 - Previous Interpolation Score: 0.5779
+		Hypothesis: Function Definition Focus. Program successfully parsed.
+Best candidate program function_initialization_attention added | solo score 0.5235.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 25...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6541
+		Hypothesis: Function Declaration Focus. Program successfully parsed.
+		Program valid with score 0.6312.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.6146
+		Hypothesis: Token Type Consistency Attention. Program successfully parsed.
+		Program valid with score 0.7073.
+	 TRYING | Layer 4, Head 3 - Previous Interpolation Score: 0.5909
+		Hypothesis: Function Delimiting Pattern. Program successfully parsed.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.5865
+		Hypothesis: Positional Token Reference Attention. Program successfully parsed.
+		Program valid with score 0.7436.
+	 TRYING | Layer 5, Head 0 - Previous Interpolation Score: 0.5837
+		Hypothesis: Function Scope Boundary Detection. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+Best candidate program function_declaration_focus added | solo score 0.6312.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 27...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6403
+		Hypothesis: Function Name Resolution Pattern. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.6069
+		Hypothesis: Variable Assignment Tracking. Program successfully parsed.
+		Program valid with score 0.6870.
+	 TRYING | Layer 2, Head 5 - Previous Interpolation Score: 0.5997
+		Hypothesis: Function Definitions Anchor. Program successfully parsed.
+		Program valid with score 0.7780.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.5932
+		Hypothesis: Keyword Initial Token Discounting. Program successfully parsed.
+	 TRYING | Layer 0, Head 10 - Previous Interpolation Score: 0.5891
+		Hypothesis: Function Call Focused Attention. Program successfully parsed.
+		Program valid with score 0.5841.
+Best candidate program function_call_attention added | solo score 0.5841.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 29...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 2 - Previous Interpolation Score: 0.5802
+		Hypothesis: Keyword Initialization Attention. Program successfully parsed.
+		Program valid with score 0.7370.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5800
+		Hypothesis: Function Signature Identification. Program successfully parsed.
+		Program valid with score 0.6985.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.5644
+		Hypothesis: Identifying Function Declarations. Program successfully parsed.
+		Program valid with score 0.5015.
+	 TRYING | Layer 2, Head 3 - Previous Interpolation Score: 0.5613
+		Error parsing response, skipping head (2, 3)
+	 TRYING | Layer 1, Head 6 - Previous Interpolation Score: 0.5578
+		Hypothesis: Function Declaration-Marker Attention. Program successfully parsed.
+		Program valid with score 0.5543.
+Best candidate program identify_function_declarations added | solo score 0.5015.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 31...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6496
+		Hypothesis: Function Header Focus. Program successfully parsed.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.6113
+		Hypothesis: Syntax Structures: Identify Code and Structural Components. Program successfully parsed.
+		Program valid with score 0.6814.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.6019
+		Hypothesis: Subtoken Alignment. Program successfully parsed.
+		Program valid with score 0.5892.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.6008
+		Hypothesis: Function Definition Boundary Detection. Program successfully parsed.
+	 TRYING | Layer 3, Head 1 - Previous Interpolation Score: 0.5932
+		Error parsing response, skipping head (3, 1)
+Best candidate program subtoken_alignment added | solo score 0.5892.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 33...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6294
+		Hypothesis: Function Scope Attention. Program successfully parsed.
+Program loading failed: unmatched '}' (layer2_head10_code.py, line 30)
+	 TRYING | Layer 8, Head 1 - Previous Interpolation Score: 0.6289
+		Hypothesis: Function Definition Pattern. Program successfully parsed.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.6260
+		Hypothesis: Function-Level Attention. Program successfully parsed.
+		Program valid with score 0.7068.
+	 TRYING | Layer 3, Head 1 - Previous Interpolation Score: 0.6153
+		Hypothesis: Function Signature and Implementation Attention. Program successfully parsed.
+		Program valid with score 0.7856.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.5924
+		Hypothesis: Function Programming Structure Attention. Program successfully parsed.
+		Program valid with score 0.7850.
+Best candidate program function_level_attention added | solo score 0.7068.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 35...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 5, Head 1 - Previous Interpolation Score: 0.6768
+		Hypothesis: Keyword/Function Identification. Program successfully parsed.
+		Program valid with score 0.7554.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6591
+		Hypothesis: Function Signature Focus. Program successfully parsed.
+Program loading failed: unterminated string literal (detected at line 20) (layer2_head6_code.py, line 20)
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6299
+		Hypothesis: Function Name Pattern. Program successfully parsed.
+		Program valid with score 0.5556.
+	 TRYING | Layer 1, Head 4 - Previous Interpolation Score: 0.6072
+		Hypothesis: Header and Function Detection. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 0, Head 6 - Previous Interpolation Score: 0.5936
+		Hypothesis: Function Boundary Detection. Program successfully parsed.
+		Program valid with score 0.5041.
+Best candidate program function_boundary_detection added | solo score 0.5041.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 37...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 5, Head 0 - Previous Interpolation Score: 0.6360
+		Hypothesis: Function Definition Parameter Attention. Program successfully parsed.
+	 TRYING | Layer 5, Head 5 - Previous Interpolation Score: 0.6001
+		Error parsing response, skipping head (5, 5)
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5999
+		Hypothesis: Keyword Contextualization. Program successfully parsed.
+		Program valid with score 0.7134.
+	 TRYING | Layer 11, Head 11 - Previous Interpolation Score: 0.5968
+		Hypothesis: Token Type Segmentation. Program successfully parsed.
+		Program valid with score 0.7098.
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.5782
+		Hypothesis: Code Structure Marker. Program successfully parsed.
+		Program valid with score 0.7874.
+Best candidate program token_type_segmentation added | solo score 0.7098.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 39...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6412
+		Hypothesis: Function Definition Anchoring. Program successfully parsed.
+		Program valid with score 0.6102.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6385
+		Hypothesis: Definition Scope Attention Pattern. Program successfully parsed.
+		Program valid with score 0.6206.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.6156
+		Error parsing response, skipping head (1, 0)
+	 TRYING | Layer 0, Head 10 - Previous Interpolation Score: 0.5925
+		Hypothesis: Function Parsing Pattern. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5839
+		Hypothesis: Function Scope Final Token Attention. Program successfully parsed.
+Best candidate program function_definition_anchoring added | solo score 0.6102.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 41...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.6109
+		Hypothesis: Variable Assignment Detection. Program successfully parsed.
+		Program valid with score 0.6634.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6068
+		Error parsing response, skipping head (2, 6)
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.6030
+		Hypothesis: Function Definition Focus Pattern. Program successfully parsed.
+		Program valid with score 0.6794.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5804
+		Hypothesis: Programming Keywords and Functions Association Attention. Program successfully parsed.
+		Program valid with score 0.7462.
+	 TRYING | Layer 4, Head 9 - Previous Interpolation Score: 0.5710
+		Hypothesis: Function Definition Focus. Program successfully parsed.
+Best candidate program variable_assignment_pattern added | solo score 0.6634.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 43...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.6154
+		Hypothesis: Function Delimiter Attention. Program successfully parsed.
+		Program valid with score 0.7194.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.6103
+		Hypothesis: Variable Name Reference. Program successfully parsed.
+		Program valid with score 0.7281.
+	 TRYING | Layer 3, Head 1 - Previous Interpolation Score: 0.5892
+		Hypothesis: Function-Level Focus Pattern. Program successfully parsed.
+		Program valid with score 0.7497.
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.5717
+		Hypothesis: Programming Syntax Parsing. Program successfully parsed.
+	 TRYING | Layer 1, Head 3 - Previous Interpolation Score: 0.5709
+		Hypothesis: Function Definition and Identifier. Program successfully parsed.
+Best candidate program function_delimiter_attention added | solo score 0.7194.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 45...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.6100
+		Hypothesis: Function Structure Completeness. Program successfully parsed.
+		Program valid with score 0.6749.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5944
+		Hypothesis: Function Delimiter Pairing. Program successfully parsed.
+		Program valid with score 0.7263.
+	 TRYING | Layer 2, Head 3 - Previous Interpolation Score: 0.5918
+		Hypothesis: Structural Group Alignment. Program successfully parsed.
+		Program valid with score 0.6613.
+	 TRYING | Layer 10, Head 3 - Previous Interpolation Score: 0.5577
+		Hypothesis: Duplicate Token Suppression. Program successfully parsed.
+		Program valid with score 0.7426.
+	 TRYING | Layer 2, Head 5 - Previous Interpolation Score: 0.5565
+		Hypothesis: Function Definition Influence. Program successfully parsed.
+Best candidate program structural_group_alignment_modeling added | solo score 0.6613.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 47...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6258
+		Hypothesis: Function Header and Key Elements Attention Pattern. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6228
+		Hypothesis: Function-Call Contextualization. Program successfully parsed.
+		Program valid with score 0.5264.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5963
+		Hypothesis: Function Name and Parameter Attention Pattern. Program successfully parsed.
+		Program valid with score 0.6881.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.5937
+		Hypothesis: Frequency-based Token Attention. Program successfully parsed.
+		Program valid with score 0.5893.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.5886
+		Error parsing response, skipping head (2, 6)
+Best candidate program function_call_contextualization added | solo score 0.5264.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 49...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6320
+		Hypothesis: Function Definition and Invocation Pattern. Program successfully parsed.
+		Program valid with score 0.5825.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.6137
+		Hypothesis: Function Definition Attention. Program successfully parsed.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.6123
+		Error parsing response, skipping head (5, 3)
+	 TRYING | Layer 5, Head 5 - Previous Interpolation Score: 0.6074
+		Hypothesis: Syntax_Keyword_Attention. Program successfully parsed.
+		Program valid with score 0.7803.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.5934
+		Hypothesis: Function Structure Attention. Program successfully parsed.
+		Program valid with score 0.4986.
+Best candidate program function_structure_attention added | solo score 0.4986.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 51...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6118
+		Hypothesis: Function Definition and Conditional Segment Attention. Program successfully parsed.
+		Program valid with score 0.6200.
+	 TRYING | Layer 3, Head 1 - Previous Interpolation Score: 0.6111
+		Hypothesis: Function Definition Segmentation. Program successfully parsed.
+		Program valid with score 0.7428.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.5939
+		Hypothesis: Keyword Initial Token Attention. Program successfully parsed.
+		Program valid with score 0.6119.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.5930
+		Hypothesis: Function-Definition Focus. Program successfully parsed.
+		Program valid with score 0.6876.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.5794
+		Hypothesis: Relative Position Attention. Program successfully parsed.
+		Program valid with score 0.6549.
+Best candidate program keyword_initial_token_attention added | solo score 0.6119.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 53...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 9, Head 6 - Previous Interpolation Score: nan
+		Hypothesis: Function and Variable Reference Tracking Pattern. Program successfully parsed.
+	 TRYING | Layer 2, Head 0 - Previous Interpolation Score: 0.6056
+		Hypothesis: Function Definition Scope Attention. Program successfully parsed.
+Program loading failed: unterminated string literal (detected at line 18) (layer2_head0_code.py, line 18)
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.5807
+		Hypothesis: Function Definition-Reference Attention. Program successfully parsed.
+		Program valid with score 0.7569.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.5772
+		Hypothesis: Symbol or Identifier Grouping. Program successfully parsed.
+		Program valid with score 0.7138.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5686
+		Hypothesis: Function Body Lexical Reference. Program successfully parsed.
+Best candidate program symbol_or_identifier_grouping added | solo score 0.7138.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 55...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 0, Head 9 - Previous Interpolation Score: nan
+		Hypothesis: Function Definition Contextualization. Program successfully parsed.
+		Program valid with score 0.5770.
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6545
+		Hypothesis: Function Syntax Awareness. Program successfully parsed.
+		Program valid with score 0.7111.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.6454
+		Hypothesis: Function Block Delineation. Program successfully parsed.
+		Program valid with score 0.8148.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6287
+		Hypothesis: Variable and Function Naming. Program successfully parsed.
+		Program valid with score 0.7254.
+	 TRYING | Layer 5, Head 1 - Previous Interpolation Score: 0.6177
+		Hypothesis: Keyword-Function Association Attention. Program successfully parsed.
+Best candidate program function_definition_contextualization added | solo score 0.5770.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 57...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6217
+		Hypothesis: Code Block and Functionality Alignment. Program successfully parsed.
+		Program valid with score 0.6031.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.6121
+		Hypothesis: Function Initialization Pattern. Program successfully parsed.
+		Program valid with score 0.7625.
+	 TRYING | Layer 3, Head 1 - Previous Interpolation Score: 0.5988
+		Hypothesis: Definition Context Attention. Program successfully parsed.
+		Program valid with score 0.7845.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5972
+		Hypothesis: Function Start and End Attention Pattern. Program successfully parsed.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.5916
+		Hypothesis: Function-Specific Attention Pattern. Program successfully parsed.
+		Program valid with score 0.5946.
+Best candidate program function_specific_attention added | solo score 0.5946.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 59...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6547
+		Hypothesis: Function Boundary Attention. Program successfully parsed.
+		Program valid with score 0.6191.
+	 TRYING | Layer 5, Head 5 - Previous Interpolation Score: 0.6100
+		Hypothesis: Function Definition Start Attention. Program successfully parsed.
+		Program valid with score 0.4664.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.5861
+		Hypothesis: Lexical Cohesion Pattern. Program successfully parsed.
+	 TRYING | Layer 0, Head 6 - Previous Interpolation Score: 0.5823
+		Hypothesis: Token Type Learning. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 2, Head 3 - Previous Interpolation Score: 0.5820
+		Hypothesis: Pattern Attention for Function Definitions. Program successfully parsed.
+Best candidate program func_def_start_attention added | solo score 0.4664.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 61...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.6169
+		Hypothesis: Matching Function or Loop Structures. Program successfully parsed.
+		Program valid with score 0.7753.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.6084
+		Hypothesis: Function Start Attention. Program successfully parsed.
+		Program valid with score 0.7605.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.6067
+		Hypothesis: Function Definition Boundary Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 7, Head 11 - Previous Interpolation Score: 0.5964
+		Hypothesis: Function Definition Keyword Attention. Program successfully parsed.
+		Program valid with score 0.7608.
+	 TRYING | Layer 2, Head 0 - Previous Interpolation Score: 0.5889
+		Hypothesis: Function Definition Attention. Program successfully parsed.
+Program loading failed: expected ':' (layer2_head0_code.py, line 4)
+Best candidate program function_start_attention added | solo score 0.7605.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 63...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 4, Head 1 - Previous Interpolation Score: nan
+		Hypothesis: Function Definition Alignment. Program successfully parsed.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.6018
+		Hypothesis: Function Name Attribution Pattern. Program successfully parsed.
+		Program valid with score 0.7829.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6015
+		Hypothesis: JavaScript-Like Function Declaration Attention. Program successfully parsed.
+		Program valid with score 0.7203.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.5893
+		Hypothesis: Function Keyword Attention. Program successfully parsed.
+		Program valid with score 0.8054.
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.5839
+		Hypothesis: Function Header Attention. Program successfully parsed.
+Best candidate program javascript_function_attention added | solo score 0.7203.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 65...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 0, Head 4 - Previous Interpolation Score: nan
+		Hypothesis: Repetition Token Attention. Program successfully parsed.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.6146
+		Hypothesis: Function Declaration Attention Pattern. Program successfully parsed.
+		Program valid with score 0.6053.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.6129
+		Hypothesis: Function-Level Token Grouping. Program successfully parsed.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.5885
+		Hypothesis: Function Name and Definition Attention. Program successfully parsed.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.5860
+		Hypothesis: Def-Block Attention Pattern. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+Best candidate program function_declaration_attention added | solo score 0.6053.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 67...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 8, Head 1 - Previous Interpolation Score: 0.6289
+		Hypothesis: Function Name and Keyword Attention. Program successfully parsed.
+	 TRYING | Layer 1, Head 4 - Previous Interpolation Score: 0.6248
+		Hypothesis: Keyword-Based Initial Token Reference. Program successfully parsed.
+Program loading failed: unterminated string literal (detected at line 18) (layer1_head4_code.py, line 18)
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6208
+		Hypothesis: Function Header Attention Pattern. Program successfully parsed.
+		Program valid with score 0.7376.
+	 TRYING | Layer 10, Head 10 - Previous Interpolation Score: 0.6181
+		Hypothesis: Self-reference Attention Pattern. Program successfully parsed.
+		Program valid with score 0.8002.
+	 TRYING | Layer 3, Head 1 - Previous Interpolation Score: 0.5854
+		Hypothesis: Function Definition Focusing. Program successfully parsed.
+		Program valid with score 0.8193.
+Best candidate program function_header_attention added | solo score 0.7376.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 69...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.6097
+		Hypothesis: Begin-End Punctuation Attention Pattern. Program successfully parsed.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.6046
+		Hypothesis: Return Reference Pattern. Program successfully parsed.
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.5985
+		Hypothesis: Token Type Disambiguation. Program successfully parsed.
+		Program valid with score 0.6506.
+	 TRYING | Layer 2, Head 3 - Previous Interpolation Score: 0.5898
+		Hypothesis: Function Signature Based Token Attention Pattern. Program successfully parsed.
+		Program valid with score 0.7482.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.5782
+		Hypothesis: Function Block Attention. Program successfully parsed.
+		Program valid with score 0.8320.
+Best candidate program token_type_disambiguation added | solo score 0.6506.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 71...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6095
+		Hypothesis: Function-based Code Segment Attention. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.5786
+		Hypothesis: Function Identifier Pattern. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 7, Head 2 - Previous Interpolation Score: 0.5768
+		Hypothesis: Code Structure Attention Pattern. Program successfully parsed.
+		Program valid with score 0.7989.
+	 TRYING | Layer 2, Head 3 - Previous Interpolation Score: 0.5698
+		Hypothesis: Function Definition Contextualization Attention. Program successfully parsed.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.5591
+		Hypothesis: Programming Semantic Grouping. Program successfully parsed.
+Best candidate program code_structure_attention added | solo score 0.7989.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 73...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 4 - Previous Interpolation Score: 0.6345
+		Hypothesis: Initial Keyword Focus. Program successfully parsed.
+Program loading failed: name 'Tuple' is not defined
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6343
+		Error parsing response, skipping head (2, 6)
+	 TRYING | Layer 5, Head 5 - Previous Interpolation Score: 0.6077
+		Hypothesis: Import Statement Attention Pattern. Program successfully parsed.
+		Program valid with score 0.7395.
+	 TRYING | Layer 4, Head 3 - Previous Interpolation Score: 0.5810
+		Hypothesis: Function Definition Keyword Attention. Program successfully parsed.
+		Program valid with score 0.6566.
+	 TRYING | Layer 0, Head 8 - Previous Interpolation Score: 0.5783
+		Hypothesis: Function Header Pattern. Program successfully parsed.
+		Program valid with score 0.5295.
+Best candidate program function_header_pattern added | solo score 0.5295.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 75...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 0, Head 4 - Previous Interpolation Score: nan
+		Hypothesis: Keyword Based Token Attention. Program successfully parsed.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.6205
+		Hypothesis: Conditional and Loop Block Parsing. Program successfully parsed.
+		Program valid with score 0.7713.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.6074
+		Error parsing response, skipping head (0, 7)
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5984
+		Error parsing response, skipping head (2, 8)
+	 TRYING | Layer 0, Head 0 - Previous Interpolation Score: 0.5927
+		Hypothesis: Programming Function Declaration Pattern. Program successfully parsed.
+		Program valid with score 0.5388.
+Best candidate program function_declaration_attention added | solo score 0.5388.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 77...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 11, Head 11 - Previous Interpolation Score: 0.6428
+		Hypothesis: Function Name Contextual Importance. Program successfully parsed.
+		Program valid with score 0.8294.
+	 TRYING | Layer 1, Head 4 - Previous Interpolation Score: 0.5999
+		Hypothesis: Function Declaration Pattern. Program successfully parsed.
+		Program valid with score 0.6667.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.5925
+		Hypothesis: Function Syntax Component Pattern. Program successfully parsed.
+		Program valid with score 0.6836.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5899
+		Hypothesis: Return Value Prediction. Program successfully parsed.
+		Program valid with score 0.8252.
+	 TRYING | Layer 0, Head 6 - Previous Interpolation Score: 0.5769
+		Hypothesis: Import Dependency Attention. Program successfully parsed.
+		Program valid with score 0.6013.
+Best candidate program import_dependency_attention added | solo score 0.6013.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 79...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.6203
+		Hypothesis: Keyword-Phrase Intensity Pattern. Program successfully parsed.
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.5918
+		Hypothesis: Function Definition Focus. Program successfully parsed.
+Program loading failed: unexpected indent (layer1_head1_code.py, line 11)
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.5888
+		Hypothesis: Function Definition Keyword Attention Pattern. Program successfully parsed.
+	 TRYING | Layer 2, Head 3 - Previous Interpolation Score: 0.5825
+		Hypothesis: Function Definition and Usage Attention. Program successfully parsed.
+		Program valid with score 0.7697.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.5817
+		Hypothesis: Function Definition Attention. Program successfully parsed.
+		Program valid with score 0.6985.
+Best candidate program function_definition_attention added | solo score 0.6985.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 81...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6617
+		Hypothesis: Function Name Reference Attention. Program successfully parsed.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6341
+		Hypothesis: Declaration and Function Name Attention. Program successfully parsed.
+		Program valid with score 0.7420.
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.6088
+		Hypothesis: Code Structure Control Flow Attention. Program successfully parsed.
+		Program valid with score 0.7837.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.6005
+		Hypothesis: Function Structural Attention. Program successfully parsed.
+		Program valid with score 0.8057.
+	 TRYING | Layer 11, Head 11 - Previous Interpolation Score: 0.5992
+		Hypothesis: Code Keyword Attention. Program successfully parsed.
+		Program valid with score 0.7335.
+Best candidate program code_keyword_attention added | solo score 0.7335.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 83...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.6128
+		Hypothesis: Definition Scope Pattern. Program successfully parsed.
+		Program valid with score 0.5584.
+	 TRYING | Layer 0, Head 9 - Previous Interpolation Score: 0.5858
+		Hypothesis: Header Token Emphasis. Program successfully parsed.
+		Program valid with score 0.4906.
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.5684
+		Hypothesis: Syntax Group Binding. Program successfully parsed.
+		Program valid with score 0.7413.
+	 TRYING | Layer 2, Head 3 - Previous Interpolation Score: 0.5657
+		Hypothesis: Function Definition and Unrolling Pattern. Program successfully parsed.
+Program loading failed: unmatched ')' (layer2_head3_code.py, line 16)
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.5657
+		Hypothesis: Contextual Function Parsing. Program successfully parsed.
+Best candidate program header_token_emphasis added | solo score 0.4906.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 85...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6202
+		Hypothesis: Function Definition Attention Pattern. Program successfully parsed.
+		Program valid with score 0.6874.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.6108
+		Hypothesis: Lexical Entity Combination Detection. Program successfully parsed.
+		Program valid with score 0.7020.
+	 TRYING | Layer 5, Head 3 - Previous Interpolation Score: 0.6037
+		Hypothesis: Function Definition Attention Pattern. Program successfully parsed.
+		Program valid with score 0.8105.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.5997
+		Hypothesis: Function Declaration and Keyword Correlation. Program successfully parsed.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.5891
+		Hypothesis: Token Pair Reference Attention. Program successfully parsed.
+		Program valid with score 0.6652.
+Best candidate program token_pair_reference added | solo score 0.6652.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 87...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 7, Head 10 - Previous Interpolation Score: 0.6477
+		Hypothesis: Def Token Focus. Program successfully parsed.
+		Program valid with score 0.8152.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6365
+		Hypothesis: Function-level Attention Pattern. Program successfully parsed.
+		Program valid with score 0.6478.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.6318
+		Hypothesis: Python Code Structure Attention. Program successfully parsed.
+		Program valid with score 0.6882.
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.6185
+		Hypothesis: Lexical Role Emphasis Pattern. Program successfully parsed.
+		Program valid with score 0.7228.
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6098
+		Hypothesis: Function Definition Coordination. Program successfully parsed.
+		Program valid with score 0.6812.
+Best candidate program function_level_attention added | solo score 0.6478.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 89...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6511
+		Hypothesis: Function Definition Recognition. Program successfully parsed.
+		Program valid with score 0.7746.
+	 TRYING | Layer 1, Head 4 - Previous Interpolation Score: 0.6169
+		Hypothesis: Keyword Reference Attention. Program successfully parsed.
+	 TRYING | Layer 5, Head 5 - Previous Interpolation Score: 0.6025
+		Hypothesis: Repeated Token Attention. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 1, Head 6 - Previous Interpolation Score: 0.5953
+		Hypothesis: Function Definition Identifier. Program successfully parsed.
+	 TRYING | Layer 1, Head 5 - Previous Interpolation Score: 0.5816
+		Hypothesis: Line-Start Structure Attention. Program successfully parsed.
+Best candidate program func_definition_attention added | solo score 0.7746.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 91...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.6443
+		Hypothesis: Function Boundary Attention. Program successfully parsed.
+		Program valid with score 0.6357.
+	 TRYING | Layer 1, Head 0 - Previous Interpolation Score: 0.6123
+		Hypothesis: Programming Syntax Structure Attention. Program successfully parsed.
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.5919
+		Hypothesis: Adjacent Token Grouping Attention Pattern. Program successfully parsed.
+		Program valid with score 0.6353.
+	 TRYING | Layer 0, Head 0 - Previous Interpolation Score: 0.5857
+		Hypothesis: Variable Reference Attention. Program successfully parsed.
+		Program valid with score 0.7391.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5790
+		Hypothesis: Keyword-Driven Functional Attention. Program successfully parsed.
+		Program valid with score 0.7101.
+Best candidate program adjacent_token_grouping added | solo score 0.6353.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 93...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 4 - Previous Interpolation Score: 0.6419
+		Hypothesis: Function Definition Start Attention. Program successfully parsed.
+		Program valid with score 0.8122.
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.6399
+		Hypothesis: Function Definitions Reference Pattern. Program successfully parsed.
+Program loading failed: name 'python' is not defined
+	 TRYING | Layer 5, Head 5 - Previous Interpolation Score: 0.6384
+		Hypothesis: Code Structure Attention. Program successfully parsed.
+		Program valid with score 0.7646.
+	 TRYING | Layer 7, Head 11 - Previous Interpolation Score: 0.6084
+		Hypothesis: Import Statement Focus. Program successfully parsed.
+	 TRYING | Layer 2, Head 8 - Previous Interpolation Score: 0.5972
+		Hypothesis: Lexical Association Attention. Program successfully parsed.
+Best candidate program code_structure_attention added | solo score 0.7646.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 95...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 0, Head 0 - Previous Interpolation Score: 0.6103
+		Hypothesis: Function Definition Anchor. Program successfully parsed.
+		Program valid with score 0.5777.
+	 TRYING | Layer 11, Head 11 - Previous Interpolation Score: 0.6090
+		Hypothesis: Keyword-based Head Activation. Program successfully parsed.
+		Program valid with score 0.7119.
+	 TRYING | Layer 2, Head 0 - Previous Interpolation Score: 0.5966
+		Hypothesis: Function Definition Header Focus. Program successfully parsed.
+		Program valid with score 0.6853.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.5949
+		Hypothesis: Function Block Penetration. Program successfully parsed.
+		Program valid with score 0.7169.
+	 TRYING | Layer 4, Head 9 - Previous Interpolation Score: 0.5903
+		Hypothesis: Function Definition Grouping Attention. Program successfully parsed.
+Program loading failed: unexpected indent (layer4_head9_code.py, line 18)
+Best candidate program function_definition_anchor added | solo score 0.5777.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 97...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 1, Head 10 - Previous Interpolation Score: 0.6064
+		Error parsing response, skipping head (1, 10)
+	 TRYING | Layer 1, Head 4 - Previous Interpolation Score: 0.6042
+		Hypothesis: Function Definition Header Attention. Program successfully parsed.
+		Program valid with score 0.6434.
+	 TRYING | Layer 11, Head 11 - Previous Interpolation Score: 0.6026
+		Hypothesis: Function Name Identification Pattern. Program successfully parsed.
+	 TRYING | Layer 1, Head 7 - Previous Interpolation Score: 0.5855
+		Hypothesis: Function Definition Pattern. Program successfully parsed.
+		Program valid with score 0.7966.
+	 TRYING | Layer 4, Head 9 - Previous Interpolation Score: 0.5815
+		Hypothesis: Pattern Specific to Function Definitions and Control Structures. Program successfully parsed.
+Best candidate program function_def_header_attention added | solo score 0.6434.
+----------------------------------------
+
+
+Error in main loop: source code not available
+Searching for new patterns, iteration 0 | total loops 99...
+	Calculating interpolation scores for all heads...
+		Layer 0/12 complete
+		Layer 3/12 complete
+		Layer 6/12 complete
+		Layer 9/12 complete
+HERE!!
+	 TRYING | Layer 0, Head 7 - Previous Interpolation Score: 0.6146
+		Hypothesis: Local Context Attention. Program successfully parsed.
+		Program valid with score 0.5441.
+	 TRYING | Layer 11, Head 8 - Previous Interpolation Score: 0.5939
+		Hypothesis: Repetitive Structure Attention. Program successfully parsed.
+		Program valid with score 0.6698.
+	 TRYING | Layer 1, Head 1 - Previous Interpolation Score: 0.5918
+		Hypothesis: Function Header Attention. Program successfully parsed.
+		Program valid with score 0.7046.
+	 TRYING | Layer 2, Head 10 - Previous Interpolation Score: 0.5896
+		Hypothesis: Function Header Pattern. Program successfully parsed.
+		Program valid with score 0.7759.
+	 TRYING | Layer 2, Head 6 - Previous Interpolation Score: 0.5861
+		Hypothesis: Function Definition Focus. Program successfully parsed.
+		Program valid with score 0.7582.
+Best candidate program local_context_attention added | solo score 0.5441.
+----------------------------------------
+
+
+Error in main loop: source code not available
