@@ -1,3 +1,10 @@
+import numpy as np
+import spacy
+nlp = spacy.load("en_core_web_sm")
+from typing import Optional, Tuple, Callable
+from transformers import PreTrainedTokenizerBase
+from sklearn.linear_model import LinearRegression
+
 # Layer 0, Head 0
 from typing import Tuple
 import numpy as np
@@ -1071,12 +1078,13 @@ def pronoun_reference(sentence: str, tokenizer: PreTrainedTokenizerBase):
     return "Pronoun Reference and Salience Pattern", out
 
 # Layer 6, Head 9
-import numpy as np
-from scipy.special import softmax
-from typing import Tuple
-from transformers import PreTrainedTokenizerBase
 
 def coreference_resolution(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]:
+    import numpy as np
+    from scipy.special import softmax
+    from typing import Tuple
+    from transformers import PreTrainedTokenizerBase
+    
     toks = tokenizer([sentence], return_tensors="pt")
     len_seq = len(toks.input_ids[0])
     out = np.zeros((len_seq, len_seq))
@@ -2816,48 +2824,6 @@ def sentence_start_dominance(sentence: str, tokenizer: PreTrainedTokenizerBase):
     out += 1e-4
     out = out / out.sum(axis=1, keepdims=True)
     return "Sentence Start Dominance", out
-
-def initial_token_emphasis_subsequent_dominance(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]:
-    toks = tokenizer([sentence], return_tensors="pt")
-    len_seq = len(toks.input_ids[0])
-    out = np.zeros((len_seq, len_seq))
-    first_token_index = 0  # The starting [CLS] token
-    end_token_index = len_seq - 1  # The closing [SEP] or [EOS] token
-
-    # Assign high attention weight to the initial token [CLS] across all sentence tokens
-    out[:, first_token_index] = 1
-    out[first_token_index, first_token_index] = 1
-
-    # Assign subsequent high weights from initial token to others, but diminish over sequence length
-    for i in range(1, len_seq):
-        out[i, first_token_index] = len_seq - i
-        out[first_token_index, i] = len_seq - i
-
-    # Normalize to ensure each row sums to 1, achieving a probabilistic attention matrix
-    out /= out.sum(axis=1, keepdims=True)
-
-    return "Initial Token Emphasis with Subsequent Token Dominance", out
-
-def initial_token_emphasis_subsequent_dominance(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]:
-    toks = tokenizer([sentence], return_tensors="pt")
-    len_seq = len(toks.input_ids[0])
-    out = np.zeros((len_seq, len_seq))
-    first_token_index = 0  # The starting [CLS] token
-    end_token_index = len_seq - 1  # The closing [SEP] or [EOS] token
-
-    # Assign high attention weight to the initial token [CLS] across all sentence tokens
-    out[:, first_token_index] = 1
-    out[first_token_index, first_token_index] = 1
-
-    # Assign subsequent high weights from initial token to others, but diminish over sequence length
-    for i in range(1, len_seq):
-        out[i, first_token_index] = len_seq - i
-        out[first_token_index, i] = len_seq - i
-
-    # Normalize to ensure each row sums to 1, achieving a probabilistic attention matrix
-    out /= out.sum(axis=1, keepdims=True)
-
-    return "Initial Token Emphasis with Subsequent Token Dominance", out
 
 def token_emphasis_subsequent_dominance(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]:
     toks = tokenizer([sentence], return_tensors="pt")
