@@ -1,0 +1,282 @@
+{
+  "adverbial_modulation": {
+    "BERT": [0, 0],
+    "GPT2": [11, 0]
+  },
+  "appositive_phrase_attention": {
+    "BERT": [0, 0],
+    "GPT2": [11, 0]
+  },
+  "cls_attention": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "complement_adjunct_relationship": {
+    "BERT": [5, 6],
+    "GPT2": [0, 1]
+  },
+  "compound_element_association": {
+    "BERT": [0, 0],
+    "GPT2": [11, 0]
+  },
+  "compound_modifier_attention": {
+    "BERT": [0, 0],
+    "GPT2": [0, 9]
+  },
+  "compound_word_attention_pattern": {
+    "BERT": [0, 0],
+    "GPT2": [11, 0]
+  },
+  "conjunction_based_grouping": {
+    "BERT": [0, 0],
+    "GPT2": [11, 0]
+  },
+  "conjunction_resolution": {
+    "BERT": [7, 11],
+    "GPT2": [0, 1]
+  },
+  "contextual_anchoring": {
+    "BERT": [0, 4],
+    "GPT2": [0, 9]
+  },
+  "coord_and_verb_dependency": {
+    "BERT": [8, 5],
+    "GPT2": [0, 1]
+  },
+  "coordination_attention": {
+    "BERT": [5, 1],
+    "GPT2": [0, 1]
+  },
+  "coreference_resolution": {
+    "BERT": [0, 0],
+    "GPT2": [0, 1]
+  },
+  "dependencies": {
+    "BERT": [2, 0],
+    "GPT2": [3, 4]
+  },
+  "dominant_subject_attention": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "emphasize_verbs_and_objects": {
+    "BERT": [5, 1],
+    "GPT2": [4, 1]
+  },
+  "eos_attention": {
+    "BERT": [8, 2],
+    "GPT2": [3, 8]
+  },
+  "first_token_dominance": {
+    "BERT": [0, 0],
+    "GPT2": [5, 11]
+  },
+  "first_token_domination": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "first_token_emphasis": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "head_initial_token_emphasis": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "high_saliency_relationship_detection": {
+    "BERT": [0, 0],
+    "GPT2": [4, 1]
+  },
+  "initial_contextual_attention": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "initial_element_reinforcement": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "initial_phrase_contextualization": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "initial_phrase_dominance": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "initial_reference_attention": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "initial_token_anchoring": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "initial_token_attachment": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "initial_token_attention": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "initial_token_centralization": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "initial_token_dominance": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "initial_token_emphasis": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "initial_token_reference_attention": {
+    "BERT": [1, 6],
+    "GPT2": [3, 0]
+  },
+  "initial_word_attention": {
+    "BERT": [0, 0],
+    "GPT2": [4, 1]
+  },
+  "last_token_attention": {
+    "BERT": [0, 0],
+    "GPT2": [0, 1]
+  },
+  "leading_contextual_emphasis": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "lexical_diversity_focus": {
+    "BERT": [0, 0],
+    "GPT2": [0, 1]
+  },
+  "main_subject_attention": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "negation_attention": {
+    "BERT": [0, 0],
+    "GPT2": [5, 9]
+  },
+  "next_attention": {
+    "BERT": [2, 0],
+    "GPT2": [4, 1]
+  },
+  "parenthetical_attention": {
+    "BERT": [0, 0],
+    "GPT2": [3, 8]
+  },
+  "parenthetical_insertion": {
+    "BERT": [0, 0],
+    "GPT2": [4, 1]
+  },
+  "pos_alignment": {
+    "BERT": [0, 0],
+    "GPT2": [4, 1]
+  },
+  "previous_attention": {
+    "BERT": [3, 5],
+    "GPT2": [4, 11]
+  },
+  "pronoun_reference": {
+    "BERT": [4, 3],
+    "GPT2": [3, 4]
+  },
+  "punctuation_attention": {
+    "BERT": [0, 0],
+    "GPT2": [4, 1]
+  },
+  "quotation_association": {
+    "BERT": [0, 0],
+    "GPT2": [5, 9]
+  },
+  "rare_word_dominance": {
+    "BERT": [0, 0],
+    "GPT2": [0, 1]
+  },
+  "relative_position_attention": {
+    "BERT": [1, 9],
+    "GPT2": [5, 9]
+  },
+  "repeated_attention": {
+    "BERT": [2, 6],
+    "GPT2": [0, 1]
+  },
+  "same_attention": {
+    "BERT": [0, 0],
+    "GPT2": [0, 1]
+  },
+  "semantic_grouping": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "sentence_beginning_attention_pattern": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "sentence_beginning_emphasis": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "sentence_beginning_salience": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "sentence_boundary_focus": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "sentence_initial_dominance": {
+    "BERT": [0, 0],
+    "GPT2": [11, 6]
+  },
+  "sentence_initiation_emphasis": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "sentence_level_attention": {
+    "BERT": [1, 6],
+    "GPT2": [9, 9]
+  },
+  "sentence_level_initial_token_repetition": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "sentence_opening_salience": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "sentence_position_preference": {
+    "BERT": [0, 0],
+    "GPT2": [0, 9]
+  },
+  "sentence_start_attention": {
+    "BERT": [0, 0],
+    "GPT2": [4, 1]
+  },
+  "sentence_start_dominance": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "sentence_start_emphasis": {
+    "BERT": [0, 0],
+    "GPT2": [5, 1]
+  },
+  "special_token_attention": {
+    "BERT": [8, 2],
+    "GPT2": [4, 1]
+  },
+  "token_emphasis_subsequent_dominance": {
+    "BERT": [1, 6],
+    "GPT2": [5, 1]
+  },
+  "token_reinforcement": {
+    "BERT": [1, 6],
+    "GPT2": [3, 0]
+  },
+  "uniform_attention": {
+    "BERT": [0, 0],
+    "GPT2": [4, 1]
+  }
+}
