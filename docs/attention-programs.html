@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Attention Programs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+::selection { background:#c0824433; color:#b06830; }
+:root {
+  --bg:#f2ede8; --bg2:#ebe5de; --bg3:#e2dbd3;
+  --border:#ccc4bb; --border2:#bbb0a5;
+  --text:#2a201a; --text2:#6b5c52; --text3:#9c8c83;
+  --accent:#b06030; --accent2:#2a7a6a;
+}
+body { min-height:100vh; background:var(--bg); color:var(--text); font-family:'DM Mono',monospace; padding-bottom:80px; }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance:none; }
+input[type=number] { -moz-appearance:textfield; }
+@keyframes fadeUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+@keyframes pulse  { 0%,100%{opacity:1} 50%{opacity:.35} }
+.fu0{animation:fadeUp .35s ease both}
+.fu1{animation:fadeUp .35s .08s ease both}
+.fu2{animation:fadeUp .35s .18s ease both}
+.fu3{animation:fadeUp .35s .30s ease both}
+
+#header{text-align:center;padding:52px 0 36px}
+#header .eyebrow{font-size:9px;letter-spacing:.32em;color:var(--text3);text-transform:uppercase;margin-bottom:12px}
+#header h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(26px,4vw,42px);letter-spacing:-.02em;color:var(--text);line-height:1;margin-bottom:8px}
+#header .sub{font-size:11px;color:var(--text3);letter-spacing:.06em}
+
+#wrap{max-width:900px;margin:0 auto;padding:0 24px}
+
+#search-row{display:flex;margin-bottom:6px}
+#sentence{flex:1;background:#fff;border:1.5px solid var(--border);border-right:none;color:var(--text);font-family:'DM Mono',monospace;font-size:13px;padding:11px 14px;outline:none;transition:border-color .15s}
+#sentence:focus{border-color:var(--border2)}
+#sentence.over{border-color:#c0392b88}
+#search-btn{background:var(--accent);border:none;color:#fff;font-family:'DM Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.12em;padding:11px 22px;cursor:pointer;transition:background .15s;text-transform:uppercase}
+#search-btn:hover:not(:disabled){background:#c87040}
+#search-btn:disabled{opacity:.35;cursor:default}
+
+#counter{display:flex;justify-content:flex-end;gap:16px;margin-bottom:18px;font-size:10px;color:var(--text3)}
+.warn{color:var(--accent)} .err{color:#c0392b}
+
+#controls{display:flex;align-items:center;gap:24px;flex-wrap:wrap;padding:16px 20px;background:var(--bg2);border:1.5px solid var(--border);margin-bottom:28px}
+.ctrl-label{font-size:9px;letter-spacing:.15em;color:var(--text3);text-transform:uppercase;margin-bottom:7px}
+.model-btn{background:transparent;border:1.5px solid var(--border);color:var(--text2);padding:6px 16px;cursor:pointer;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.08em;transition:all .15s}
+.model-btn:hover{border-color:var(--border2);color:var(--text)}
+.model-btn.on{background:#b0603015;border-color:var(--accent);color:var(--accent)}
+.num-input{background:#fff;border:1.5px solid var(--border);color:var(--text);font-family:'DM Mono',monospace;font-size:14px;text-align:center;width:58px;padding:7px 4px;outline:none;transition:border-color .15s}
+.num-input:focus{border-color:var(--border2)}
+#ctrl-right{margin-left:auto;display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+#again-btn{background:transparent;border:1.5px solid var(--border2);color:var(--text2);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;padding:7px 14px;cursor:pointer;transition:all .15s;text-transform:uppercase}
+#again-btn:hover{border-color:var(--accent2);color:var(--accent2)}
+#again-btn:disabled{opacity:.3;cursor:default}
+.api-pill{font-size:10px;display:flex;align-items:center;gap:5px}
+.api-pill.ok{color:var(--accent2)} .api-pill.err{color:#c0392b} .api-pill.busy{color:var(--accent);animation:pulse 1.2s infinite}
+
+#loading-msg{text-align:center;padding:60px 0;font-size:12px;letter-spacing:.15em;color:var(--text3);animation:pulse 1.2s infinite;display:none}
+#error-box{padding:10px 16px;background:#fff0ef;border:1.5px solid #c0392b55;color:#c0392b;font-size:10px;margin-bottom:24px;line-height:1.65;white-space:pre-wrap;display:none}
+#empty{text-align:center;padding:60px 0;color:var(--border2);font-size:11px;letter-spacing:.12em}
+#results{display:none}
+
+#badge-row{display:flex;align-items:baseline;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+#badge-row .lbl{font-size:9px;letter-spacing:.2em;color:var(--text3);text-transform:uppercase}
+#prog-name{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;letter-spacing:-.01em}
+#kl-chip{margin-left:auto;background:#2a7a6a15;border:1px solid var(--accent2);padding:4px 12px;font-size:11px;color:var(--accent2)}
+
+#heatmap-row{display:flex;gap:32px;flex-wrap:wrap;justify-content:center;padding:28px 20px;background:var(--bg2);border:1.5px solid var(--border)}
+.hm-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+.hm-label.real{color:var(--accent)} .hm-label.program{color:var(--accent2)}
+.hm-no-data{width:300px;height:300px;background:var(--bg3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--text3)}
+#colorbar-wrap{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:9px;color:var(--text3)}
+#token-legend{margin-top:14px;display:flex;flex-wrap:wrap;gap:5px}
+.tok-chip{font-size:10px;background:#fff;border:1px solid var(--border);padding:2px 7px}
+.tok-chip .idx{color:var(--text3);margin-right:4px} .tok-chip .str{color:var(--text2)}
+.hm-tooltip{position:absolute;background:#fff;border:1.5px solid var(--border2);padding:3px 7px;font-size:10px;pointer-events:none;white-space:nowrap;z-index:10;border-radius:2px;box-shadow:0 2px 8px #0002}
+
+#footer{text-align:center;margin-top:80px;padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:center;align-items:center;gap:20px}
+#footer a{font-size:10px;color:var(--text3);letter-spacing:.1em;text-decoration:none;transition:color .15s}
+#footer a:hover{color:var(--text2)}
+.fdiv{width:1px;height:12px;background:var(--border)}
+</style>
+</head>
+<body>
+
+<div id="header" class="fu0">
+  <div class="eyebrow">mechanistic interpretability</div>
+  <h1>Attention Programs</h1>
+  <p class="sub">causal hypothesis testing · transformer heads</p>
+</div>
+
+<div id="wrap">
+  <div class="fu1">
+    <div id="search-row">
+      <input id="sentence" type="text" placeholder="enter a sentence to analyze..." />
+      <button id="search-btn">Search</button>
+    </div>
+    <div id="counter">
+      <span id="tok-count">~0 tokens</span>
+      <span id="char-count">0/160 chars</span>
+    </div>
+  </div>
+
+  <div id="controls" class="fu2">
+    <div>
+      <div class="ctrl-label">Model</div>
+      <div style="display:flex">
+        <button class="model-btn on" data-model="GPT-2">GPT-2</button>
+        <button class="model-btn"    data-model="BERT">BERT</button>
+      </div>
+    </div>
+    <div style="width:1px;height:40px;background:var(--border);flex-shrink:0"></div>
+    <div>
+      <div class="ctrl-label">Layer</div>
+      <input id="layer-input" class="num-input" type="number" value="0" min="0" max="11" />
+    </div>
+    <div>
+      <div class="ctrl-label">Head</div>
+      <input id="head-input" class="num-input" type="number" value="0" min="0" max="11" />
+    </div>
+    <div id="ctrl-right">
+      <button id="again-btn" disabled>↻ Again</button>
+      <div id="api-pill" class="api-pill" style="display:none">
+        <span id="api-dot"></span><span id="api-msg"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="loading-msg">computing···</div>
+  <div id="error-box"></div>
+  <div id="empty">enter a sentence · select a layer and head · press search</div>
+
+  <div id="results" class="fu3">
+    <div id="badge-row">
+      <div class="lbl">best fit program</div>
+      <div id="prog-name">—</div>
+      <div id="kl-chip" style="display:none">similarity: <strong id="kl-val"></strong></div>
+    </div>
+    <div id="heatmap-row">
+      <div>
+        <div class="hm-label real" id="real-label">Real Activation</div>
+        <div id="real-hm"></div>
+      </div>
+      <div>
+        <div class="hm-label program" id="prog-label">Program</div>
+        <div id="prog-hm"></div>
+      </div>
+    </div>
+    <div id="colorbar-wrap">
+      <span>0</span><canvas id="colorbar" width="160" height="7"></canvas><span>1</span>
+    </div>
+    <div id="token-legend"></div>
+  </div>
+</div>
+
+<div id="footer">
+  <a href="https://amirihayes.github.io/LLM-Interpretability/">↗ website</a>
+  <div class="fdiv"></div>
+  <a href="https://drive.google.com/file/d/1h7wfQGjmjxRAEsa5HY0fxZ3_bT0ZXX3E/view">↗ report</a>
+</div>
+
+<script>
+const API_BASE  = "https://AmiriHayes-attn-api.hf.space";
+const MAX_CHARS = 160;
+
+// ── API ───────────────────────────────────────────────────────────────────────
+async function fetchActivation(modelKey, sentence, layer, head) {
+  const resp = await fetch(API_BASE + "/activate", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      sentence,
+      model: modelKey === "GPT-2" ? "gpt2" : "bert",
+      layer,
+      head,
+    }),
+  });
+  if (!resp.ok) throw new Error("API " + resp.status + ": " + (await resp.text()).slice(0,200));
+  return resp.json();
+}
+
+// ── MATRIX UTILS ─────────────────────────────────────────────────────────────
+function zeros(n){return Array.from({length:n},()=>new Array(n).fill(0));}
+function rowNorm(m){
+  for(let i=0;i<m.length;i++){
+    let s=m[i].reduce((a,b)=>a+b,0);
+    if(!s){m[i][m.length-1]=1;s=1;}
+    for(let j=0;j<m[i].length;j++)m[i][j]/=s;
+  }
+  return m;
+}
+function addEps(m,e=1e-4){m.forEach(r=>r.forEach((_,j,a)=>a[j]+=e));return m;}
+
+// ── 23 PROGRAMS ───────────────────────────────────────────────────────────────
+const SP=new Set(["[CLS]","[SEP]","<|BOS|>","<|EOS|>","<|endoftext|>"]);
+const PU=new Set([..."!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"]);
+function uniform_attention(t){const n=t.length,m=zeros(n);for(let i=0;i<n;i++)for(let j=0;j<n;j++)m[i][j]=1/n;return{name:"Uniform Pattern",matrix:m};}
+function previous_attention(t){const n=t.length,m=zeros(n);for(let i=1;i<n-1;i++)m[i][i-1]=1;m[0][0]=1;m[n-1][0]=1;return{name:"Previous Token",matrix:rowNorm(m)};}
+function next_attention(t){const n=t.length,m=zeros(n);for(let i=1;i<n-1;i++)m[i][i+1]=1;m[0][0]=1;m[n-1][0]=1;return{name:"Next Token",matrix:rowNorm(m)};}
+function cls_attention(t){const n=t.length,m=zeros(n);for(let i=0;i<n;i++)m[i][0]=1;return{name:"CLS Pattern",matrix:rowNorm(m)};}
+function eos_attention(t){const n=t.length,m=zeros(n);for(let i=0;i<n;i++)m[i][n-1]=1;return{name:"EOS Pattern",matrix:rowNorm(m)};}
+function last_token_attention(t){const n=t.length,m=zeros(n);for(let i=0;i<n;i++){m[i][n-1]=0.5;if(n>=2)m[i][n-2]=0.5;}return{name:"Last Token",matrix:rowNorm(m)};}
+function same_attention(t){const n=t.length,m=zeros(n);for(let i=1;i<n-1;i++)m[i][i]=1;m[0][0]=1;m[n-1][0]=1;return{name:"Same Token",matrix:rowNorm(m)};}
+function special_token_attention(t){const n=t.length,m=zeros(n);const si=t.map((x,i)=>SP.has(x)?i:-1).filter(i=>i>=0);for(let i=0;i<n;i++){if(SP.has(t[i]))for(const s of si)m[i][s]=1;else m[i][n-1]=1;}return{name:"Special Token",matrix:rowNorm(m)};}
+function punctuation_attention(t){const n=t.length,m=zeros(n);const pi=t.map((x,i)=>[...x].some(c=>PU.has(c))?i:-1).filter(i=>i>=0);for(let i=0;i<n;i++){const f=pi.filter(j=>j>i);if(f.length)for(const j of f)m[i][j]=1;else m[i][i]=1;}addEps(m);return{name:"Punctuation",matrix:rowNorm(m)};}
+function relative_position_attention(t){const n=t.length,m=zeros(n),c=Math.floor(n/2);for(let j=0;j<n;j++){m[0][j]=1;m[j][0]=1;m[n-1][j]=1;m[j][n-1]=1;}for(let i=1;i<n-1;i++){const d=1/(1+Math.abs(c-i));for(let j=0;j<n;j++)m[i][j]+=d;}return{name:"Relative Position",matrix:rowNorm(m)};}
+function repeated_attention(t){const n=t.length,m=zeros(n);for(let i=1;i<n-1;i++)for(let j=1;j<n-1;j++)if(t[i]===t[j])m[i][j]=1;m[0][0]=1;m[n-1][0]=1;return{name:"Repetition",matrix:rowNorm(m)};}
+function sentence_position_preference(t){const n=t.length,m=zeros(n);for(let i=0;i<n;i++){const w=n-i;for(let j=0;j<i;j++)m[i][j]=w;}addEps(m);m[0][0]=1;return{name:"Sentence Position Preference",matrix:rowNorm(m)};}
+function contextual_anchoring(t){const n=t.length,m=zeros(n);m[0][0]=1;m[n-1][n-1]=1;for(let i=1;i<n-1;i++){if(i===1)for(let j=0;j<n;j++)m[i][j]=1;else for(let j=0;j<i;j++)m[i][j]=1/i;}return{name:"Contextual Anchoring",matrix:rowNorm(m)};}
+function sentence_initial_dominance(t){const n=t.length,m=zeros(n);m[0][1]=1;for(let j=0;j<n;j++)m[1][j]=1;for(let i=0;i<n;i++)if(!m[i].reduce((a,b)=>a+b,0))m[i][n-1]=1;addEps(m);return{name:"Sentence Initial Dominance",matrix:rowNorm(m)};}
+function initial_token_attention(t){const n=t.length,m=zeros(n);for(let j=1;j<n;j++)m[1][j]=1;for(let i=1;i<n;i++)m[i][1]=1;for(let i=0;i<n;i++)if(!m[i].reduce((a,b)=>a+b,0))m[i][n-1]=1;addEps(m);return{name:"Initial Token Attention",matrix:rowNorm(m)};}
+function sentence_start_attention(t){const n=t.length,m=zeros(n);for(let j=0;j<n;j++){m[0][j]=1;m[Math.min(1,n-1)][j]=1;}for(let i=2;i<n;i++)m[i][1]=1;return{name:"Sentence Start Attention",matrix:rowNorm(m)};}
+function sentence_beginning_salience(t){const n=t.length,m=zeros(n);m[0][0]=1;m[n-1][0]=1;for(let i=1;i<n-1;i++)m[i][0]=Math.max(0,1-i/n);addEps(m);return{name:"Sentence Beginning Salience",matrix:rowNorm(m)};}
+function first_token_dominance(t){const n=t.length,m=zeros(n);for(let i=1;i<n;i++)m[i][0]=1;for(let i=0;i<n;i++)m[i][i]=1;m[0][0]=1;m[n-1][0]=1;addEps(m);return{name:"First Token Dominance",matrix:rowNorm(m)};}
+function token_reinforcement(t){const n=t.length,m=zeros(n);m[0][0]=1;for(let i=1;i<n-1;i++){m[i][0]=0.9;m[i][i]=0.1;}m[n-1][0]=1;for(let i=0;i<n;i++)m[i][i]+=1e-5;return{name:"Token Reinforcement",matrix:rowNorm(m)};}
+function initial_token_reference_attention(t){const n=t.length,m=zeros(n);m[0][0]=1;for(let i=1;i<n;i++){m[i][0]=0.5;m[i][i]=0.1;}return{name:"Initial Token Reference",matrix:rowNorm(m)};}
+function lexical_diversity_focus(t){const n=t.length,m=zeros(n),map={};t.forEach((x,i)=>{if(!map[x])map[x]=[];map[x].push(i);});for(const idxs of Object.values(map))for(const idx of idxs){if(idxs.length===1)m[idx][idx]=1;else for(const ii of idxs)m[ii][idx]=0.5;}m[0][0]=1;m[n-1][0]=1;return{name:"Lexical Diversity Focus",matrix:rowNorm(m)};}
+function complement_adjunct_relationship(t){const n=t.length,m=zeros(n);const pairs=[["to","play"],["to","difficult"],["with","play"],["with","share"],["for","difficult"]];const w=t.map(x=>x.toLowerCase());for(const[w1,w2]of pairs){const a=w.map((x,i)=>x===w1?i:-1).filter(i=>i>=0);const b=w.map((x,i)=>x===w2?i:-1).filter(i=>i>=0);for(const i of a)for(const j of b){m[i][j]=1;m[j][i]=1;}}for(let i=0;i<n;i++)if(!m[i].reduce((a,b)=>a+b,0))m[i][n-1]=1;addEps(m);return{name:"Complement Adjunct",matrix:rowNorm(m)};}
+function appositive_phrase_attention(t){const n=t.length,m=zeros(n);const ci=t.map((x,i)=>x===","?i:-1).filter(i=>i>=0);if(ci.length>1)for(let k=0;k<ci.length-1;k++){const s=ci[k],e=ci[k+1];for(let i=s;i<=e&&i<n;i++)for(let j=s;j<=e&&j<n;j++)m[i][j]=1;}m[0][0]=1;m[n-1][0]=1;addEps(m);return{name:"Appositive Phrase",matrix:rowNorm(m)};}
+
+const PROGRAMS={uniform_attention,previous_attention,next_attention,cls_attention,eos_attention,last_token_attention,same_attention,special_token_attention,punctuation_attention,relative_position_attention,repeated_attention,sentence_position_preference,contextual_anchoring,sentence_initial_dominance,initial_token_attention,sentence_start_attention,sentence_beginning_salience,first_token_dominance,token_reinforcement,initial_token_reference_attention,lexical_diversity_focus,complement_adjunct_relationship,appositive_phrase_attention};
+
+// ── BEST FITS ─────────────────────────────────────────────────────────────────
+const BEST_FITS_BERT_RAW=[[69,'uniform_attention',0.1473],[69,'uniform_attention',0.3275],[44,'previous_attention',0.4827],[44,'previous_attention',0.5022],[69,'uniform_attention',0.2081],[69,'uniform_attention',0.3105],[69,'uniform_attention',0.2229],[69,'uniform_attention',0.3097],[69,'uniform_attention',0.2890],[49,'relative_position_attention',0.3044],[40,'next_attention',0.3817],[69,'uniform_attention',0.3878],[49,'relative_position_attention',0.3176],[40,'next_attention',0.3900],[49,'relative_position_attention',0.3465],[49,'relative_position_attention',0.3506],[44,'previous_attention',0.3629],[49,'relative_position_attention',0.3494],[2,'cls_attention',0.1420],[49,'relative_position_attention',0.3515],[49,'relative_position_attention',0.2565],[49,'relative_position_attention',0.2308],[69,'uniform_attention',0.4185],[49,'relative_position_attention',0.3892],[40,'next_attention',0.0134],[2,'cls_attention',0.4960],[2,'cls_attention',0.3953],[49,'relative_position_attention',0.2897],[49,'relative_position_attention',0.3637],[49,'relative_position_attention',0.2932],[50,'repeated_attention',0.4399],[49,'relative_position_attention',0.3265],[49,'relative_position_attention',0.3704],[40,'next_attention',0.0195],[49,'relative_position_attention',0.3989],[1,'appositive_phrase_attention',0.3487],[66,'special_token_attention',0.5092],[49,'relative_position_attention',0.2824],[49,'relative_position_attention',0.4066],[69,'uniform_attention',0.4829],[49,'relative_position_attention',0.3165],[44,'previous_attention',0.3103],[49,'relative_position_attention',0.3234],[49,'relative_position_attention',0.2825],[49,'relative_position_attention',0.3627],[40,'next_attention',0.4777],[49,'relative_position_attention',0.4219],[69,'uniform_attention',0.5315],[16,'eos_attention',0.3978],[69,'uniform_attention',0.3054],[49,'relative_position_attention',0.4086],[16,'eos_attention',0.2591],[49,'relative_position_attention',0.3845],[66,'special_token_attention',0.5120],[69,'uniform_attention',0.5084],[16,'eos_attention',0.3712],[16,'eos_attention',0.4340],[49,'relative_position_attention',0.3408],[69,'uniform_attention',0.5020],[16,'eos_attention',0.4119],[16,'eos_attention',0.4389],[16,'eos_attention',0.2319],[69,'uniform_attention',0.4117],[16,'eos_attention',0.4862],[49,'relative_position_attention',0.3662],[16,'eos_attention',0.3233],[3,'complement_adjunct_relationship',0.3205],[16,'eos_attention',0.3817],[49,'relative_position_attention',0.4438],[40,'next_attention',0.4166],[16,'eos_attention',0.5139],[16,'eos_attention',0.3572],[16,'eos_attention',0.3370],[66,'special_token_attention',0.4221],[16,'eos_attention',0.4899],[16,'eos_attention',0.3042],[16,'eos_attention',0.3551],[16,'eos_attention',0.4772],[16,'eos_attention',0.4295],[49,'relative_position_attention',0.3803],[16,'eos_attention',0.4117],[16,'eos_attention',0.5059],[16,'eos_attention',0.3875],[44,'previous_attention',0.5071],[69,'uniform_attention',0.4887],[16,'eos_attention',0.4869],[16,'eos_attention',0.4328],[16,'eos_attention',0.2884],[44,'previous_attention',0.4641],[69,'uniform_attention',0.4205],[16,'eos_attention',0.2383],[16,'eos_attention',0.2631],[46,'punctuation_attention',0.4820],[16,'eos_attention',0.4590],[16,'eos_attention',0.4726],[16,'eos_attention',0.3057],[16,'eos_attention',0.3588],[16,'eos_attention',0.4138],[16,'eos_attention',0.1990],[69,'uniform_attention',0.4562],[16,'eos_attention',0.3908],[16,'eos_attention',0.2943],[16,'eos_attention',0.2695],[69,'uniform_attention',0.3337],[69,'uniform_attention',0.3467],[69,'uniform_attention',0.4314],[16,'eos_attention',0.4303],[69,'uniform_attention',0.4847],[16,'eos_attention',0.4348],[16,'eos_attention',0.4246],[69,'uniform_attention',0.4071],[16,'eos_attention',0.4080],[16,'eos_attention',0.3966],[69,'uniform_attention',0.3855],[16,'eos_attention',0.3180],[16,'eos_attention',0.3648],[49,'relative_position_attention',0.4247],[16,'eos_attention',0.2659],[49,'relative_position_attention',0.4080],[49,'relative_position_attention',0.3920],[49,'relative_position_attention',0.3954],[35,'last_token_attention',0.4592],[69,'uniform_attention',0.4367],[35,'last_token_attention',0.3999],[35,'last_token_attention',0.4349],[35,'last_token_attention',0.4439],[35,'last_token_attention',0.5253],[35,'last_token_attention',0.4694],[69,'uniform_attention',0.4714],[35,'last_token_attention',0.4478],[16,'eos_attention',0.4326],[69,'uniform_attention',0.4180],[35,'last_token_attention',0.4124],[35,'last_token_attention',0.4425],[69,'uniform_attention',0.4029],[35,'last_token_attention',0.4660],[46,'punctuation_attention',0.4037],[46,'punctuation_attention',0.4332],[35,'last_token_attention',0.4421],[46,'punctuation_attention',0.3979],[69,'uniform_attention',0.4275],[69,'uniform_attention',0.3518],[35,'last_token_attention',0.4335],[46,'punctuation_attention',0.4339]];
+const BEST_FITS_GPT_RAW=[[62,'sentence_position_preference',0.2915],[37,'lexical_diversity_focus',0.1329],[62,'sentence_position_preference',0.3005],[51,'same_attention',0.2537],[51,'same_attention',0.4631],[37,'lexical_diversity_focus',0.2297],[62,'sentence_position_preference',0.3351],[9,'contextual_anchoring',0.4151],[9,'contextual_anchoring',0.3463],[62,'sentence_position_preference',0.2261],[9,'contextual_anchoring',0.3294],[9,'contextual_anchoring',0.2606],[62,'sentence_position_preference',0.4032],[9,'contextual_anchoring',0.3654],[62,'sentence_position_preference',0.3094],[57,'sentence_initial_dominance',0.3660],[62,'sentence_position_preference',0.3182],[62,'sentence_position_preference',0.4013],[62,'sentence_position_preference',0.3449],[62,'sentence_position_preference',0.2962],[62,'sentence_position_preference',0.3069],[62,'sentence_position_preference',0.3447],[9,'contextual_anchoring',0.3423],[37,'lexical_diversity_focus',0.3208],[62,'sentence_position_preference',0.3722],[57,'sentence_initial_dominance',0.2978],[44,'previous_attention',0.3968],[62,'sentence_position_preference',0.4238],[44,'previous_attention',0.5293],[62,'sentence_position_preference',0.4461],[63,'sentence_start_attention',0.3720],[9,'contextual_anchoring',0.3424],[62,'sentence_position_preference',0.4349],[62,'sentence_position_preference',0.4460],[62,'sentence_position_preference',0.3331],[63,'sentence_start_attention',0.2938],[29,'initial_token_attention',0.1081],[63,'sentence_start_attention',0.3848],[44,'previous_attention',0.4934],[63,'sentence_start_attention',0.3868],[55,'sentence_beginning_salience',0.1509],[57,'sentence_initial_dominance',0.3618],[62,'sentence_position_preference',0.4487],[44,'previous_attention',0.5065],[44,'previous_attention',0.5436],[2,'cls_attention',0.4922],[33,'initial_token_reference_attention',0.2766],[62,'sentence_position_preference',0.4270],[63,'sentence_start_attention',0.4473],[63,'sentence_start_attention',0.4439],[57,'sentence_initial_dominance',0.2376],[null,null,null],[63,'sentence_start_attention',0.2494],[63,'sentence_start_attention',0.3836],[57,'sentence_initial_dominance',0.3718],[17,'first_token_dominance',0.3609],[57,'sentence_initial_dominance',0.2456],[62,'sentence_position_preference',0.3834],[29,'initial_token_attention',0.1864],[44,'previous_attention',0.0437],[29,'initial_token_attention',0.1586],[2,'cls_attention',0.0308],[57,'sentence_initial_dominance',0.4275],[62,'sentence_position_preference',0.3563],[63,'sentence_start_attention',0.3998],[29,'initial_token_attention',0.1275],[29,'initial_token_attention',0.2906],[63,'sentence_start_attention',0.3228],[29,'initial_token_attention',0.2504],[57,'sentence_initial_dominance',0.1677],[57,'sentence_initial_dominance',0.3514],[63,'sentence_start_attention',0.2511],[62,'sentence_position_preference',0.4074],[29,'initial_token_attention',0.2792],[57,'sentence_initial_dominance',0.2225],[57,'sentence_initial_dominance',0.2692],[57,'sentence_initial_dominance',0.3249],[63,'sentence_start_attention',0.3079],[63,'sentence_start_attention',0.1819],[57,'sentence_initial_dominance',0.3750],[57,'sentence_initial_dominance',0.4288],[2,'cls_attention',0.0671],[29,'initial_token_attention',0.1432],[63,'sentence_start_attention',0.4014],[29,'initial_token_attention',0.3862],[29,'initial_token_attention',0.1647],[2,'cls_attention',0.0522],[57,'sentence_initial_dominance',0.3175],[57,'sentence_initial_dominance',0.2735],[57,'sentence_initial_dominance',0.3208],[57,'sentence_initial_dominance',0.2115],[29,'initial_token_attention',0.1511],[57,'sentence_initial_dominance',0.4085],[57,'sentence_initial_dominance',0.3038],[29,'initial_token_attention',0.0826],[29,'initial_token_attention',0.1325],[57,'sentence_initial_dominance',0.2256],[29,'initial_token_attention',0.1078],[57,'sentence_initial_dominance',0.3248],[29,'initial_token_attention',0.1998],[63,'sentence_start_attention',0.3205],[62,'sentence_position_preference',0.3887],[29,'initial_token_attention',0.2436],[68,'token_reinforcement',0.3698],[57,'sentence_initial_dominance',0.3324],[29,'initial_token_attention',0.2472],[63,'sentence_start_attention',0.2847],[57,'sentence_initial_dominance',0.2129],[57,'sentence_initial_dominance',0.2788],[29,'initial_token_attention',0.1315],[29,'initial_token_attention',0.2479],[63,'sentence_start_attention',0.4225],[29,'initial_token_attention',0.1242],[57,'sentence_initial_dominance',0.2249],[55,'sentence_beginning_salience',0.0895],[57,'sentence_initial_dominance',0.2546],[57,'sentence_initial_dominance',0.1991],[55,'sentence_beginning_salience',0.0715],[63,'sentence_start_attention',0.3395],[55,'sentence_beginning_salience',0.1077],[29,'initial_token_attention',0.1949],[29,'initial_token_attention',0.1189],[29,'initial_token_attention',0.1219],[57,'sentence_initial_dominance',0.2215],[57,'sentence_initial_dominance',0.3272],[57,'sentence_initial_dominance',0.2857],[29,'initial_token_attention',0.1144],[63,'sentence_start_attention',0.2663],[29,'initial_token_attention',0.1038],[63,'sentence_start_attention',0.3419],[55,'sentence_beginning_salience',0.1013],[29,'initial_token_attention',0.2395],[9,'contextual_anchoring',0.3113],[57,'sentence_initial_dominance',0.2206],[29,'initial_token_attention',0.1450],[57,'sentence_initial_dominance',0.3380],[57,'sentence_initial_dominance',0.2506],[29,'initial_token_attention',0.1562],[55,'sentence_beginning_salience',0.1184],[29,'initial_token_attention',0.2282],[9,'contextual_anchoring',0.4327],[29,'initial_token_attention',0.1274],[63,'sentence_start_attention',0.3425],[63,'sentence_start_attention',0.3435]];
+
+const ID2P={1:'appositive_phrase_attention',2:'cls_attention',3:'complement_adjunct_relationship',9:'contextual_anchoring',16:'eos_attention',17:'first_token_dominance',29:'initial_token_attention',33:'initial_token_reference_attention',35:'last_token_attention',37:'lexical_diversity_focus',40:'next_attention',44:'previous_attention',46:'punctuation_attention',49:'relative_position_attention',50:'repeated_attention',51:'same_attention',55:'sentence_beginning_salience',57:'sentence_initial_dominance',62:'sentence_position_preference',63:'sentence_start_attention',66:'special_token_attention',68:'token_reinforcement',69:'uniform_attention'};
+
+function buildLookup(raw,H=12){
+  const o={};
+  raw.forEach(([id,,kl],idx)=>{
+    if(id===null)return;
+    o["L"+Math.floor(idx/H)+"H"+(idx%H)]=[ID2P[id],kl];
+  });
+  return o;
+}
+const LOOKUP={BERT:buildLookup(BEST_FITS_BERT_RAW),"GPT-2":buildLookup(BEST_FITS_GPT_RAW)};
+
+// ── IoU SIMILARITY ────────────────────────────────────────────────────────────
+function iouSimilarity(p, q) {
+  // Flatten 2D matrices, clip to avoid zero, compute intersection over union
+  let inter = 0, union = 0;
+  for (let i = 0; i < p.length; i++) {
+    for (let j = 0; j < p[i].length; j++) {
+      const a = Math.max(p[i][j], 1e-12);
+      const b = Math.max(q[i][j], 1e-12);
+      inter += Math.min(a, b);
+      union += Math.max(a, b);
+    }
+  }
+  return union > 0 ? inter / union : 0;
+}
+
+function getBestFit(model,layer,head){return LOOKUP[model]?.["L"+layer+"H"+head]??null;}
+
+// ── COLOR SCALE ───────────────────────────────────────────────────────────────
+const MAGMA=[[0,0,4],[28,16,68],[79,18,123],[159,42,99],[229,107,43],[253,207,88],[252,253,191]];
+function heatColor(v){
+  const t=Math.max(0,Math.min(1,v))*(MAGMA.length-1),i=Math.floor(t),f=t-i;
+  const a=MAGMA[Math.min(i,MAGMA.length-1)],b=MAGMA[Math.min(i+1,MAGMA.length-1)];
+  return"rgb("+Math.round(a[0]+f*(b[0]-a[0]))+","+Math.round(a[1]+f*(b[1]-a[1]))+","+Math.round(a[2]+f*(b[2]-a[2]))+")";
+}
+(function(){
+  const ctx=document.getElementById("colorbar").getContext("2d");
+  for(let x=0;x<160;x++){ctx.fillStyle=heatColor(x/159);ctx.fillRect(x,0,1,7);}
+})();
+
+// ── HEATMAP ───────────────────────────────────────────────────────────────────
+function fmt(t){return t.replace("[CLS]","CLS").replace("[SEP]","SEP").replace("<|BOS|>","BOS").replace("<|endoftext|>","EOS").replace(/^Ġ/,"");}
+
+function renderHeatmap(container,matrix,tokens,accent){
+  container.innerHTML="";
+  if(!matrix){
+    const d=document.createElement("div");d.className="hm-no-data";d.textContent="no data";
+    container.appendChild(d);return;
+  }
+  const n=matrix.length,CELL=Math.max(6,Math.min(28,Math.floor(300/n)));
+  const wrap=document.createElement("div");wrap.style.cssText="position:relative;display:inline-block;";
+
+  const colRow=document.createElement("div");
+  colRow.style.cssText="display:flex;margin-left:"+(CELL*3+4)+"px;margin-bottom:2px;";
+  tokens.forEach(t=>{
+    const d=document.createElement("div");
+    d.style.cssText="width:"+CELL+"px;font-size:7px;color:var(--text3);font-family:'DM Mono',monospace;overflow:hidden;white-space:nowrap;transform:rotate(-40deg) translateX(3px);transform-origin:bottom left;height:20px;";
+    d.textContent=fmt(t);colRow.appendChild(d);
+  });
+  wrap.appendChild(colRow);
+
+  const rowArea=document.createElement("div");rowArea.style.display="flex";
+  const rowLabels=document.createElement("div");rowLabels.style.cssText="display:flex;flex-direction:column;margin-right:4px;";
+  tokens.forEach(t=>{
+    const d=document.createElement("div");
+    d.style.cssText="height:"+CELL+"px;font-size:7px;color:var(--text3);font-family:'DM Mono',monospace;display:flex;align-items:center;justify-content:flex-end;width:"+(CELL*3)+"px;padding-right:4px;overflow:hidden;white-space:nowrap;";
+    d.textContent=fmt(t);rowLabels.appendChild(d);
+  });
+  rowArea.appendChild(rowLabels);
+
+  const grid=document.createElement("div");
+  grid.style.cssText="position:relative;width:"+(n*CELL)+"px;height:"+(n*CELL)+"px;flex-shrink:0;";
+  const tip=document.createElement("div");
+  tip.className="hm-tooltip";tip.style.cssText="display:none;color:"+accent+";border-color:"+accent+";";
+
+  matrix.forEach((row,i)=>row.forEach((val,j)=>{
+    const cell=document.createElement("div");
+    cell.style.cssText="position:absolute;top:"+(i*CELL)+"px;left:"+(j*CELL)+"px;width:"+(CELL-1)+"px;height:"+(CELL-1)+"px;background:"+heatColor(val)+";cursor:crosshair;";
+    cell.addEventListener("mouseenter",()=>{
+      tip.style.display="block";
+      tip.style.top=Math.max(0,i*CELL-28)+"px";tip.style.left=j*CELL+"px";
+      tip.textContent="["+fmt(tokens[i])+"→"+fmt(tokens[j])+"] "+val.toFixed(4);
+    });
+    cell.addEventListener("mouseleave",()=>{tip.style.display="none";});
+    grid.appendChild(cell);
+  }));
+  grid.appendChild(tip);rowArea.appendChild(grid);wrap.appendChild(rowArea);container.appendChild(wrap);
+}
+
+// ── WIRING ────────────────────────────────────────────────────────────────────
+let currentModel="GPT-2", isLoading=false;
+
+document.querySelectorAll(".model-btn").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".model-btn").forEach(b=>b.classList.remove("on"));
+    btn.classList.add("on");currentModel=btn.dataset.model;
+  });
+});
+
+const sentenceEl=document.getElementById("sentence");
+const searchBtn=document.getElementById("search-btn");
+const againBtn=document.getElementById("again-btn");
+const loadingMsg=document.getElementById("loading-msg");
+const errorBox=document.getElementById("error-box");
+const resultsEl=document.getElementById("results");
+const emptyEl=document.getElementById("empty");
+const apiPill=document.getElementById("api-pill");
+const apiDot=document.getElementById("api-dot");
+const apiMsg=document.getElementById("api-msg");
+
+function updateCounter(){
+  const len=sentenceEl.value.length, over=len>MAX_CHARS;
+  document.getElementById("tok-count").textContent="~"+Math.ceil(len/4)+" tokens";
+  const cc=document.getElementById("char-count");
+  cc.textContent=len+"/"+MAX_CHARS+" chars"; cc.className=over?"err":"";
+  sentenceEl.classList.toggle("over",over);
+  searchBtn.disabled=over||!sentenceEl.value.trim()||isLoading;
+}
+sentenceEl.addEventListener("input",updateCounter);
+sentenceEl.addEventListener("keydown",e=>{if(e.key==="Enter")doSearch();});
+searchBtn.addEventListener("click",doSearch);
+againBtn.addEventListener("click",doSearch);
+
+async function doSearch(){
+  const text=sentenceEl.value.trim();
+  if(!text||text.length>MAX_CHARS||isLoading)return;
+  const model=currentModel;
+  const layer=Math.max(0,Math.min(11,parseInt(document.getElementById("layer-input").value)||0));
+  const head=Math.max(0,Math.min(11,parseInt(document.getElementById("head-input").value)||0));
+
+  isLoading=true;
+  searchBtn.disabled=true; againBtn.disabled=true;
+  emptyEl.style.display="none"; resultsEl.style.display="none";
+  errorBox.style.display="none"; apiPill.style.display="none";
+  loadingMsg.style.display="block"; loadingMsg.textContent="computing programs…";
+
+  // Program matrix — instant, pure JS
+  const raw=text.replace(/([.,!?;:"])/g," $1 ").split(/\s+/).filter(Boolean);
+  const ptok=model==="BERT"?["[CLS]",...raw,"[SEP]"]:["<|BOS|>",...raw];
+  const fit=getBestFit(model,layer,head);
+  let programMatrix=null,programName="No fit recorded",klDiv=null;
+  if(fit){
+    const[progKey]=fit;
+    const fn=PROGRAMS[progKey];
+    if(fn){const r=fn(ptok,model);programMatrix=r.matrix;programName=r.name;}
+    else programName=progKey;
+  } else {
+    const r=uniform_attention(ptok);programMatrix=r.matrix;programName="No fit recorded — uniform fallback";
+  }
+
+  // Real activation — API
+  let realMatrix=null,displayTokens=null,errorMsg=null;
+  loadingMsg.textContent="calling api…";
+  try{
+    const res=await fetchActivation(model,text,layer,head);
+    realMatrix=res.matrix; displayTokens=res.tokens;
+    if(fit&&PROGRAMS[fit[0]]){
+      const r=PROGRAMS[fit[0]](displayTokens,model);programMatrix=r.matrix;programName=r.name;
+    }
+  }catch(e){
+    errorMsg=e.message; displayTokens=ptok;
+  }
+
+  isLoading=false;
+  loadingMsg.style.display="none";
+  searchBtn.disabled=false; againBtn.disabled=false;
+
+  apiPill.style.display="flex";
+  if(errorMsg){
+    apiPill.className="api-pill err"; apiDot.textContent="✕"; apiMsg.textContent="api error";
+    errorBox.textContent=errorMsg; errorBox.style.display="block";
+  } else {
+    apiPill.className="api-pill ok"; apiDot.textContent="●"; apiMsg.textContent="api ok";
+  }
+
+  // Compute IoU between real and program matrices if both available
+  if(realMatrix&&programMatrix){
+    klDiv=iouSimilarity(realMatrix,programMatrix);
+  }
+
+  document.getElementById("prog-name").textContent=programName;
+  document.getElementById("prog-name").style.color=fit?"var(--accent2)":"var(--text3)";
+  const klChip=document.getElementById("kl-chip");
+  if(klDiv!==null){klChip.style.display="inline-block";document.getElementById("kl-val").textContent=Math.round(klDiv*100)+"%";}
+  else klChip.style.display="none";
+
+  document.getElementById("real-label").textContent=realMatrix?"Real Activation — L"+layer+" H"+head:"Real Activation — unavailable";
+  document.getElementById("prog-label").textContent="Program: "+programName;
+
+  renderHeatmap(document.getElementById("real-hm"),realMatrix,displayTokens,"var(--accent)");
+  renderHeatmap(document.getElementById("prog-hm"),programMatrix,displayTokens,"var(--accent2)");
+
+  const legend=document.getElementById("token-legend");legend.innerHTML="";
+  displayTokens.forEach((t,i)=>{
+    const c=document.createElement("div");c.className="tok-chip";
+    c.innerHTML='<span class="idx">'+i+'</span><span class="str">'+fmt(t)+'</span>';
+    legend.appendChild(c);
+  });
+
+  resultsEl.style.display="block";
+  updateCounter();
+}
+</script>
+</body>
+</html>
