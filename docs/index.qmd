@@ -50,7 +50,7 @@ jupyter: python3
   <a href="https://github.com/AmiriHayes/LLM-Interpretability"><strong>GitHub</strong></a>
   <a href="https://drive.google.com/file/d/1h7wfQGjmjxRAEsa5HY0fxZ3_bT0ZXX3E/view"><strong>Report</strong></a>
   <!-- <a href="https://test.pypi.org/project/viewllm/"><strong>Library: ViewLLM</strong></a> -->
-  <a href="attention-programs.html"><strong>Use Demo</strong></a>
+  <a href="demo.html"><strong>Use Demo</strong></a>
 </div>
 </div>
 

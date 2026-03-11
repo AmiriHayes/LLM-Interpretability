@@ -82,6 +82,22 @@ input[type=number] { -moz-appearance:textfield; }
 #footer a{font-size:10px;color:var(--text3);letter-spacing:.1em;text-decoration:none;transition:color .15s}
 #footer a:hover{color:var(--text2)}
 .fdiv{width:1px;height:12px;background:var(--border)}
+
+#suggestions{max-width:900px;margin:48px auto 0;padding:28px 24px 32px;background:var(--bg2);border:1.5px solid var(--border)}
+.sg-eyebrow{font-size:9px;letter-spacing:.28em;color:var(--text3);text-transform:uppercase;margin-bottom:20px}
+.sg-grid{display:flex;gap:0;flex-wrap:wrap}
+.sg-col{flex:1;min-width:200px;padding:0 24px}
+.sg-col:first-child{padding-left:0}
+.sg-divider{width:1px;background:var(--border);flex-shrink:0;margin:0 4px}
+.sg-model-label{font-family:'Syne',sans-serif;font-weight:700;font-size:13px;color:var(--text);margin-bottom:14px;letter-spacing:-.01em}
+.sg-group-head{font-size:9px;letter-spacing:.18em;color:var(--text3);text-transform:uppercase;margin-bottom:8px}
+.sg-items{display:flex;flex-wrap:wrap;gap:6px}
+.sg-item{font-size:11px;font-family:'DM Mono',monospace;color:var(--text2);background:var(--bg3);border:1px solid var(--border);padding:3px 9px;cursor:pointer;transition:all .15s;white-space:nowrap}
+.sg-item:hover{border-color:var(--accent);color:var(--accent);background:var(--bg)}
+.sg-item em{font-style:normal;color:var(--text3);margin-left:4px;font-size:10px}
+.sg-footer{margin-top:20px;font-size:10px;color:var(--text3);letter-spacing:.04em}
+.sg-footer a{color:var(--text3);text-decoration:underline;text-underline-offset:3px;transition:color .15s}
+.sg-footer a:hover{color:var(--accent)}
 </style>
 </head>
 <body>
@@ -153,6 +169,64 @@ input[type=number] { -moz-appearance:textfield; }
       <span>0</span><canvas id="colorbar" width="160" height="7"></canvas><span>1</span>
     </div>
     <div id="token-legend"></div>
+  </div>
+</div>
+
+<!-- ── Suggestions ── -->
+<div id="suggestions">
+  <div class="sg-eyebrow">curious what to search for?</div>
+  <div class="sg-grid">
+    <div class="sg-col">
+      <div class="sg-model-label">BERT</div>
+      <div class="sg-group">
+        <div class="sg-group-head">Strong fits</div>
+        <div class="sg-items">
+          <span class="sg-item" data-layer="2" data-head="0" data-model="BERT">L2 H0 <em>next token</em></span>
+          <span class="sg-item" data-layer="2" data-head="9" data-model="BERT">L2 H9 <em>next token</em></span>
+          <span class="sg-item" data-layer="1" data-head="6" data-model="BERT">L1 H6 <em>cls</em></span>
+          <span class="sg-item" data-layer="0" data-head="0" data-model="BERT">L0 H0 <em>uniform</em></span>
+          <span class="sg-item" data-layer="0" data-head="4" data-model="BERT">L0 H4 <em>uniform</em></span>
+          <span class="sg-item" data-layer="8" data-head="2" data-model="BERT">L8 H2 <em>eos</em></span>
+          <span class="sg-item" data-layer="5" data-head="6" data-model="BERT">L5 H6 <em>special token</em></span>
+          <span class="sg-item" data-layer="7" data-head="11" data-model="BERT">L7 H11 <em>special token</em></span>
+        </div>
+      </div>
+      <div class="sg-group" style="margin-top:14px">
+        <div class="sg-group-head">Novel programs</div>
+        <div class="sg-items">
+          <span class="sg-item" data-layer="9" data-head="9" data-model="BERT">L9 H9 <em>coreference resolution</em></span>
+          <span class="sg-item" data-layer="4" data-head="3" data-model="BERT">L4 H3 <em>coordination attention</em></span>
+          <span class="sg-item" data-layer="5" data-head="1" data-model="BERT">L5 H1 <em>pronoun reference</em></span>
+          <span class="sg-item" data-layer="8" data-head="5" data-model="BERT">L8 H5 <em>sentence initial dominance</em></span>
+        </div>
+      </div>
+    </div>
+    <div class="sg-divider"></div>
+    <div class="sg-col">
+      <div class="sg-model-label">GPT-2</div>
+      <div class="sg-group">
+        <div class="sg-group-head">Strong fits</div>
+        <div class="sg-items">
+          <span class="sg-item" data-layer="5" data-head="1" data-model="GPT-2">L5 H1 <em>cls</em></span>
+          <span class="sg-item" data-layer="7" data-head="2" data-model="GPT-2">L7 H2 <em>cls</em></span>
+          <span class="sg-item" data-layer="6" data-head="9" data-model="GPT-2">L6 H9 <em>cls</em></span>
+          <span class="sg-item" data-layer="4" data-head="11" data-model="GPT-2">L4 H11 <em>previous token</em></span>
+          <span class="sg-item" data-layer="0" data-head="1" data-model="GPT-2">L0 H1 <em>repeated</em></span>
+        </div>
+      </div>
+      <div class="sg-group" style="margin-top:14px">
+        <div class="sg-group-head">Novel programs</div>
+        <div class="sg-items">
+          <span class="sg-item" data-layer="0" data-head="1" data-model="GPT-2">L0 H1 <em>conjunction resolution</em></span>
+          <span class="sg-item" data-layer="3" data-head="0" data-model="GPT-2">L3 H0 <em>semantic grouping</em></span>
+          <span class="sg-item" data-layer="3" data-head="4" data-model="GPT-2">L3 H4 <em>semantic grouping</em></span>
+          <span class="sg-item" data-layer="0" data-head="5" data-model="GPT-2">L0 H5 <em>conjunction resolution</em></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sg-footer">
+    full program catalogue and head mappings in the <a href="https://drive.google.com/file/d/1h7wfQGjmjxRAEsa5HY0fxZ3_bT0ZXX3E/view">paper</a>
   </div>
 </div>
 
@@ -350,6 +424,27 @@ sentenceEl.addEventListener("input",updateCounter);
 sentenceEl.addEventListener("keydown",e=>{if(e.key==="Enter")doSearch();});
 searchBtn.addEventListener("click",doSearch);
 againBtn.addEventListener("click",doSearch);
+
+// ── Suggestion chips ──────────────────────────────────────────────────────────
+document.querySelectorAll(".sg-item").forEach(chip => {
+  chip.addEventListener("click", () => {
+    const layer = chip.dataset.layer;
+    const head  = chip.dataset.head;
+    const model = chip.dataset.model;
+    document.getElementById("layer-input").value = layer;
+    document.getElementById("head-input").value  = head;
+    document.querySelectorAll(".model-btn").forEach(b => {
+      b.classList.toggle("on", b.dataset.model === model);
+    });
+    currentModel = model;
+    if (!sentenceEl.value.trim()) {
+      sentenceEl.value = "the quick brown fox jumps over the lazy dog";
+      updateCounter();
+    }
+    sentenceEl.focus();
+  });
+});
+
 
 async function doSearch(){
   const text=sentenceEl.value.trim();
