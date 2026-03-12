@@ -196,32 +196,93 @@ import spacy
 
 nlp = spacy.load('en_core_web_sm')
 
+# def pronoun_reference(sentence: str, tokenizer: PreTrainedTokenizerBase) -> tuple:
+#     toks = tokenizer([sentence], return_tensors="pt")
+#     len_seq = len(toks.input_ids[0])
+#     out = np.zeros((len_seq, len_seq))
+#     # Convert token IDs to text, and get alignment
+#     tokens = tokenizer.convert_ids_to_tokens(toks.input_ids[0])
+#     token_to_spacy = {i: tokens[i] for i in range(len(tokens))}
+#     # SpaCy processing
+#     doc = nlp(sentence)
+#     spacy_to_token = {token.text: i+1 for i, token in enumerate(doc) if token.text in token_to_spacy.values()}
+#     # Link pronouns with their referents
+#     for i, token in enumerate(doc):
+#         if token.pos_ == 'PRON':  # If the token is a pronoun
+#             for possible_ref in doc:
+#                 if possible_ref.lemma_ == token.lemma_ and possible_ref != token:
+#                     spacy_ref_idx = possible_ref.i + 1
+#                     spacy_token_idx = token.i + 1
+#                     if spacy_token_idx in spacy_to_token.keys() and spacy_ref_idx in spacy_to_token.keys():
+#                         out[spacy_token_idx, spacy_ref_idx] = 1
+#                         out[spacy_ref_idx, spacy_token_idx] = 1
+#     # Ensure each row has some attention
+#     for row in range(len_seq):
+#         if out[row].sum() == 0:
+#             out[row, -1] = 1.0
+#     out += 1e-4  # Avoid division by zero
+#     out = out / out.sum(axis=1, keepdims=True)  # Normalize
+#     return "Pronoun Reference Pattern", out
+
+import numpy as np
+from transformers import PreTrainedTokenizerBase
+import spacy
+
+# Assuming nlp is loaded elsewhere
+# nlp = spacy.load("en_core_web_sm")
+
 def pronoun_reference(sentence: str, tokenizer: PreTrainedTokenizerBase) -> tuple:
-    toks = tokenizer([sentence], return_tensors="pt")
-    len_seq = len(toks.input_ids[0])
-    out = np.zeros((len_seq, len_seq))
-    # Convert token IDs to text, and get alignment
-    tokens = tokenizer.convert_ids_to_tokens(toks.input_ids[0])
-    token_to_spacy = {i: tokens[i] for i in range(len(tokens))}
-    # SpaCy processing
+    # 1. Process with SpaCy for linguistic analysis
     doc = nlp(sentence)
-    spacy_to_token = {token.text: i+1 for i, token in enumerate(doc) if token.text in token_to_spacy.values()}
-    # Link pronouns with their referents
+    
+    # 2. Tokenize for Transformer
+    toks = tokenizer([sentence], return_tensors="pt")
+    input_ids = toks.input_ids[0]
+    tokens = tokenizer.convert_ids_to_tokens(input_ids)
+    len_seq = len(tokens)
+    
+    # Create the attention matrix
+    out = np.zeros((len_seq, len_seq))
+
+    # 3. Create a mapping from Transformer Token Index to SpaCy Token Index
+    # This aligns the subwords to words
+    tok_to_spacy = {}
+    
+    # Convert token IDs to strings and clean them for comparison
+    # (Handling BERT/GPT style tokenizers)
+    clean_tokens = [t.replace("##", "").replace("Ġ", "") for t in tokens]
+    
+    for spacy_token in doc:
+        # Find which transformer tokens make up this spacy token
+        for i, token in enumerate(clean_tokens):
+            if token and spacy_token.text.startswith(token) and len(token) > 0:
+                # Basic heuristic mapping - can be improved with offset mapping
+                if i not in tok_to_spacy:
+                    tok_to_spacy[i] = spacy_token
+                    
+    # 4. Link pronouns with their referents
     for i, token in enumerate(doc):
-        if token.pos_ == 'PRON':  # If the token is a pronoun
+        if token.pos_ == 'PRON':
             for possible_ref in doc:
                 if possible_ref.lemma_ == token.lemma_ and possible_ref != token:
-                    spacy_ref_idx = possible_ref.i + 1
-                    spacy_token_idx = token.i + 1
-                    if spacy_token_idx in spacy_to_token.keys() and spacy_ref_idx in spacy_to_token.keys():
-                        out[spacy_token_idx, spacy_ref_idx] = 1
-                        out[spacy_ref_idx, spacy_token_idx] = 1
-    # Ensure each row has some attention
+                    # Find transformer tokens corresponding to these spacy tokens
+                    pronoun_indices = [idx for idx, s_tok in tok_to_spacy.items() if s_tok == token]
+                    referent_indices = [idx for idx, s_tok in tok_to_spacy.items() if s_tok == possible_ref]
+                    
+                    # Fill matrix
+                    for p_idx in pronoun_indices:
+                        for r_idx in referent_indices:
+                            out[p_idx, r_idx] = 1.0
+                            out[r_idx, p_idx] = 1.0
+
+    # 5. Ensure valid attention (row sum > 0)
     for row in range(len_seq):
         if out[row].sum() == 0:
-            out[row, -1] = 1.0
-    out += 1e-4  # Avoid division by zero
-    out = out / out.sum(axis=1, keepdims=True)  # Normalize
+            out[row, row] = 1.0 # Self-attention if no reference found
+            
+    # Normalize to make it a valid probability distribution
+    out = out / out.sum(axis=1, keepdims=True)
+    
     return "Pronoun Reference Pattern", out
 
 # Layer 5, Head 1
@@ -2632,7 +2693,7 @@ def sentence_position_preference(sentence: str, tokenizer: PreTrainedTokenizerBa
 
     # Make sure [CLS] and [SEP] tokens receive some base self-attention
     out[0, 0] = 1
-    out[-1, 0] = 1
+    # out[-1, 0] = 1
 
     return "Sentence Position Preference", out
 
