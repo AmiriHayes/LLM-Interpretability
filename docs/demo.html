@@ -86,7 +86,7 @@ input[type=number] { -moz-appearance:textfield; }
 #suggestions{max-width:900px;margin:48px auto 0;padding:28px 24px 32px;background:var(--bg2);border:1.5px solid var(--border)}
 .sg-eyebrow{font-size:9px;letter-spacing:.28em;color:var(--text3);text-transform:uppercase;margin-bottom:20px}
 .sg-grid{display:flex;gap:0;flex-wrap:wrap}
-.sg-col{flex:1;min-width:200px;padding:0 24px}
+.sg-col{flex:1;min-width:200px;padding:0 24px} @media(max-width:600px){.sg-col{padding:0 0 20px 0;flex-basis:100%} .sg-divider{display:none}}
 .sg-col:first-child{padding-left:0}
 .sg-divider{width:1px;background:var(--border);flex-shrink:0;margin:0 4px}
 .sg-model-label{font-family:'Syne',sans-serif;font-weight:700;font-size:13px;color:var(--text);margin-bottom:14px;letter-spacing:-.01em}
@@ -98,6 +98,18 @@ input[type=number] { -moz-appearance:textfield; }
 .sg-footer{margin-top:20px;font-size:10px;color:var(--text3);letter-spacing:.04em}
 .sg-footer a{color:var(--text3);text-decoration:underline;text-underline-offset:3px;transition:color .15s}
 .sg-footer a:hover{color:var(--accent)}
+
+#rand-btn{background:transparent;border:1.5px solid var(--border);color:var(--text3);font-family:'DM Mono',monospace;font-size:11px;padding:0 12px;cursor:pointer;transition:all .15s;letter-spacing:.06em;white-space:nowrap}
+#rand-btn:hover{border-color:var(--border2);color:var(--text2)}
+
+#prog-viewer{display:none;margin-top:20px;background:var(--bg2);border:1.5px solid var(--border);overflow:hidden}
+#prog-viewer-header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid var(--border)}
+#prog-viewer-title{font-size:10px;letter-spacing:.15em;color:var(--text3);text-transform:uppercase}
+#prog-viewer-close{background:transparent;border:none;color:var(--text3);font-family:'DM Mono',monospace;font-size:13px;cursor:pointer;padding:0 4px;transition:color .15s}
+#prog-viewer-close:hover{color:var(--text)}
+#prog-viewer pre{margin:0;padding:16px 20px;font-family:'DM Mono',monospace;font-size:11px;line-height:1.7;color:var(--text2);overflow-x:auto;background:var(--bg3)}
+#show-prog-btn{margin-top:14px;background:transparent;border:1.5px solid var(--border);color:var(--text3);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;padding:6px 14px;cursor:pointer;transition:all .15s;text-transform:uppercase;display:none}
+#show-prog-btn:hover{border-color:var(--accent2);color:var(--accent2)}
 </style>
 </head>
 <body>
@@ -111,8 +123,8 @@ input[type=number] { -moz-appearance:textfield; }
 <div id="wrap">
   <div class="fu1">
     <div id="search-row">
-      <input id="sentence" type="text" placeholder="enter a sentence to analyze..." />
-      <button id="search-btn">Search</button>
+      <input id="sentence" type="text" placeholder="the quick brown fox jumps over the lazy dog" />
+      <button id="rand-btn">⚄</button><button id="search-btn">Search</button>
     </div>
     <div id="counter">
       <span id="tok-count">~0 tokens</span>
@@ -169,6 +181,8 @@ input[type=number] { -moz-appearance:textfield; }
       <span>0</span><canvas id="colorbar" width="160" height="7"></canvas><span>1</span>
     </div>
     <div id="token-legend"></div>
+    <button id="show-prog-btn">⌥ view program definition</button>
+    <div id="prog-viewer"><div id="prog-viewer-header"><span id="prog-viewer-title">program definition</span><button id="prog-viewer-close">✕</button></div><pre id="prog-viewer-code"></pre></div>
   </div>
 </div>
 
@@ -503,6 +517,10 @@ async function doSearch(){
     klDiv=iouSimilarity(realMatrix,programMatrix);
   }
 
+  currentProgKey = fit ? fit[0] : null;
+  document.getElementById("show-prog-btn").style.display = fit ? "inline-block" : "none";
+  document.getElementById("prog-viewer").style.display = "none";
+  document.getElementById("show-prog-btn").textContent = "⌥ view program definition";
   document.getElementById("prog-name").textContent=programName;
   document.getElementById("prog-name").style.color=fit?"var(--accent2)":"var(--text3)";
   const klChip=document.getElementById("kl-chip");
@@ -525,6 +543,286 @@ async function doSearch(){
   resultsEl.style.display="block";
   updateCounter();
 }
+
+// ── Random sentences ──────────────────────────────────────────────────────────
+const SENTENCES = [
+  "the quick brown fox jumps over the lazy dog",
+  "she sells seashells by the seashore",
+  "time flies like an arrow, fruit flies like a banana",
+  "the cat sat on the mat and looked at the hat",
+  "all that glitters is not gold",
+  "to be or not to be, that is the question",
+  "the horse raced past the barn fell",
+  "buffalo buffalo buffalo buffalo buffalo buffalo buffalo buffalo",
+  "i know that you know that i know what you did",
+  "the old man the boats while the young abandon the shore",
+];
+document.getElementById("rand-btn").addEventListener("click", () => {
+  const current = sentenceEl.value.trim();
+  const pool = SENTENCES.filter(s => s !== current);
+  sentenceEl.value = pool[Math.floor(Math.random() * pool.length)];
+  updateCounter();
+});
+
+// ── Program source display ────────────────────────────────────────────────────
+const PROG_SOURCE = {
+  uniform_attention: `def uniform_attention(tokens):
+    n = len(tokens)
+    return np.full((n, n), 1.0 / n)`,
+
+  previous_attention: `def previous_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    for i in range(1, n - 1):
+        out[i][i - 1] = 1
+    out[0][0] = 1
+    out[n-1][0] = 1
+    return row_normalize(out)`,
+
+  next_attention: `def next_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    for i in range(1, n - 1):
+        out[i][i + 1] = 1
+    out[0][0] = 1
+    out[n-1][0] = 1
+    return row_normalize(out)`,
+
+  cls_attention: `def cls_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    for i in range(n):
+        out[i][0] = 1
+    return row_normalize(out)`,
+
+  eos_attention: `def eos_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    for i in range(n):
+        out[i][n - 1] = 1
+    return row_normalize(out)`,
+
+  last_token_attention: `def last_token_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    for i in range(n):
+        out[i][n - 1] = 0.5
+        if n >= 2:
+            out[i][n - 2] = 0.5
+    return row_normalize(out)`,
+
+  same_attention: `def same_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    for i in range(1, n - 1):
+        out[i][i] = 1
+    out[0][0] = 1
+    out[n-1][0] = 1
+    return row_normalize(out)`,
+
+  special_token_attention: `def special_token_attention(tokens):
+    SPECIAL = {"[CLS]", "[SEP]", "<|BOS|>", "<|EOS|>"}
+    n = len(tokens)
+    out = np.zeros((n, n))
+    si = [i for i, t in enumerate(tokens) if t in SPECIAL]
+    for i in range(n):
+        if tokens[i] in SPECIAL:
+            for s in si:
+                out[i][s] = 1
+        else:
+            out[i][n - 1] = 1
+    return row_normalize(out)`,
+
+  punctuation_attention: `def punctuation_attention(tokens):
+    import string
+    n = len(tokens)
+    out = np.zeros((n, n))
+    pi = [i for i, t in enumerate(tokens)
+          if any(c in string.punctuation for c in t)]
+    for i in range(n):
+        future = [j for j in pi if j > i]
+        if future:
+            for j in future:
+                out[i][j] = 1
+        else:
+            out[i][i] = 1
+    return row_normalize(out + 1e-4)`,
+
+  relative_position_attention: `def relative_position_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    c = n // 2
+    out[0, :] = 1; out[:, 0] = 1
+    out[n-1, :] = 1; out[:, n-1] = 1
+    for i in range(1, n - 1):
+        d = 1 / (1 + abs(c - i))
+        out[i] += d
+    return row_normalize(out)`,
+
+  repeated_attention: `def repeated_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    for i in range(1, n - 1):
+        for j in range(1, n - 1):
+            if tokens[i] == tokens[j]:
+                out[i][j] = 1
+    out[0][0] = 1; out[n-1][0] = 1
+    return row_normalize(out)`,
+
+  sentence_position_preference: `def sentence_position_preference(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    for i in range(n):
+        w = n - i
+        for j in range(i):
+            out[i][j] = w
+    out[0][0] = 1
+    return row_normalize(out + 1e-4)`,
+
+  contextual_anchoring: `def contextual_anchoring(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    out[0][0] = 1; out[n-1][n-1] = 1
+    for i in range(1, n - 1):
+        if i == 1:
+            out[i] = 1
+        else:
+            for j in range(i):
+                out[i][j] = 1 / i
+    return row_normalize(out)`,
+
+  sentence_initial_dominance: `def sentence_initial_dominance(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    out[0][1] = 1
+    out[1] = 1
+    for i in range(n):
+        if out[i].sum() == 0:
+            out[i][n-1] = 1
+    return row_normalize(out + 1e-4)`,
+
+  initial_token_attention: `def initial_token_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    for j in range(1, n): out[1][j] = 1
+    for i in range(1, n): out[i][1] = 1
+    for i in range(n):
+        if out[i].sum() == 0:
+            out[i][n-1] = 1
+    return row_normalize(out + 1e-4)`,
+
+  sentence_start_attention: `def sentence_start_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    out[0] = 1
+    out[min(1, n-1)] = 1
+    for i in range(2, n):
+        out[i][1] = 1
+    return row_normalize(out)`,
+
+  sentence_beginning_salience: `def sentence_beginning_salience(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    out[0][0] = 1; out[n-1][0] = 1
+    for i in range(1, n - 1):
+        out[i][0] = max(0, 1 - i / n)
+    return row_normalize(out + 1e-4)`,
+
+  first_token_dominance: `def first_token_dominance(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    for i in range(1, n): out[i][0] = 1
+    for i in range(n):    out[i][i] = 1
+    out[0][0] = 1; out[n-1][0] = 1
+    return row_normalize(out + 1e-4)`,
+
+  token_reinforcement: `def token_reinforcement(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    out[0][0] = 1
+    for i in range(1, n - 1):
+        out[i][0] = 0.9
+        out[i][i] = 0.1
+    out[n-1][0] = 1
+    return row_normalize(out)`,
+
+  initial_token_reference_attention: `def initial_token_reference_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    out[0][0] = 1
+    for i in range(1, n):
+        out[i][0] = 0.5
+        out[i][i] = 0.1
+    return row_normalize(out)`,
+
+  lexical_diversity_focus: `def lexical_diversity_focus(tokens):
+    from collections import defaultdict
+    n = len(tokens)
+    out = np.zeros((n, n))
+    groups = defaultdict(list)
+    for i, t in enumerate(tokens): groups[t].append(i)
+    for idxs in groups.values():
+        for idx in idxs:
+            if len(idxs) == 1: out[idx][idx] = 1
+            else:
+                for ii in idxs: out[ii][idx] = 0.5
+    out[0][0] = 1; out[n-1][0] = 1
+    return row_normalize(out)`,
+
+  complement_adjunct_relationship: `def complement_adjunct_relationship(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    pairs = [("to","play"),("to","difficult"),
+             ("with","play"),("with","share"),("for","difficult")]
+    words = [t.lower() for t in tokens]
+    for w1, w2 in pairs:
+        a = [i for i,w in enumerate(words) if w == w1]
+        b = [i for i,w in enumerate(words) if w == w2]
+        for i in a:
+            for j in b:
+                out[i][j] = 1; out[j][i] = 1
+    for i in range(n):
+        if out[i].sum() == 0: out[i][n-1] = 1
+    return row_normalize(out + 1e-4)`,
+
+  appositive_phrase_attention: `def appositive_phrase_attention(tokens):
+    n = len(tokens)
+    out = np.zeros((n, n))
+    commas = [i for i, t in enumerate(tokens) if t == ","]
+    if len(commas) > 1:
+        for k in range(len(commas) - 1):
+            s, e = commas[k], commas[k+1]
+            for i in range(s, min(e+1, n)):
+                for j in range(s, min(e+1, n)):
+                    out[i][j] = 1
+    out[0][0] = 1; out[n-1][0] = 1
+    return row_normalize(out + 1e-4)`,
+};
+
+let currentProgKey = null;
+
+document.getElementById("show-prog-btn").addEventListener("click", () => {
+  const viewer = document.getElementById("prog-viewer");
+  const isOpen = viewer.style.display === "block";
+  if (isOpen) {
+    viewer.style.display = "none";
+    document.getElementById("show-prog-btn").textContent = "⌥ view program definition";
+  } else {
+    const src = currentProgKey && PROG_SOURCE[currentProgKey]
+      ? PROG_SOURCE[currentProgKey]
+      : "# no program definition available";
+    document.getElementById("prog-viewer-code").textContent = src;
+    document.getElementById("prog-viewer-title").textContent =
+      (currentProgKey || "program").replace(/_/g, " ");
+    viewer.style.display = "block";
+    document.getElementById("show-prog-btn").textContent = "⌥ hide program definition";
+  }
+});
+
+document.getElementById("prog-viewer-close").addEventListener("click", () => {
+  document.getElementById("prog-viewer").style.display = "none";
+  document.getElementById("show-prog-btn").textContent = "⌥ view program definition";
+});
 </script>
 </body>
 </html>
