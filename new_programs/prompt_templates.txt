@@ -1,0 +1,101 @@
+================================================================================
+SYSTEM PROMPT (shared by both calls):
+================================================================================
+You are an expert at analyzing transformer attention patterns and writing Python code to approximate them. You write clean, correct Python that uses spacy and numpy to predict attention patterns based on linguistic features.
+
+================================================================================
+TEMPLATE 1 — INITIAL ZERO-SHOT:
+================================================================================
+Placeholders: {{layer}}, {{head}}, {{head_examples}}, {{helpers_source}}
+
+I'm analyzing attention head L{{layer}}H{{head}} of GPT2-small. Below are examples of its attention patterns on several sentences. Each example shows, for each query token, a sample of key tokens it attends to with their attention weights.
+
+{{head_examples}}
+
+## Your task
+
+Write a Python function `predict_attention_map(sentence: str) -> tuple[list[str], np.ndarray]` that approximates this attention head's behavior.
+
+The function should:
+1. Take a raw sentence string as input
+2. Return a tuple of (tokens, attention_matrix) where:
+   - `tokens` is a list of GPT2 BPE token strings (use the `gpt2_tokenize` helper)
+   - `attention_matrix` is an (n, n) numpy array where n = len(tokens)
+   - Each row should sum to 1.0 (row-stochastic)
+   - The matrix must be lower-triangular (causal mask): token i can only attend to tokens j <= i
+
+## Available helper functions
+
+The following helper functions are available in your execution environment (do NOT redefine them):
+
+```python
+{{helpers_source}}
+```
+
+## Instructions
+
+- Analyze the attention patterns carefully. Look for linguistic patterns like:
+  - Positional patterns (attend to previous token, first token, self, etc.)
+  - Syntactic patterns (attend to head of phrase, modifiers, etc.)
+  - Mixed patterns (some positional bias + syntactic component)
+- Use `gpt2_tokenize()` to get tokens (NOT spacy tokenization)
+- Use `align_gpt2_to_spacy()` or `align_spacy_to_gpt2()` if you need linguistic features from spacy
+- Use `make_row_stochastic()` and `apply_causal_mask()` to finalize the matrix
+- Your function will be called on new sentences not shown above
+
+Write ONLY the function definition inside a single ```python code block. Do not include import statements for numpy or the helpers (they are pre-imported). Do not include test code or example usage.
+
+================================================================================
+TEMPLATE 2 — REFINEMENT:
+================================================================================
+Placeholders: {{layer}}, {{head}}, {{original_code}}, {{feedback_text}}, {{helpers_source}}
+
+I'm refining the attention-prediction code for head L{{layer}}H{{head}} of GPT2-small.
+
+## Original code
+
+```python
+{{original_code}}
+```
+
+## Evaluation feedback
+
+Below are sentences where the original code was evaluated. For each, the real and predicted attention patterns are shown in stratified-pairs format, along with the JSD score (lower = better match). The first 3 are the best matches and the last 3 are the worst.
+
+{{feedback_text}}
+
+## Your task
+
+The original code scores well on most sentences (see the best-scoring examples). Your job is to make a MINIMAL, TARGETED modification that handles the failure cases without degrading performance on sentences where it already works.
+
+CRITICAL: Start from the original code and add a small amount of new logic. Do NOT rewrite the function from scratch. The original code's approach to self-attention weights, decay rates, and overall structure should be preserved exactly. You should only ADD a new code path (e.g. an if-statement) that detects the specific pattern the original misses and adjusts the attention weights for those specific tokens.
+
+Think of it as: the original code is the "default" behavior. You are adding a "special case" handler that fires only when the specific pattern is detected, and leaves all other attention weights unchanged.
+
+Write an improved version of `predict_attention_map(sentence: str) -> tuple[list[str], np.ndarray]`.
+
+The function should:
+1. Take a raw sentence string as input
+2. Return a tuple of (tokens, attention_matrix) where:
+   - `tokens` is a list of GPT2 BPE token strings (use the `gpt2_tokenize` helper)
+   - `attention_matrix` is an (n, n) numpy array where n = len(tokens)
+   - Each row should sum to 1.0 (row-stochastic)
+   - The matrix must be lower-triangular (causal mask): token i can only attend to tokens j <= i
+
+## Available helper functions
+
+```python
+{{helpers_source}}
+```
+
+## Instructions
+
+- PRESERVE the original code's structure and parameters — copy it as your starting point
+- ADD a targeted fix for the pattern visible in the worst-scoring examples
+- The fix should only affect tokens where the pattern applies; all other tokens should produce the same attention as the original code
+- Use `gpt2_tokenize()` to get tokens (NOT spacy tokenization)
+- Use `align_gpt2_to_spacy()` or `align_spacy_to_gpt2()` if you need linguistic features
+- Use `make_row_stochastic()` and `apply_causal_mask()` to finalize the matrix
+
+Write ONLY the function definition inside a single ```python code block. Do not include import statements for numpy or the helpers (they are pre-imported). Do not include test code or example usage.
+
