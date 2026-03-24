@@ -1,0 +1,8 @@
+Benchmark,shuffle_08_k41
+HellaSwag,0.31
+GLUE/SST-2,0.68
+GLUE/MNLI,0.415
+GLUE/MRPC,0.685
+SuperGLUE/COPA,0.64
+SuperGLUE/BoolQ,0.52
+SuperGLUE/WiC,0.535
