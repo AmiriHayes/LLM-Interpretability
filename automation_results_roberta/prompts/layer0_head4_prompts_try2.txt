@@ -1,0 +1,1 @@
+Fix incorrect indexing when aligning spaCy and Hugging Face tokens

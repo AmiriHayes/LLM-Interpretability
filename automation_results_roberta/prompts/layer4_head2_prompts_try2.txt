@@ -1,0 +1,1 @@
+The previous code was missing an import statement for 'Tuple' from the 'typing' module. Adding this import statement fixes the error regarding 'Tuple' not being defined.

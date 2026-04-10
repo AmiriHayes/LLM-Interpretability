@@ -1,0 +1,1 @@
+I fixed the code by importing the Tuple class from the typing module. This resolves the name 'Tuple' is not defined error.

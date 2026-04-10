@@ -1,0 +1,1 @@
+The program had an error due to a missing import for 'Tuple' from the 'typing' module, which is necessary for specifying the return type of the function as a tuple. The fixed version of the program includes this import statement.

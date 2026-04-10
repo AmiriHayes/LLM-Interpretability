@@ -1,0 +1,1 @@
+Fixed missing import for Tuple from typing and ensured the function returns the correct tuple by defining Tuple in the import section.

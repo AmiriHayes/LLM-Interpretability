@@ -1,0 +1,1 @@
+The error occurred because the 'Tuple' type was used without being imported. The 'Tuple' type from 'typing' needs to be imported to properly define the return type of the function.

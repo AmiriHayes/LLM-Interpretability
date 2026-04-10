@@ -1,0 +1,11 @@
+Program validation failed: 'str' object has no attribute 'idx' +
+Traceback (most recent call last):
+  File "C:\Users\amkah\AppData\Local\Temp\ipykernel_32040\2858570404.py", line 85, in validate_program
+    score = score_prediction(model, tokenizer, (layer, head), program_to_test, sentence, distance="jsd", output=False)
+  File "C:\Users\amkah\AppData\Local\Temp\ipykernel_32040\804430570.py", line 39, in score_prediction
+    else: name, pred_att = pattern(sentence_1, torch_tokenizer)
+                           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\amkah\OneDrive\Documents\GitHub\LLM-Interpretability\automation_results_bert_2/llm_code/layer4_head0_code.py", line 15, in object_specific_attention
+    token_mapping = {token.idx: i for i, token in enumerate(toks.tokens())}
+                     ^^^^^^^^^
+AttributeError: 'str' object has no attribute 'idx'

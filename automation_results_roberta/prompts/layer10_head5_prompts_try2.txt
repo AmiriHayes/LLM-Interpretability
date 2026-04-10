@@ -1,0 +1,1 @@
+I added the missing import statement for the Tuple type from the typing module to resolve the error. This lets the function correctly specify the return type as a tuple containing a string and a numpy array.

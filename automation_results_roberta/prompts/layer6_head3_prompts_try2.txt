@@ -1,0 +1,1 @@
+Fixed missing import of the 'Tuple' type from the 'typing' module, which is necessary for type hinting in the function signature.

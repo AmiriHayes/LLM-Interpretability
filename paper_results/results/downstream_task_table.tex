@@ -1,0 +1,27 @@
+\begin{table*}[ht]
+\centering
+\caption{Downstream Task Accuracy Across Varying Attention Head Replacement Levels}
+\label{tab:replacement_scaling}
+\setlength{\tabcolsep}{0pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c cc cc cc @{}}
+\toprule
+& \textit{Baseline} & \multicolumn{2}{c}{\textbf{25\% Heads Replaced}} & \multicolumn{2}{c}{\textbf{50\% Heads Replaced}} & \multicolumn{2}{c}{\textbf{100\% Heads Replaced}} \\
+\cmidrule(lr){2-2} \cmidrule(lr){3-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+\textbf{Benchmark} & \textbf{Acc.} & \textbf{Acc. $\pm \sigma$} & \textbf{$\Delta$} & \textbf{Acc. $\pm \sigma$} & \textbf{$\Delta$} & \textbf{Acc. $\pm \sigma$} & \textbf{$\Delta$} \\
+\midrule
+\textit{GPT-2 Small} & & & & & & & \\
+HellaSwag & 31.0 & 31.5 $\pm$ 0.0 & +0.5 & 30.0 $\pm$ 0.0 & -1.0 & 25.0 $\pm$ 0.0 & -6.0 \\
+GLUE/SST-2 & 68.0 & 74.5 $\pm$ 0.0 & +6.5 & 59.0 $\pm$ 0.0 & -9.0 & 49.5 $\pm$ 0.0 & -18.5 \\
+GLUE/MNLI & 41.5 & 43.0 $\pm$ 0.0 & +1.5 & 40.5 $\pm$ 0.0 & -1.0 & 33.0 $\pm$ 0.0 & -8.5 \\
+\midrule
+\textit{TinyLlama-1.1B} & & & & & & & \\
+HellaSwag & 47.5 & 43.5 $\pm$ 0.0 & -4.0 & 33.5 $\pm$ 0.0 & -14.0 & 25.0 $\pm$ 0.0 & -22.5 \\
+ARC-Challenge & 30.5 & 29.5 $\pm$ 0.0 & -1.0 & 24.5 $\pm$ 0.0 & -6.0 & 24.5 $\pm$ 0.0 & -6.0 \\
+\midrule
+\textit{BERT-Base} & & & & & & & \\
+MNLI-m & 41.0 & 34.0 $\pm$ 0.0 & -7.0 & 36.0 $\pm$ 0.0 & -5.0 & 27.0 $\pm$ 0.0 & -14.0 \\
+\bottomrule
+\end{tabular*}
+\vspace{1mm}
+\small \\ Note: $\Delta$ represents the change in accuracy relative to the Baseline; $\sigma$ denotes the standard deviation across five experimental runs with different random seeds (here shown as 0.0 for single runs).
+\end{table*}

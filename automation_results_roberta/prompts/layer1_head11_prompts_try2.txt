@@ -1,0 +1,1 @@
+The error occurred because the 'Tuple' class from the 'typing' module was not imported, resulting in a name error when specifying the return type of the function. Importing 'Tuple' resolves this issue.

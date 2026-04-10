@@ -1,0 +1,11 @@
+Program validation failed: 10 +
+Traceback (most recent call last):
+  File "C:\Users\amkah\AppData\Local\Temp\ipykernel_32040\2858570404.py", line 85, in validate_program
+    score = score_prediction(model, tokenizer, (layer, head), program_to_test, sentence, distance="jsd", output=False)
+  File "C:\Users\amkah\AppData\Local\Temp\ipykernel_32040\804430570.py", line 39, in score_prediction
+    else: name, pred_att = pattern(sentence_1, torch_tokenizer)
+                           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\amkah\OneDrive\Documents\GitHub\LLM-Interpretability\automation_results_bert_2/llm_code/layer3_head5_code.py", line 35, in complementary_pairing
+    i = token_map[words.index(tok1)]
+        ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 10

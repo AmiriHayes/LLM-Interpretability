@@ -1,0 +1,1 @@
+The error was due to accessing offset values improperly; offsets were interpreted as integers instead of tuples. Fixed by correctly handling the tuple structure.

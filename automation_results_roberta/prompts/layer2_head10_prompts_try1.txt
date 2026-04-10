@@ -1,0 +1,1 @@
+The head is responsible for focusing on singular verbal actions or states within the sentence. The issue in the original code was that `word_id` was treated as subscriptable, which was incorrect. `return_offsets_mapping` returns a list of tuples, and `word_id` was meant to be an index tuple rather than directly subscriptable.

@@ -1,0 +1,1 @@
+This head is responsible for identifying key entities and actions in a sentence, with a focus on connections between subject-predicate pairs and notable entities, often across phrases.

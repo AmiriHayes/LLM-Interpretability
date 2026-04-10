@@ -1,0 +1,1 @@
+The error occurred because the 'Tuple' type is not imported. In Python, you need to explicitly import types like 'Tuple' when you use type hints for return values. The fix is to import 'Tuple' from the 'typing' module.

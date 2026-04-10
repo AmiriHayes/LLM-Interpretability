@@ -1,43 +1,46 @@
 import numpy as np
 from transformers import PreTrainedTokenizerBase
-from typing import Tuple
-import spacy
+import re
+from collections import defaultdict
 
-nlp = spacy.load('en_core_web_sm')
+# Define the function to calculate predicted attention
 
-def pronominal_reference_and_repetition(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]:
+def repetitive_entity_attention(sentence: str, tokenizer: PreTrainedTokenizerBase) -> tuple:
+    # Tokenize the input sentence
     toks = tokenizer([sentence], return_tensors="pt")
     len_seq = len(toks.input_ids[0])
     out = np.zeros((len_seq, len_seq))
 
-    # Tokenize the sentence using spaCy for part of speech tagging and dependency parsing
-    doc = nlp(sentence)
-    token_indices = {token.idx: i+1 for i, token in enumerate(doc)}
+    # Tokenize words by space for pattern matching
+    words = sentence.split()
 
-    # Identify pronominal references and repetitions
-    for i, token in enumerate(doc):
-        if token.pos_ in ['PRON', 'NOUN', 'PROPN']:
-            # Establish reference circles around pronouns/nouns/proper nouns and repetitions
-            token_idx = token_indices.get(token.idx, None)
-            if token_idx is not None:
-                out[token_idx, token_idx] = 1  # Self-attend to the pronoun/noun
+    # Use regex patterns for simple token matching
+    word_positions = defaultdict(list)
+    pattern = re.compile(r'[a-zA-Z0-9]+')
+    for idx, word in enumerate(words):
+        match = pattern.match(word)
+        if match:
+            # Use lower case for case insensitivity
+            word_positions[match.group(0).lower()].append(idx + 1)
 
-            # Link repeated words across the sentence
-            for j, other_token in enumerate(doc[i+1:], start=i+1):
-                if token.text == other_token.text:
-                    other_token_idx = token_indices.get(other_token.idx, None)
-                    if other_token_idx is not None:
-                        out[token_idx, other_token_idx] = 1
-                        out[other_token_idx, token_idx] = 1
+    # Assign attention based on repetitive entities
+    for positions in word_positions.values():
+        if len(positions) > 1: # Entity must be repetitive
+            for pos in positions:
+                for other_pos in positions:
+                    if pos != other_pos: # Avoid self-attention
+                        out[pos, other_pos] = 1
 
-    # Ensure each row has at least one attention, usually directed at [SEP]
+    # Ensure [CLS] and [SEP] have some attention
+    out[0, 1:] = 1 / (len_seq - 1)
+    out[-1, :-1] = 1 / (len_seq - 1)
+
+    # Ensure all rows are normalized
     for row in range(len_seq):
         if out[row].sum() == 0:
             out[row, -1] = 1.0
+        else:
+            out[row] += 1e-4  # Avoid division by zero
+            out[row] = out[row] / out[row].sum()  # Normalize
 
-    # Normalize the attention matrix
-    out += 1e-4  # Avoid division by zero
-    out = out / out.sum(axis=1, keepdims=True)
-
-    return "Pronominal Reference and Repetition Focus", out
-
+    return "Repetitive Entity Attention", out

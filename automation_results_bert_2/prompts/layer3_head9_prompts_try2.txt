@@ -1,0 +1,1 @@
+The issue was with the function signature lacking a colon at the end and potentially missing an import statement for Tuple. I have fixed the function signature by adding the colon and included the necessary import for Tuple.

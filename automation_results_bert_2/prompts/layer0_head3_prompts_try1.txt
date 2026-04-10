@@ -1,0 +1,1 @@
+Adjusted program to handle the alignment of subject pronouns with their corresponding verbs more robustly by incorporating additional tokens and refining assumptions for verb identification.

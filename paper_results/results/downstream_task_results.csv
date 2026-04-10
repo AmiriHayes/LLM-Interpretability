@@ -1,0 +1,10 @@
+model,replacement_pct,csv_file,HellaSwag,GLUE/SST-2,GLUE/MNLI,ARC-Challenge,MNLI-m
+gpt2,25,gpt2_smart_shuffle_8.csv,0.315,0.745,0.43,,
+gpt2,50,gpt2_smart_shuffle_8.csv,0.3,0.59,0.405,,
+gpt2,100,gpt2_smart_shuffle_8.csv,0.25,0.495,0.33,,
+tinyllama,25,tinyllama_smart_shuffle_2.csv,0.435,,,0.295,
+tinyllama,50,tinyllama_smart_shuffle_2.csv,0.335,,,0.245,
+tinyllama,100,tinyllama_smart_shuffle_2.csv,0.25,,,0.245,
+bert,25,bert_smart_shuffle_5.csv,,,,,0.34
+bert,50,bert_smart_shuffle_5.csv,,,,,0.36
+bert,100,bert_smart_shuffle_5.csv,,,,,0.27

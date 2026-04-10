@@ -1,0 +1,1 @@
+I refined the program by ensuring that both children and parent of keywords are marked for attention, as well as double-checking the token mapping to ensure better alignment between spaCy and tokenizer indexing.

@@ -1,0 +1,1 @@
+The previous code was missing an import statement for Tuple, which is necessary for type hinting the return type. Adding `from typing import Tuple` resolves the error.

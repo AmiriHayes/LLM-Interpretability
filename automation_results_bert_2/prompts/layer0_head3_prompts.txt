@@ -1,0 +1,1 @@
+The head primarily handles Subject-Verb alignment

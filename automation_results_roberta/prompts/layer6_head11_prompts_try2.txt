@@ -1,0 +1,1 @@
+The initial code was missing the import of the 'Tuple' type hint from the 'typing' module, which is necessary for properly annotating the return type of the function. By adding 'from typing import Tuple', the code now correctly uses Tuple for type hints and should function as expected.

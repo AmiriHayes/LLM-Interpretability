@@ -1,0 +1,1 @@
+The code was corrected to map tokens using start and end char indices compatible with the tokenizer output.

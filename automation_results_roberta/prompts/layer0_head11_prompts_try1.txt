@@ -1,0 +1,1 @@
+Fix token mapping mechanism for subject and verb alignment pattern

@@ -1,0 +1,14 @@
+Program validation failed: list index out of range +
+Traceback (most recent call last):
+  File "C:\Users\amkah\AppData\Local\Temp\ipykernel_32040\2858570404.py", line 85, in validate_program
+    score = score_prediction(model, tokenizer, (layer, head), program_to_test, sentence, distance="jsd", output=False)
+  File "C:\Users\amkah\AppData\Local\Temp\ipykernel_32040\804430570.py", line 39, in score_prediction
+    else: name, pred_att = pattern(sentence_1, torch_tokenizer)
+                           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\amkah\OneDrive\Documents\GitHub\LLM-Interpretability\automation_results_bert_2/llm_code/layer5_head11_code.py", line 18, in coordinated_conjunction_attention
+    words = [toks[i] for i in range(len_seq)]
+             ~~~~^^^
+  File "c:\Users\amkah\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\tokenization_utils_base.py", line 274, in __getitem__
+    return self._encodings[item]
+           ~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range

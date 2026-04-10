@@ -1,38 +1,49 @@
 import numpy as np
 from typing import Tuple
-from transformers import PreTrainedTokenizerBase
 
-# Function to model the attention pattern of Layer 4, Head 11
-
-def semantic_role_alignment(sentence: str, tokenizer: PreTrainedTokenizerBase) -> Tuple[str, np.ndarray]:
-    toks = tokenizer([sentence], return_tensors="pt")
+# Define a function that encodes the dependency parsing pattern
+# based on observed patterns in L4H11 attention data.
+def dependency_parsing_parallel(sentence: str, tokenizer) -> Tuple[str, np.ndarray]:
+    # Tokenize the input sentence
+    toks = tokenizer([sentence], return_tensors='pt')
     len_seq = len(toks.input_ids[0])
     out = np.zeros((len_seq, len_seq))
 
-    # Identifying key semantic pairs and their interactions
-    special_tokens = {"[CLS]": 0, "[SEP]": len_seq - 1}
+    # Split the sentence into words with SpaCy
     words = sentence.split()
+    # Ensure alignment of tokenizer and spaCy tokens
+    # Initialize a mapping of word positions to token positions
+    tok_word_map = {}
+    word_pos = 0
+    for idx, word_id in enumerate(toks.word_ids()):
+        if word_id is not None:
+            tok_word_map[idx] = word_pos
+            if idx == len_seq - 2:  # Skip the last [SEP]
+                break
+            if word_pos < len(words) - 1 and sentence.index(words[word_pos], tok_word_map[idx]) + len(words[word_pos]) <= idx:
+                word_pos += 1
 
-    # Approach assumes noun/verb interaction is key
-    for i, word in enumerate(words):
-        if i == 0:  # Skip [CLS]
-            continue
-        if i >= len(words) - 1:  # Skip [SEP]
-            continue
-        # Simulate focus on nouns and their related words (verbs/adjectives)
-        for j, related_word in enumerate(words):
-            if i != j:
-                if 'and' in word or 'with' in word:  # e.g., conjunctions
-                    out[i+1, j+1] = 0.8
-                elif 'her' in word or 'the' in word:  # pronouns and articles
-                    out[i+1, j+1] = 0.4
+    # Use SpaCy to parse the sentence and build parallel dependencies
+    import spacy
+    nlp = spacy.load('en_core_web_sm')
+    doc = nlp(' '.join(words))
 
-    # Ensure attention doesn't end up being zero
-    for row in range(1, len_seq - 1):
+    # Fill attention based on dependency parsing rules
+    for token in doc:
+        parent_index = token.i
+        for child_token in token.children:
+            child_index = child_token.i
+            if child_index + 1 in tok_word_map and parent_index + 1 in tok_word_map:
+                out[tok_word_map[parent_index+1], tok_word_map[child_index+1]] = 1
+                out[tok_word_map[child_index+1], tok_word_map[parent_index+1]] = 1  # Include reverse interaction
+
+    # Ensure normalization of nonzero rows
+    for row in range(len_seq):
         if out[row].sum() == 0:
-            out[row, -1] = 1.0  # Attend to [SEP] to ensure non-zero sum
+            out[row, -1] = 1.0
 
-    # Normalize the matrix row-wise
-    out = out / out.sum(axis=1, keepdims=True)
+    out += 1e-4 # Avoid division by zero
+    out /= out.sum(axis=1, keepdims=True) # Normalize attention distribution
 
-    return "Semantic Role Alignment Pattern", out
+    return "Parallel Dependency Parsing", out
+

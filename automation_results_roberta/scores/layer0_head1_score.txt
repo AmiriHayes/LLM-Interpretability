@@ -1,0 +1,14 @@
+Program validation failed: 'numpy.int64' object is not iterable +
+Traceback (most recent call last):
+  File "C:\Users\amkah\AppData\Local\Temp\ipykernel_15736\2137589201.py", line 82, in validate_program
+    score = score_prediction(model, tokenizer, (layer, head), program_to_test, sentence, distance="jsd", output=False)
+  File "C:\Users\amkah\AppData\Local\Temp\ipykernel_15736\868874430.py", line 38, in score_prediction
+    else: name, pred_att = pattern(sentence_1, torch_tokenizer)
+                           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\amkah\OneDrive\Documents\GitHub\LLM-Interpretability\automation_results_roberta/llm_code/layer0_head1_code.py", line 20, in entity_and_noun_attention
+    token_ids = [tokenizer.convert_ids_to_tokens(tok_id) for tok_id in toks.input_ids[0].numpy()]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\amkah\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\tokenization_utils_fast.py", line 415, in convert_ids_to_tokens
+    for index in ids:
+                 ^^^
+TypeError: 'numpy.int64' object is not iterable

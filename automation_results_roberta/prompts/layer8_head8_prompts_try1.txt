@@ -1,0 +1,1 @@
+Fixed AttributeError by using tokenizer's decode method directly.
