@@ -1,0 +1,761 @@
+Using device: cpu
+Loaded 71 program functions
+
+######################################################################
+# MODEL: GPT2
+######################################################################
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (5% replacement)
+======================================================================
+Applying GPT-2 head replacement for 5% -> 7 heads
+Replaced 7 heads across 5 layers
+
+Running SciQ...
+  Accuracy: 0.4650
+
+Running HellaSwag...
+  Accuracy: 0.3250
+
+Running PIQA...
+  Accuracy: 0.6400
+
+======================================================================
+Results for GPT2
+  SciQ: 0.4650
+  HellaSwag: 0.3250
+  PIQA: 0.6400
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (10% replacement)
+======================================================================
+Applying GPT-2 head replacement for 10% -> 14 heads
+Replaced 14 heads across 8 layers
+
+Running SciQ...
+  Accuracy: 0.4450
+
+Running HellaSwag...
+  Accuracy: 0.3300
+
+Running PIQA...
+  Accuracy: 0.6300
+
+======================================================================
+Results for GPT2
+  SciQ: 0.4450
+  HellaSwag: 0.3300
+  PIQA: 0.6300
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (15% replacement)
+======================================================================
+Applying GPT-2 head replacement for 15% -> 21 heads
+Replaced 21 heads across 10 layers
+
+Running SciQ...
+  Accuracy: 0.4500
+
+Running HellaSwag...
+  Accuracy: 0.3250
+
+Running PIQA...
+  Accuracy: 0.6200
+
+======================================================================
+Results for GPT2
+  SciQ: 0.4500
+  HellaSwag: 0.3250
+  PIQA: 0.6200
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (20% replacement)
+======================================================================
+Applying GPT-2 head replacement for 20% -> 28 heads
+Replaced 28 heads across 10 layers
+
+Running SciQ...
+  Accuracy: 0.4250
+
+Running HellaSwag...
+  Accuracy: 0.3200
+
+Running PIQA...
+  Accuracy: 0.6300
+
+======================================================================
+Results for GPT2
+  SciQ: 0.4250
+  HellaSwag: 0.3200
+  PIQA: 0.6300
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (30% replacement)
+======================================================================
+Applying GPT-2 head replacement for 30% -> 43 heads
+Replaced 43 heads across 10 layers
+
+Running SciQ...
+  Accuracy: 0.4200
+
+Running HellaSwag...
+  Accuracy: 0.3400
+
+Running PIQA...
+  Accuracy: 0.6300
+
+======================================================================
+Results for GPT2
+  SciQ: 0.4200
+  HellaSwag: 0.3400
+  PIQA: 0.6300
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (40% replacement)
+======================================================================
+Applying GPT-2 head replacement for 40% -> 57 heads
+Replaced 57 heads across 10 layers
+
+Running SciQ...
+  Accuracy: 0.4000
+
+Running HellaSwag...
+  Accuracy: 0.3150
+
+Running PIQA...
+  Accuracy: 0.6050
+
+======================================================================
+Results for GPT2
+  SciQ: 0.4000
+  HellaSwag: 0.3150
+  PIQA: 0.6050
+======================================================================
+
+######################################################################
+# MODEL: TINYLLAMA
+######################################################################
+
+======================================================================
+Evaluating: TINYLLAMA
+Config: tinyllama_smart_shuffle_2.csv (5% replacement)
+======================================================================
+Applying TinyLlama head replacement for 5% -> 35 heads
+Replaced 35 heads across 13 layers
+
+Running SciQ...
+  Accuracy: 0.5150
+
+Running HellaSwag...
+  Accuracy: 0.4650
+
+Running PIQA...
+  Accuracy: 0.7000
+
+======================================================================
+Results for TINYLLAMA
+  SciQ: 0.5150
+  HellaSwag: 0.4650
+  PIQA: 0.7000
+======================================================================
+
+======================================================================
+Evaluating: TINYLLAMA
+Config: tinyllama_smart_shuffle_2.csv (10% replacement)
+======================================================================
+Applying TinyLlama head replacement for 10% -> 70 heads
+Replaced 70 heads across 16 layers
+
+Running SciQ...
+Using the latest cached version of the dataset since sciq couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'default' at C:\Users\amkah\.cache\huggingface\datasets\sciq\default\0.0.0\2c94ad3e1aafab77146f384e23536f97a4849815 (last modified on Fri Apr 10 06:20:35 2026).
+  Accuracy: 0.5100
+
+Running HellaSwag...
+  Accuracy: 0.4600
+
+Running PIQA...
+  Accuracy: 0.6950
+
+======================================================================
+Results for TINYLLAMA
+  SciQ: 0.5100
+  HellaSwag: 0.4600
+  PIQA: 0.6950
+======================================================================
+
+======================================================================
+Evaluating: TINYLLAMA
+Config: tinyllama_smart_shuffle_2.csv (15% replacement)
+======================================================================
+Applying TinyLlama head replacement for 15% -> 105 heads
+Replaced 105 heads across 18 layers
+
+Running SciQ...
+  Accuracy: 0.5100
+
+Running HellaSwag...
+  Accuracy: 0.4450
+
+Running PIQA...
+  Accuracy: 0.7000
+
+======================================================================
+Results for TINYLLAMA
+  SciQ: 0.5100
+  HellaSwag: 0.4450
+  PIQA: 0.7000
+======================================================================
+
+======================================================================
+Evaluating: TINYLLAMA
+Config: tinyllama_smart_shuffle_2.csv (20% replacement)
+======================================================================
+Applying TinyLlama head replacement for 20% -> 140 heads
+Replaced 140 heads across 19 layers
+
+Running SciQ...
+  Accuracy: 0.4950
+
+Running HellaSwag...
+  Accuracy: 0.4350
+
+Running PIQA...
+  Accuracy: 0.6950
+
+======================================================================
+Results for TINYLLAMA
+  SciQ: 0.4950
+  HellaSwag: 0.4350
+  PIQA: 0.6950
+======================================================================
+
+======================================================================
+Evaluating: TINYLLAMA
+Config: tinyllama_smart_shuffle_2.csv (30% replacement)
+======================================================================
+Applying TinyLlama head replacement for 30% -> 211 heads
+Replaced 211 heads across 20 layers
+
+Running SciQ...
+  Accuracy: 0.4850
+
+Running HellaSwag...
+  Accuracy: 0.4100
+
+Running PIQA...
+  Accuracy: 0.6600
+
+======================================================================
+Results for TINYLLAMA
+  SciQ: 0.4850
+  HellaSwag: 0.4100
+  PIQA: 0.6600
+======================================================================
+
+======================================================================
+Evaluating: TINYLLAMA
+Config: tinyllama_smart_shuffle_2.csv (40% replacement)
+======================================================================
+Applying TinyLlama head replacement for 40% -> 281 heads
+Replaced 281 heads across 20 layers
+
+Running SciQ...
+  Accuracy: 0.4350
+
+Running HellaSwag...
+  Accuracy: 0.4000
+
+Running PIQA...
+  Accuracy: 0.6350
+
+======================================================================
+Results for TINYLLAMA
+  SciQ: 0.4350
+  HellaSwag: 0.4000
+  PIQA: 0.6350
+======================================================================
+
+======================================================================
+ALL RESULTS:
+======================================================================
+        model  replacement_pct  \
+0        gpt2                5   
+1        gpt2               10   
+2        gpt2               15   
+3        gpt2               20   
+4        gpt2               30   
+5        gpt2               40   
+6   tinyllama                5   
+7   tinyllama               10   
+8   tinyllama               15   
+9   tinyllama               20   
+10  tinyllama               30   
+11  tinyllama               40   
+
+                                             csv_file shuffle_idx  \
+0   ../results/replacement_run/shuffles/gpt2_smart...   hardcoded   
+1   ../results/replacement_run/shuffles/gpt2_smart...   hardcoded   
+2   ../results/replacement_run/shuffles/gpt2_smart...   hardcoded   
+3   ../results/replacement_run/shuffles/gpt2_smart...   hardcoded   
+4   ../results/replacement_run/shuffles/gpt2_smart...   hardcoded   
+5   ../results/replacement_run/shuffles/gpt2_smart...   hardcoded   
+6   ../results/replacement_run/shuffles/tinyllama_...   hardcoded   
+7   ../results/replacement_run/shuffles/tinyllama_...   hardcoded   
+8   ../results/replacement_run/shuffles/tinyllama_...   hardcoded   
+9   ../results/replacement_run/shuffles/tinyllama_...   hardcoded   
+10  ../results/replacement_run/shuffles/tinyllama_...   hardcoded   
+11  ../results/replacement_run/shuffles/tinyllama_...   hardcoded   
+
+   perplexity_increase   SciQ  HellaSwag   PIQA  
+0                  N/A  0.465      0.325  0.640  
+1                  N/A  0.445      0.330  0.630  
+2                  N/A  0.450      0.325  0.620  
+3                  N/A  0.425      0.320  0.630  
+4                  N/A  0.420      0.340  0.630  
+5                  N/A  0.400      0.315  0.605  
+6                  N/A  0.515      0.465  0.700  
+7                  N/A  0.510      0.460  0.695  
+8                  N/A  0.510      0.445  0.700  
+9                  N/A  0.495      0.435  0.695  
+10                 N/A  0.485      0.410  0.660  
+11                 N/A  0.435      0.400  0.635  
+
+Results saved to: ../results/downstream_task_results.csv
+
+======================================================================
+LATEX TABLE:
+======================================================================
+\begin{table*}[ht]
+\centering
+\caption{Downstream Task Performance Across Varying Attention Head Replacement Levels}
+\label{tab:replacement_scaling}
+\setlength{\tabcolsep}{0pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c cc cc cc cc cc cc @{}}
+\toprule
+& \textit{Baseline Model} & \multicolumn{2}{c}{\textbf{5\% Heads Replaced}} & \multicolumn{2}{c}{\textbf{10\% Heads Replaced}} & \multicolumn{2}{c}{\textbf{15\% Heads Replaced}} & \multicolumn{2}{c}{\textbf{20\% Heads Replaced}} & \multicolumn{2}{c}{\textbf{30\% Heads Replaced}} & \multicolumn{2}{c}{\textbf{40\% Heads Replaced}} \\
+\cmidrule(lr){2-2} \cmidrule(lr){3-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8} \cmidrule(lr){9-10} \cmidrule(lr){11-12} \cmidrule(lr){13-14} 
+\textbf{Benchmark} & \textbf{Score} & \textbf{Score} & \textbf{$\Delta$} & \textbf{Score} & \textbf{$\Delta$} & \textbf{Score} & \textbf{$\Delta$} & \textbf{Score} & \textbf{$\Delta$} & \textbf{Score} & \textbf{$\Delta$} & \textbf{Score} & \textbf{$\Delta$} \\
+\midrule
+\textit{GPT-2 Small}  & & & & & & & & & & & & & \\
+SciQ (random) & 25.0 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+SciQ & -- & 46.5 & +0.0 & 44.5 & +0.0 & 45.0 & +0.0 & 42.5 & +0.0 & 42.0 & +0.0 & 40.0 & +0.0 \\
+HellaSwag (random) & 25.0 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+HellaSwag & -- & 32.5 & +0.0 & 33.0 & +0.0 & 32.5 & +0.0 & 32.0 & +0.0 & 34.0 & +0.0 & 31.5 & +0.0 \\
+PIQA (random) & 50.0 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+PIQA & -- & 64.0 & +0.0 & 63.0 & +0.0 & 62.0 & +0.0 & 63.0 & +0.0 & 63.0 & +0.0 & 60.5 & +0.0 \\
+WikiText & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+LAMBADA & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+\midrule
+\textit{TinyLlama-1.1B}  & & & & & & & & & & & & & \\
+SciQ (random) & 25.0 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+SciQ & -- & 51.5 & +0.0 & 51.0 & +0.0 & 51.0 & +0.0 & 49.5 & +0.0 & 48.5 & +0.0 & 43.5 & +0.0 \\
+HellaSwag (random) & 25.0 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+HellaSwag & -- & 46.5 & +0.0 & 46.0 & +0.0 & 44.5 & +0.0 & 43.5 & +0.0 & 41.0 & +0.0 & 40.0 & +0.0 \\
+PIQA (random) & 50.0 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+PIQA & -- & 70.0 & +0.0 & 69.5 & +0.0 & 70.0 & +0.0 & 69.5 & +0.0 & 66.0 & +0.0 & 63.5 & +0.0 \\
+WikiText & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+LAMBADA & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular*}
+\vspace{1mm}
+\small \\ Note: $\Delta$ represents the change in performance relative to the Baseline. For SciQ, HellaSwag, and PIQA, random baseline represents uniform random guessing. WikiText-103 reports perplexity (lower is better); others report accuracy (higher is better).
+\end{table*}
+
+LaTeX table saved to: ../results/downstream_task_table.tex
+
+Using device: cpu
+Loaded 71 program functions
+
+######################################################################
+# MODEL: GPT2
+######################################################################
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (75% replacement)
+======================================================================
+Applying GPT-2 head replacement for 75% -> 108 heads
+Replaced 108 heads across 12 layers
+
+Running SciQ...
+  Accuracy: 0.3250
+
+Running HellaSwag...
+  Accuracy: 0.2700
+
+Running PIQA...
+  Accuracy: 0.5900
+
+======================================================================
+Results for GPT2
+  SciQ: 0.3250
+  HellaSwag: 0.2700
+  PIQA: 0.5900
+======================================================================
+
+######################################################################
+# MODEL: TINYLLAMA
+######################################################################
+
+======================================================================
+Evaluating: TINYLLAMA
+Config: tinyllama_smart_shuffle_2.csv (75% replacement)
+======================================================================
+Applying TinyLlama head replacement for 75% -> 528 heads
+Replaced 528 heads across 21 layers
+
+Running SciQ...
+  Accuracy: 0.3400
+
+Running HellaSwag...
+  Accuracy: 0.3000
+
+Running PIQA...
+  Accuracy: 0.5500
+
+======================================================================
+Results for TINYLLAMA
+  SciQ: 0.3400
+  HellaSwag: 0.3000
+  PIQA: 0.5500
+======================================================================
+
+======================================================================
+ALL RESULTS:
+======================================================================
+       model  replacement_pct  \
+0       gpt2               75   
+1  tinyllama               75   
+
+                                            csv_file shuffle_idx  \
+0  ../results/replacement_run/shuffles/gpt2_smart...   hardcoded   
+1  ../results/replacement_run/shuffles/tinyllama_...   hardcoded   
+
+  perplexity_increase   SciQ  HellaSwag  PIQA  
+0                 N/A  0.325       0.27  0.59  
+1                 N/A  0.340       0.30  0.55  
+
+Results saved to: ../results/downstream_task_results.csv
+
+======================================================================
+LATEX TABLE:
+======================================================================
+\begin{table*}[ht]
+\centering
+\caption{Downstream Task Performance Across Varying Attention Head Replacement Levels}
+\label{tab:replacement_scaling}
+\setlength{\tabcolsep}{0pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c cc @{}}
+\toprule
+& \textit{Baseline Model} & \multicolumn{2}{c}{\textbf{75\% Heads Replaced}} \\
+\cmidrule(lr){2-2} \cmidrule(lr){3-4} 
+\textbf{Benchmark} & \textbf{Score} & \textbf{Score} & \textbf{$\Delta$} \\
+\midrule
+\textit{GPT-2 Small}  & & & \\
+SciQ (random) & 25.0 & -- & -- \\
+SciQ & -- & 32.5 & +0.0 \\
+HellaSwag (random) & 25.0 & -- & -- \\
+HellaSwag & -- & 27.0 & +0.0 \\
+PIQA (random) & 50.0 & -- & -- \\
+PIQA & -- & 59.0 & +0.0 \\
+WikiText & -- & -- & -- \\
+LAMBADA & -- & -- & -- \\
+\midrule
+\textit{TinyLlama-1.1B}  & & & \\
+SciQ (random) & 25.0 & -- & -- \\
+SciQ & -- & 34.0 & +0.0 \\
+HellaSwag (random) & 25.0 & -- & -- \\
+HellaSwag & -- & 30.0 & +0.0 \\
+PIQA (random) & 50.0 & -- & -- \\
+PIQA & -- & 55.0 & +0.0 \\
+WikiText & -- & -- & -- \\
+LAMBADA & -- & -- & -- \\
+\bottomrule
+\end{tabular*}
+\vspace{1mm}
+\small \\ Note: $\Delta$ represents the change in performance relative to the Baseline. For SciQ, HellaSwag, and PIQA, random baseline represents uniform random guessing. WikiText-103 reports perplexity (lower is better); others report accuracy (higher is better).
+\end{table*}
+
+LaTeX table saved to: ../results/downstream_task_table.tex
+
+Using device: cpu
+Loaded 71 program functions
+
+######################################################################
+# MODEL: GPT2
+######################################################################
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (5% replacement)
+======================================================================
+Applying GPT-2 head replacement for 5% -> 7 heads
+Replaced 7 heads across 5 layers
+
+Running ARC-Easy...
+  Accuracy: 0.3450
+
+Running Social IQA...
+  Accuracy: 0.4200
+
+Running OpenBookQA...
+  Accuracy: 0.4800
+
+======================================================================
+  ARC-Easy: 0.3450
+  Social IQA: 0.4200
+  OpenBookQA: 0.4800
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (10% replacement)
+======================================================================
+Applying GPT-2 head replacement for 10% -> 14 heads
+Replaced 14 heads across 8 layers
+
+Running ARC-Easy...
+  Accuracy: 0.3300
+
+Running Social IQA...
+  Accuracy: 0.4100
+
+Running OpenBookQA...
+  Accuracy: 0.4950
+
+======================================================================
+  ARC-Easy: 0.3300
+  Social IQA: 0.4100
+  OpenBookQA: 0.4950
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (15% replacement)
+======================================================================
+Applying GPT-2 head replacement for 15% -> 21 heads
+Replaced 21 heads across 10 layers
+
+Running ARC-Easy...
+  Accuracy: 0.3450
+
+Running Social IQA...
+  Accuracy: 0.4250
+
+Running OpenBookQA...
+  Accuracy: 0.4850
+
+======================================================================
+  ARC-Easy: 0.3450
+  Social IQA: 0.4250
+  OpenBookQA: 0.4850
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (20% replacement)
+======================================================================
+Applying GPT-2 head replacement for 20% -> 28 heads
+Replaced 28 heads across 10 layers
+
+Running ARC-Easy...
+  Accuracy: 0.3350
+
+Running Social IQA...
+  Accuracy: 0.4100
+
+Running OpenBookQA...
+  Accuracy: 0.4850
+
+======================================================================
+  ARC-Easy: 0.3350
+  Social IQA: 0.4100
+  OpenBookQA: 0.4850
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (25% replacement)
+======================================================================
+Applying GPT-2 head replacement for 25% -> 36 heads
+Replaced 36 heads across 10 layers
+
+Running ARC-Easy...
+  Accuracy: 0.3450
+
+Running Social IQA...
+  Accuracy: 0.4250
+
+Running OpenBookQA...
+  Accuracy: 0.4850
+
+======================================================================
+  ARC-Easy: 0.3450
+  Social IQA: 0.4250
+  OpenBookQA: 0.4850
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (30% replacement)
+======================================================================
+Applying GPT-2 head replacement for 30% -> 43 heads
+Replaced 43 heads across 10 layers
+
+Running ARC-Easy...
+  Accuracy: 0.3550
+
+Running Social IQA...
+  Accuracy: 0.4150
+
+Running OpenBookQA...
+  Accuracy: 0.4950
+
+======================================================================
+  ARC-Easy: 0.3550
+  Social IQA: 0.4150
+  OpenBookQA: 0.4950
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (40% replacement)
+======================================================================
+Applying GPT-2 head replacement for 40% -> 57 heads
+Replaced 57 heads across 10 layers
+
+Running ARC-Easy...
+  Accuracy: 0.3400
+
+Running Social IQA...
+  Accuracy: 0.3950
+
+Running OpenBookQA...
+  Accuracy: 0.4750
+
+======================================================================
+  ARC-Easy: 0.3400
+  Social IQA: 0.3950
+  OpenBookQA: 0.4750
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (50% replacement)
+======================================================================
+Applying GPT-2 head replacement for 50% -> 72 heads
+Replaced 72 heads across 12 layers
+
+Running ARC-Easy...
+  Accuracy: 0.3100
+
+Running Social IQA...
+  Accuracy: 0.4100
+
+Running OpenBookQA...
+  Accuracy: 0.4850
+
+======================================================================
+  ARC-Easy: 0.3100
+  Social IQA: 0.4100
+  OpenBookQA: 0.4850
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (75% replacement)
+======================================================================
+Applying GPT-2 head replacement for 75% -> 108 heads
+Replaced 108 heads across 12 layers
+
+Running ARC-Easy...
+  Accuracy: 0.2950
+
+Running Social IQA...
+  Accuracy: 0.4100
+
+Running OpenBookQA...
+  Accuracy: 0.4850
+
+======================================================================
+  ARC-Easy: 0.2950
+  Social IQA: 0.4100
+  OpenBookQA: 0.4850
+======================================================================
+
+======================================================================
+Evaluating: GPT2
+Config: gpt2_smart_shuffle_8.csv (100% replacement)
+======================================================================
+Applying GPT-2 head replacement for 100% -> 144 heads
+Replaced 144 heads across 12 layers
+
+Running ARC-Easy...
+  Accuracy: 0.2700
+
+Running Social IQA...
+  Accuracy: 0.4100
+
+Running OpenBookQA...
+  Accuracy: 0.4500
+
+======================================================================
+  ARC-Easy: 0.2700
+  Social IQA: 0.4100
+  OpenBookQA: 0.4500
+======================================================================
+
+Using device: cpu
+Loaded 71 program functions
+
+######################################################################
+# MODEL: GPT2
+######################################################################
+
+======================================================================
+Evaluating: GPT2
+Config: BASELINE
+======================================================================
+
+Running ARC-Easy...
+  Accuracy: 0.3450
+
+======================================================================
+  ARC-Easy: 0.3450
+======================================================================
+
+######################################################################
+# MODEL: TINYLLAMA
+######################################################################
+
+======================================================================
+Evaluating: TINYLLAMA
+Config: BASELINE
+======================================================================
+
+Running ARC-Easy...
+  Accuracy: 0.5300
+
+======================================================================
+  ARC-Easy: 0.5300
+======================================================================
+
+======================================================================
+ALL RESULTS:
+       model  replacement_pct  csv_file shuffle_idx  ARC-Easy
+0       gpt2                0  baseline    baseline     0.345
+1  tinyllama                0  baseline    baseline     0.530
+
+Results saved to: ../results/downstream_task_results.csv
