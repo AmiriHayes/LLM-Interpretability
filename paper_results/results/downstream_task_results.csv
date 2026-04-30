@@ -1,3 +1,3 @@
-model,replacement_pct,csv_file,shuffle_idx,ARC-Easy
-gpt2,0,baseline,baseline,0.345
-tinyllama,0,baseline,baseline,0.53
+model,replacement_pct,csv_file,shuffle_idx,Social IQA
+gpt2,0,baseline,baseline,0.405
+tinyllama,0,baseline,baseline,0.385

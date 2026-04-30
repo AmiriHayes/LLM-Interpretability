@@ -140,3 +140,6 @@ k,head,program,strategy,increase,kl_div,spike
 139,"(3, 2)",uniform_lower_diagonal,smart,264.70759086115254,1.938750183582306,False
 140,"(3, 7)",previous_attention,smart,293.1572779534772,2.086078405380249,False
 141,"(3, 8)",uniform_lower_diagonal,smart,336.0162449676463,2.236997961997986,False
+142,"(11, 6)",sentence_beginning_salience,smart,3484.6078366594606,3.9665184020996094,true
+143,"(11, 2)",sentence_beginning_salience,smart,4050.8874231968375,4.033837366104126,true
+144,"(1, 2)",uniform_lower_diagonal,smart,4397.002248406098,4.050034236907959,true
